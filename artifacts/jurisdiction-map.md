@@ -1,3 +1,11 @@
+---
+slug: jurisdiction-map
+title: Jurisdiction Map
+description: Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far.
+updated: 2026-08-27
+status: in-progress
+---
+
 # Jurisdiction map
 
 Where SGL-001 (and intranasal exosome products generally) can lawfully be
