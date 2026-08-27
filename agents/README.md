@@ -53,15 +53,31 @@ runs weekdays at 06:00 UTC, plus on manual dispatch. Each run:
 3. Reads that agent's brief in full, does the work, and commits — or
    commits nothing if there was nothing material to add.
 
-| Day | Agent |
-|---|---|
-| Monday | [jurisdiction](jurisdiction.md) |
-| Tuesday | — |
-| Wednesday | — |
-| Thursday | — |
-| Friday | — |
+| Day | Agent | Cadence |
+|---|---|---|
+| Monday | [literature](literature.md) | weekly |
+| Tuesday | [jurisdiction](jurisdiction.md) | weekly |
+| Wednesday | [manufacturing](manufacturing.md) | fortnightly |
+| Thursday | [spec](spec.md) | fortnightly |
+| Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) | monthly, alternating |
+
+Fortnightly and monthly agents skip their slot when they ran inside their
+cadence. A skipped slot means no commit — silence is a valid outcome and
+is preferable to a run that manufactures a finding to justify itself.
 
 An empty slot isn't idle time — the fallback rule in step 2 fills it from
 whichever agent is most overdue. Give a new agent its own row when its
 brief is created; until then it still runs via the fallback whenever it's
 due and nothing else has priority.
+
+## Rules that apply to every agent
+
+- Primary sources only. A summary is a pointer, never a substitute.
+- Regenerate `artifacts/index.json` in the same commit as any artifact change.
+- Record uncertainty as uncertainty. Never resolve an ambiguity in Signal's favour.
+- Conflicts between an artifact and Signal's public materials go in a
+  `## Conflicts` section at the top of that artifact, unsoftened.
+- Post drafts are category-level only. Never draft a post that names or
+  implies Signal's own regulatory, commercial, or supplier position.
+- Nothing confidential in the repo. Quotes, pricing, correspondence, and
+  named prospects stay in local gitignored files.
