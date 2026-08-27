@@ -1,0 +1,68 @@
+name: Agent Rota
+
+on:
+  schedule:
+    - cron: "0 6 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+
+      - uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are running today's turn of the agent rota for this repo —
+            the development record for SGL-001, an intranasal exosome
+            biologic. Agents run on a rota, read their state, produce
+            artifacts, and append what they learned. The commit history is
+            the development record.
+
+            1. Read agents/README.md in full, including its rota table, to
+               see which agent is assigned to today's weekday. Read every
+               file in state/ to see each agent's last-run date and what it
+               already knows.
+            2. Pick today's agent: use the rota's assignment for today's
+               weekday, unless that agent has already run today. If the
+               slot is empty, or the assigned agent already ran today, fall
+               back to whichever agent has gone longest since its last run
+               (per state/<name>.md), restricted to agents whose brief's
+               own `schedule` field says they're due.
+            3. Read that agent's brief in agents/<name>.md in full and
+               follow it exactly — what it reads, what it produces, and its
+               rules. If state/<name>.md doesn't exist yet or is empty,
+               follow the brief's "First run" section if it has one.
+            4. Do the work. Use primary sources the way the brief requires
+               (statute text, regulator guidance, registries — not
+               secondary summaries) via WebSearch/WebFetch. Write or update
+               the artifact(s) the brief makes this agent responsible for
+               in artifacts/, append findings to state/<name>.md, and drop
+               any post drafts worth publishing into posts/ (one file per
+               day, under 280 characters, primary source cited). Follow
+               every rule in the brief, including ones about tone, scope,
+               and never softening unfavorable findings.
+            5. If you added or changed anything in artifacts/, regenerate
+               artifacts/index.json by running
+               `python3 scripts/generate_artifacts_index.py` before
+               committing — this is required by the rule in CLAUDE.md.
+            6. If you made any change worth keeping, configure git identity
+               if needed (`git config user.name` / `user.email`), stage it,
+               and commit with a message describing what was found or
+               produced, in the style of prior commits (e.g.
+               "jurisdiction: texas"). Push the commit.
+            7. If nothing material changed — no new findings, no artifact
+               update, nothing worth a state append — commit nothing.
+               Do not create an empty or filler commit just to show
+               activity.
+          claude_args: |
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
+            --max-turns 40
