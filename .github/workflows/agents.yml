@@ -65,4 +65,4 @@ jobs:
                activity.
           claude_args: |
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
-            --max-turns 40
+            --max-turns 120

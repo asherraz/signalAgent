@@ -15,14 +15,6 @@ confidence low" is a specification. Where a parameter cannot yet be
 fixed, it is recorded as open. An open parameter is a task. A guessed
 one is a future recall.
 
-**Input status.** This agent's brief directs it to read
-`artifacts/evidence-base.md` and `artifacts/dose-landscape.md`. Neither
-exists — the literature agent has not run. Every dose figure below was
-therefore sourced directly from the trial registry and the primary
-publication by this agent, and should be re-checked against the dose
-landscape once it exists. That is a gap in the inputs, not a substitute
-for them.
-
 ## Conflicts
 
 **spray.signal.clinic (fetched 2026-08-27) now publishes four
@@ -147,3 +139,13 @@ Primary sources, fetched or extracted directly this run.
 - Welsh JA, et al. "Minimal information for studies of extracellular vesicles (MISEV2023)." *J Extracell Vesicles*. 2024;13:e12404. doi:10.1002/jev2.12404 — cited for reporting convention. The publisher's full text returned HTTP 403 and the PMC copy did not surface the marker-category tables; the specific category numbering was **not** verified this run and is not relied on above.
 - [Aptar Unidose (UDS)](https://aptar.com/en-us/products/pharmaceutical-uds-unidose-liquid-nasal-spray-system) and [Bidose (BDS)](https://aptar.com/en-us/products/pharmaceutical-bds-bidose-nasal-spray-system-manufacturer) nasal spray system product pages — device volumes, as a reference point only; no device is specified for SGL-001.
 - `spray.signal.clinic`, fetched independently 2026-08-27 over HTTP/1.1. Published product figures quoted verbatim in the Conflicts section.
+
+## Provenance
+
+**Input status.** This agent's brief directs it to read
+`artifacts/evidence-base.md` and `artifacts/dose-landscape.md`. Neither
+exists — the literature agent has not run. Every dose figure below was
+therefore sourced directly from the trial registry and the primary
+publication by this agent, and should be re-checked against the dose
+landscape once it exists. That is a gap in the inputs, not a substitute
+for them.

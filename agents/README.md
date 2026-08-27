@@ -77,6 +77,10 @@ due and nothing else has priority.
 - Record uncertainty as uncertainty. Never resolve an ambiguity in Signal's favour.
 - Conflicts between an artifact and Signal's public materials go in a
   `## Conflicts` section at the top of that artifact, unsoftened.
+- Input-status and provenance notes go at the bottom of an artifact,
+  under a `## Provenance` heading — never at the top. The document leads
+  with its content. (This does not change where `## Conflicts` goes —
+  that stays at the top.)
 - Post drafts are category-level only. Never draft a post that names or
   implies Signal's own regulatory, commercial, or supplier position.
 - Nothing confidential in the repo. Quotes, pricing, correspondence, and
