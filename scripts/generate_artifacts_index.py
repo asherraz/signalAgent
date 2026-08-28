@@ -13,7 +13,19 @@ ARTIFACTS_DIR = Path(__file__).resolve().parent.parent / "artifacts"
 INDEX_PATH = ARTIFACTS_DIR / "index.json"
 FIELDS = ["slug", "title", "description", "updated", "status"]
 
+# Private working documents that must never reach the published index,
+# regardless of frontmatter. Paths are relative to ARTIFACTS_DIR.
+EXCLUDE = {
+    "japan-asset-longlist.md",
+    "dossiers",
+}
+
 FRONTMATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
+
+
+def is_excluded(path):
+    relative = path.relative_to(ARTIFACTS_DIR)
+    return relative.parts[0] in EXCLUDE
 
 
 def parse_frontmatter(text):
@@ -34,14 +46,16 @@ def main():
     entries = []
     missing = []
 
-    for path in sorted(ARTIFACTS_DIR.glob("*.md")):
+    for path in sorted(ARTIFACTS_DIR.rglob("*.md")):
+        if is_excluded(path):
+            continue
         text = path.read_text()
         fields = parse_frontmatter(text)
         if fields is None:
-            missing.append(path.name)
+            missing.append(path.relative_to(ARTIFACTS_DIR).as_posix())
             continue
 
-        entry = {"file": path.name}
+        entry = {"file": path.relative_to(ARTIFACTS_DIR).as_posix()}
         for field in FIELDS:
             entry[field] = fields.get(field, "")
         entries.append(entry)

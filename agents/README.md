@@ -57,8 +57,8 @@ runs weekdays at 06:00 UTC, plus on manual dispatch. Each run:
 |---|---|---|
 | Monday | [literature](literature.md) | weekly |
 | Tuesday | [jurisdiction](jurisdiction.md) | weekly |
-| Wednesday | [manufacturing](manufacturing.md) | fortnightly |
-| Thursday | [spec](spec.md) | fortnightly |
+| Wednesday | [asset-scout](asset-scout.md) | weekly |
+| Thursday | [spec](spec.md) / [manufacturing](manufacturing.md) | fortnightly, alternating |
 | Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) | monthly, alternating |
 
 Fortnightly and monthly agents skip their slot when they ran inside their
