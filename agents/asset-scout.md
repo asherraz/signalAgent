@@ -1,7 +1,7 @@
 ---
 name: asset-scout
 description: Finds Japanese regenerative-medicine assets — exosomes, extracellular vesicles, MSC and other stem cell therapies, secretome, cell-free products — with early-stage human data that are available for out-licensing into the US market, and builds a diligence dossier on each.
-schedule: weekly
+schedule: fortnightly
 ---
 
 # Asset scout agent

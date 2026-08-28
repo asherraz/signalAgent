@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-08-28",
+    "agent": "formulation",
+    "summary": "Compared candidate active ingredients for an intranasal product against human intranasal precedent, regulatory class, and stability profile.",
+    "outcome": "First formulation pass; excipient system, device, and a final verdict deferred to a later run.",
+    "artifact": "active-candidates"
+  },
+  {
+    "date": "2026-08-28",
     "agent": "asset-scout",
     "summary": "Re-screened Japanese clinical-trial data under revised, earlier-stage screening criteria focused on regenerative medicine.",
     "outcome": "One candidate cleared all screening criteria; several partial matches recorded for follow-up.",
