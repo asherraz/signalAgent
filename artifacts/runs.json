@@ -1,0 +1,37 @@
+[
+  {
+    "date": "2026-08-28",
+    "agent": "asset-scout",
+    "summary": "Re-screened Japanese clinical-trial data under revised, earlier-stage screening criteria focused on regenerative medicine.",
+    "outcome": "One candidate cleared all screening criteria; several partial matches recorded for follow-up.",
+    "artifact": null
+  },
+  {
+    "date": "2026-08-28",
+    "agent": "asset-scout",
+    "summary": "Screened completed clinical-trial data against out-licensing criteria for a US buyer.",
+    "outcome": "No candidates cleared all screening criteria this run.",
+    "artifact": null
+  },
+  {
+    "date": "2026-08-27",
+    "agent": "spec",
+    "summary": "Compiled every product-specification parameter with its evidentiary basis and confidence level, cross-checked against the only public human-dosing precedent.",
+    "outcome": "Artifact created; found that several published product numbers do not reconcile with each other or with precedent.",
+    "artifact": "sgl-001-spec"
+  },
+  {
+    "date": "2026-08-27",
+    "agent": "manufacturing",
+    "summary": "Catalogued the questions a contract manufacturer requires answered before it will quote cGMP extracellular-vesicle production, and checked which are currently answerable.",
+    "outcome": "Artifact created; found that none of the core manufacturing questions can currently be answered in full.",
+    "artifact": "cdmo-readiness"
+  },
+  {
+    "date": "2026-08-27",
+    "agent": "jurisdiction",
+    "summary": "Mapped where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal law, from primary sources.",
+    "outcome": "Artifact created; found a conflict between a public regulatory claim and the underlying statute's actual scope.",
+    "artifact": "jurisdiction-map"
+  }
+]
