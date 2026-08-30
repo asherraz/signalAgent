@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-30",
+    "agent": "japan-targets",
+    "summary": "Mapped and ranked regenerative-medicine manufacturers, licensors and asset holders in a target market, and cross-checked them against prior findings.",
+    "outcome": "14 organisations ranked; two corrections raised against an earlier artifact.",
+    "artifact": null
+  },
+  {
     "date": "2026-08-28",
     "agent": "disclosure-audit",
     "summary": "Audited eight vendors' public product pages on the same eleven characterisation and quality-documentation fields, Signal's own page included and audited first.",

@@ -68,6 +68,7 @@ If the field cannot be filled honestly, rank the target 5 and say so. A target w
 - **Rank on reachability, not prestige.** A mid-size manufacturer that answers email outranks a major that will not, however impressive the logo.
 - **Everything stays in `private/`.** Never committed, never indexed, never published.
 - **No PHI, no patient data, ever.**
+- **Every run appends a shape-only entry to `artifacts/runs.json`.** Counts and outcomes only — never an organisation name, person name, or other identifying detail, even though the underlying target list stays private. Same rule as every other agent, restated here because this agent's own artifact is the one most likely to tempt a named example.
 
 ## Deadline awareness
 
