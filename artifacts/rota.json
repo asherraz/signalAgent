@@ -1,0 +1,74 @@
+[
+  {
+    "file": "asset-scout.md",
+    "name": "asset-scout",
+    "description": "Finds Japanese regenerative-medicine assets — exosomes, extracellular vesicles, MSC and other stem cell therapies, secretome, cell-free products — with early-stage human data that are available for out-licensing into the US market, and builds a diligence dossier on each.",
+    "schedule": "fortnightly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "clinics.md",
+    "name": "clinics",
+    "description": "Builds the addressable clinic list by jurisdiction, and records what documentation each type of buyer requires.",
+    "schedule": "monthly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "disclosure-audit.md",
+    "name": "disclosure-audit",
+    "description": "Records what exosome vendors publicly disclose about their product, and what they omit.",
+    "schedule": "monthly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "formulation.md",
+    "name": "formulation",
+    "description": "Designs the intranasal product — candidate actives, excipient system, presentation, device and stability strategy — from published precedent, with every choice traced to a source.",
+    "schedule": "weekly",
+    "domain": "product",
+    "private": false
+  },
+  {
+    "file": "japan-targets.md",
+    "name": "japan-targets",
+    "description": "Builds the ranked Japan business-development target list — manufacturers, licensors, clinics, CROs, counsel and distributors — each with a reason to contact them and a next action.",
+    "schedule": "weekly",
+    "domain": "commercial",
+    "private": true
+  },
+  {
+    "file": "jurisdiction.md",
+    "name": "jurisdiction",
+    "description": "Maps where intranasal exosome products can lawfully be administered, for which indications, under which statute, and with what advertising and consent obligations.",
+    "schedule": "weekly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "literature.md",
+    "name": "literature",
+    "description": "Tracks published work on intranasal extracellular vesicles and cognitive function, and reports what was measured, in what, at what n.",
+    "schedule": "weekly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "manufacturing.md",
+    "name": "manufacturing",
+    "description": "Maps the CDMO landscape for cGMP extracellular vesicle production, what each requires from a client, and what Signal must supply to be quotable.",
+    "schedule": "fortnightly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "spec.md",
+    "name": "spec",
+    "description": "Holds the finished-product specification for SGL-001, with the reasoning and sources behind every number — the active and excipient system are formulation's decisions, recorded here rather than re-derived.",
+    "schedule": "fortnightly",
+    "domain": "",
+    "private": false
+  }
+]

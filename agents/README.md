@@ -59,7 +59,7 @@ runs weekdays at 06:00 UTC, plus on manual dispatch. Each run:
 | Tuesday | [jurisdiction](jurisdiction.md) | weekly |
 | Wednesday | [spec](spec.md) / [manufacturing](manufacturing.md) | fortnightly, alternating |
 | Thursday | [formulation](formulation.md) | weekly |
-| Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) / [asset-scout](asset-scout.md) | fortnightly/monthly, alternating |
+| Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) / [asset-scout](asset-scout.md) / [japan-targets](japan-targets.md) | fortnightly/monthly, alternating; japan-targets weekly |
 
 Fortnightly and monthly agents skip their slot when they ran inside their
 cadence. A skipped slot means no commit — silence is a valid outcome and
