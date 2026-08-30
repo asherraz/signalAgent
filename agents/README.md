@@ -57,9 +57,14 @@ runs weekdays at 06:00 UTC, plus on manual dispatch. Each run:
 |---|---|---|
 | Monday | [literature](literature.md) | weekly |
 | Tuesday | [jurisdiction](jurisdiction.md) | weekly |
-| Wednesday | [spec](spec.md) / [manufacturing](manufacturing.md) | fortnightly, alternating |
+| Wednesday | [japan-targets](japan-targets.md) | weekly, **temporary through 10 October** |
 | Thursday | [formulation](formulation.md) | weekly |
-| Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) / [asset-scout](asset-scout.md) / [japan-targets](japan-targets.md) | fortnightly/monthly, alternating; japan-targets weekly |
+| Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) / [asset-scout](asset-scout.md) / [spec](spec.md) / [manufacturing](manufacturing.md) | fortnightly/monthly, alternating |
+
+Wednesday's japan-targets slot runs through 10 October, covering the
+BioJapan (7–9 Oct) and SelectBIO EV Asia (13–14 Oct) booking windows.
+After that it reverts to spec/manufacturing, which moved to Friday's
+alternation for the duration.
 
 Fortnightly and monthly agents skip their slot when they ran inside their
 cadence. A skipped slot means no commit — silence is a valid outcome and
