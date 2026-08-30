@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-08-30",
+    "agent": "disclosure-audit",
+    "summary": "Derived a named, modality-agnostic disclosure standard from the eleven audit fields, with minimum and complete tiers, a buyer's checklist, and a compliance table scoring every audited vendor against it.",
+    "outcome": "Standard v1 created; no vendor, Signal included, meets the minimum-disclosure tier in full.",
+    "artifact": "signal-standard"
+  },
+  {
+    "date": "2026-08-30",
     "agent": "japan-targets",
     "summary": "Mapped and ranked regenerative-medicine manufacturers, licensors and asset holders in a target market, and cross-checked them against prior findings.",
     "outcome": "14 organisations ranked; two corrections raised against an earlier artifact.",

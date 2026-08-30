@@ -34,6 +34,12 @@ Each field records what is disclosed, or `not disclosed`. Nothing else.
 
 Signal's own product page is audited on the same fields, in the same table, and appears first.
 
+This agent also maintains [`artifacts/signal-standard.md`](../artifacts/signal-standard.md), the modality-agnostic disclosure standard derived from these eleven fields. On every run:
+
+- Re-score every vendor's compliance table row against the standard's eleven fields and two tiers, from that run's freshly checked pages.
+- Where a vendor's score on any field changes since the last run, note the change in the standard's compliance table (and in `state/disclosure-audit.md`), the same way a changed disclosure-audit row is noted. Don't silently overwrite a prior score.
+- The standard's field definitions themselves (what each field is, why it matters, the tiers) only change when the underlying disclosure-audit fields change — routine re-scoring never edits the definitions, only the compliance table and its date.
+
 ## Rules
 
 - Report absence as absence. Non-disclosure is not evidence of a bad product and must never be written as if it were.
