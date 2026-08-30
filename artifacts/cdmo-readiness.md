@@ -4,6 +4,7 @@ title: CDMO Readiness
 description: The questions a contract manufacturer asks before it will quote cGMP extracellular vesicle production, and whether Signal can currently answer each one.
 updated: 2026-08-27
 status: in-progress
+domain: product
 ---
 
 # CDMO readiness

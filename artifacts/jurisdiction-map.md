@@ -4,6 +4,7 @@ title: Jurisdiction Map
 description: Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far.
 updated: 2026-08-27
 status: in-progress
+domain: route
 ---
 
 # Jurisdiction map

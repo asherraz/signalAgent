@@ -4,7 +4,7 @@ title: The Signal Disclosure Standard
 description: The minimum a buyer of a biological product needs disclosed before they can evaluate it — eleven fields, two tiers, a buyer's checklist, and every disclosure-audit vendor scored against it.
 updated: 2026-08-30
 status: v1
-domain: standard
+domain: market
 agent: disclosure-audit
 ---
 

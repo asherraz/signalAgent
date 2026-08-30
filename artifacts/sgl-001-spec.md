@@ -4,6 +4,7 @@ title: SGL-001 Specification
 description: Every SGL-001 parameter with its value, the evidence behind it, a confidence rating, and the question still open — including where the published numbers do not reconcile.
 updated: 2026-08-27
 status: in-progress
+domain: product
 ---
 
 # SGL-001 specification

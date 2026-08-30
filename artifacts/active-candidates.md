@@ -4,6 +4,7 @@ title: Active Candidates
 description: Every plausible active for an intranasal cognitive-function product, compared on human intranasal precedent, regulatory class, and stability profile. Excipient constraints, cost, combinability, and verdict are out of scope this run.
 updated: 2026-08-28
 status: in-progress
+domain: product
 ---
 
 # Active candidates

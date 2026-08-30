@@ -4,6 +4,7 @@ title: Japan Asset Longlist
 description: Japanese regenerative-medicine assets with human data screened against the out-licensing hard gates. Private working document — excluded from the published index.
 updated: 2026-08-28
 status: in-progress
+domain: market
 ---
 
 # Japan asset longlist

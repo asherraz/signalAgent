@@ -4,6 +4,7 @@ title: Disclosure Audit
 description: What exosome vendors publish about their product, field by field, from public pages only — source, passage, isolation method, particle count and its measurement method, markers, sterility, traceability, storage, and COA availability.
 updated: 2026-08-28
 status: in-progress
+domain: market
 ---
 
 # Disclosure audit
