@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-08-31",
+    "agent": "synthesize",
+    "summary": "First run of the new synthesis agent: read every public artifact plus the run log and wrote the standing four-section summary of what's known about developing SGL-001.",
+    "outcome": "synthesis.md created, naming the spec's internal conflicts, the jurisdiction gap, and the unanswered CDMO-readiness questions as open rather than resolved.",
+    "artifact": "synthesis"
+  },
+  {
+    "date": "2026-08-31",
     "agent": "literature",
     "summary": "Synthesized a two-tier miRNA cargo reference for MSC-EV and pluripotent-EV regenerative literature, structured data plus narrative, including recurring pathway convergence and the exosome miRNA-stoichiometry controversy.",
     "outcome": "24 miRNAs recorded across two tiers; four flagged with documented context-dependent effect reversals; marked as a secondary synthesis pending primary-source verification.",

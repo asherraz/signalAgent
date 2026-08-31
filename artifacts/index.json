@@ -54,5 +54,13 @@
     "description": "The minimum a buyer of a biological product needs disclosed before they can evaluate it — eleven fields, two tiers, a buyer's checklist, and every disclosure-audit vendor scored against it.",
     "updated": "2026-08-30",
     "status": "v1"
+  },
+  {
+    "file": "synthesis.md",
+    "slug": "synthesis",
+    "title": "Synthesis",
+    "description": "The standing four-section summary of what Signal knows about developing SGL-001, rebuilt from every public artifact and the run log on each run.",
+    "updated": "2026-08-31",
+    "status": "standing"
   }
 ]
