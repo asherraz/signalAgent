@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-08-31",
+    "agent": "literature",
+    "summary": "Synthesized a two-tier miRNA cargo reference for MSC-EV and pluripotent-EV regenerative literature, structured data plus narrative, including recurring pathway convergence and the exosome miRNA-stoichiometry controversy.",
+    "outcome": "24 miRNAs recorded across two tiers; four flagged with documented context-dependent effect reversals; marked as a secondary synthesis pending primary-source verification.",
+    "artifact": "mirna-cargo"
+  },
+  {
     "date": "2026-08-30",
     "agent": "disclosure-audit",
     "summary": "Derived a named, modality-agnostic disclosure standard from the eleven audit fields, with minimum and complete tiers, a buyer's checklist, and a compliance table scoring every audited vendor against it.",

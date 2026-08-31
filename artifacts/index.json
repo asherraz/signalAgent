@@ -32,6 +32,14 @@
     "status": "in-progress"
   },
   {
+    "file": "mirna-cargo.md",
+    "slug": "mirna-cargo",
+    "title": "miRNA Cargo in Regenerative EVs",
+    "description": "A two-tier synthesis of the miRNAs most reported in MSC-EV and pluripotent-EV cargo — recurring pathways, the chassis-matching implication, the Chevillet stoichiometry controversy, and the caveats that come with a secondary synthesis.",
+    "updated": "2026-08-31",
+    "status": "v1"
+  },
+  {
     "file": "sgl-001-spec.md",
     "slug": "sgl-001-spec",
     "title": "SGL-001 Specification",

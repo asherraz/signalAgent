@@ -26,6 +26,8 @@ The evidence base SGL-001 is being developed toward. The account's public voice 
 
 `artifacts/dose-landscape.md` — every dosing paradigm reported, with particle counts, schedules, and species, so the spec agent has something to reason from.
 
+`artifacts/data/mirna-cargo.json` and `artifacts/mirna-cargo.md` — the miRNA cargo reference (structured data plus narrative). Maintained, not appended: on each run, add newly reported miRNAs as new entries, and update an existing entry's `evidence` tier, `caveat`, or `contextDependent` flag as new work strengthens, weakens, or reverses what's recorded. Note any miRNA whose evidence tier or contextDependent flag changes since the last run, the same way a changed disclosure-audit row is noted — don't silently overwrite a prior finding.
+
 ## Rules
 
 - Record what was measured, not what the abstract says was shown. These differ often.
