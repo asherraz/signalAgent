@@ -17,6 +17,9 @@ jobs:
         with:
           fetch-depth: 0
 
+      - id: pre
+        run: echo "base_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
       - uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -66,3 +69,51 @@ jobs:
           claude_args: |
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
             --max-turns 120
+
+      - id: check-artifacts
+        run: |
+          NEW_SHA=$(git rev-parse HEAD)
+          BASE_SHA="${{ steps.pre.outputs.base_sha }}"
+          if [ "$NEW_SHA" = "$BASE_SHA" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          elif git diff --name-only "$BASE_SHA" "$NEW_SHA" -- artifacts/ | grep -q .; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.check-artifacts.outputs.changed == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
+            You are running the synthesize agent for this repo — the
+            development record for SGL-001, an intranasal exosome biologic.
+            The rota agent that just ran changed a file in artifacts/, which
+            is this agent's trigger to run.
+
+            1. Read agents/synthesize.md in full and follow it exactly —
+               what it reads, what it produces, and its rules, including
+               the confidentiality boundary around
+               artifacts/japan-asset-longlist.md and artifacts/dossiers/.
+            2. Read every file directly in artifacts/ (not artifacts/data/,
+               not artifacts/dossiers/ beyond what the brief's
+               confidentiality rule allows), plus artifacts/runs.json in
+               full, plus the existing artifacts/synthesis.md if present.
+            3. Write artifacts/synthesis.md and a dated copy at
+               artifacts/synthesis/YYYY-MM-DD.md (today's date), per the
+               brief's structure, word cap, and linking rule.
+            4. Regenerate artifacts/index.json by running
+               `python3 scripts/generate_artifacts_index.py`.
+            5. Configure git identity if needed, stage synthesis.md, the
+               dated copy, and index.json, and commit with a message
+               describing what changed in the synthesis (e.g.
+               "synthesize: <n>-day update, new conflict noted"). Push the
+               commit in the same push as this job's other commit, i.e. a
+               second commit on the same branch — do not force-push or
+               rewrite the rota agent's commit.
+            6. If, after reading everything, nothing in synthesis.md would
+               actually change from the last version, commit nothing.
+          claude_args: |
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep"
+            --max-turns 60

@@ -13,11 +13,18 @@ ARTIFACTS_DIR = Path(__file__).resolve().parent.parent / "artifacts"
 INDEX_PATH = ARTIFACTS_DIR / "index.json"
 FIELDS = ["slug", "title", "description", "updated", "status"]
 
-# Private working documents that must never reach the published index,
-# regardless of frontmatter. Paths are relative to ARTIFACTS_DIR.
+# Paths relative to ARTIFACTS_DIR excluded from the index regardless of
+# frontmatter. Two different reasons live in one set:
+# - japan-asset-longlist.md, dossiers: private working documents that must
+#   never reach the published index.
+# - synthesis: dated snapshots (synthesis/YYYY-MM-DD.md) are a trail, not
+#   separate artifacts — only the current artifacts/synthesis.md itself
+#   (a sibling file, not under this directory, so unaffected by this
+#   exclusion) belongs in the index.
 EXCLUDE = {
     "japan-asset-longlist.md",
     "dossiers",
+    "synthesis",
 }
 
 FRONTMATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
