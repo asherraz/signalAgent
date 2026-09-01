@@ -1,6 +1,20 @@
 [
   {
     "date": "2026-09-01",
+    "agent": "jurisdiction",
+    "summary": "Re-checked the product site directly (now sgl001.signal.clinic) against the standing SB 1768 conflict, on an operator report that the citation had been removed.",
+    "outcome": "Confirmed: SB 1768 is no longer cited on the site. Moved the finding to a new Resolved section; kept the underlying statutory-scope analysis as a standing reference. Federal-law silence remains open and unchanged.",
+    "artifact": "jurisdiction-map"
+  },
+  {
+    "date": "2026-09-01",
+    "agent": "spec",
+    "summary": "Re-checked the product site directly against three standing conflicts (dose framing, container arithmetic, filtration labelling), on an operator report that the site had been corrected.",
+    "outcome": "Confirmed all three resolved on the live site; moved them to a new Resolved section and fixed three downstream table cells and the Derived-figures table that depended on the now-withdrawn '100 doses' figure. Storage and shelf life remain the one open conflict.",
+    "artifact": "sgl-001-spec"
+  },
+  {
+    "date": "2026-09-01",
     "agent": "synthesize",
     "summary": "Second run, first under the common-language-for-approval mission framing: re-derived What we know/don't know from every current artifact rather than carrying forward the prior wording, folding in today's formulation and challenge runs.",
     "outcome": "Recorded, for the first time, that the artifact record's current lead active (intranasal insulin) is not the one being marketed (extracellular vesicles) — an open product-identity question layered onto the pre-existing spec, legal, and manufacturing gaps.",

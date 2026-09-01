@@ -1,8 +1,8 @@
 ---
 slug: jurisdiction-map
 title: Jurisdiction Map
-description: Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far.
-updated: 2026-08-27
+description: Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far. The product site no longer cites SB 1768; the statutory scope analysis stands as reference, not a live conflict.
+updated: 2026-09-01
 status: in-progress
 domain: route
 ---
@@ -16,25 +16,29 @@ indications are quoted verbatim from the instrument.
 
 ## Conflicts
 
-**spray.signal.clinic cites "Florida SB 1768" as the legal basis for launch, and the citation does not hold up on either of the two grounds that matter.**
+**sgl001.signal.clinic (fetched 2026-09-01 — spray.signal.clinic now redirects here) still makes no mention of federal law, IND status, or FDA review anywhere.** Federal law governs regardless of what Florida state law does or doesn't cover — see the US federal row below. This is unchanged since the last check and remains unresolved. No X/Twitter account was located to check for the same claim; that remains an open item (see state file).
 
-The site's own text (fetched 2026-08-27):
+Per the map's standing rule, this is not resolved in Signal's favour, and it is not softened. What Signal does about its own site is the operator's call.
+
+## Resolved since the last check (2026-08-27 → 2026-09-01)
+
+**Florida SB 1768 is no longer cited on the product site as the legal basis for launch.** The site's §05 section previously read, verbatim (fetched 2026-08-27):
 
 > § 05 — Launching in Florida. Physician-directed. In-clinic. Under **Florida SB 1768**. Signal is onboarding a limited cohort of licensed physicians for the initial rollout.
 
-Footer: "Physician-directed · Florida SB 1768"
+with the footer carrying "Physician-directed · Florida SB 1768". As of 2026-09-01, the same section reads:
 
-The rest of the page markets SGL-001 exclusively for cognitive/neuro use: "A biologic that signals the brain to repair itself," "Nose to brain," and a "Signal Index" scoring cognitive clarity, focus & attention, working memory, sleep quality, mood regulation, and drive & motivation. There is no orthopedic, wound-care, or pain-management framing anywhere on the page.
+> § 05 — Launching in Florida. Physician-directed. In-clinic. Signal is onboarding a limited cohort of licensed physicians for the initial rollout. If you operate a longevity, neurology, or regenerative practice, request access below.
 
-Two independent problems:
+and the footer now carries a general development-stage disclaimer instead ("SGL-001 is in development... Nothing here is a claim that any product treats, prevents or improves any condition. Not available for sale where prohibited.") that names no statute at all. Neither instance of the SB 1768 citation this artifact previously flagged is present on the live site as of this check. This resolves the specific conflict recorded here — that the site cited a statute for a use its own text doesn't cover — because the site no longer cites it.
+
+## Statutory scope, for reference
+
+The finding below no longer describes a conflict with Signal's own materials — the site doesn't cite SB 1768 at all now — but the underlying statutory analysis is unchanged and is kept here as a standing reference, since whether Florida's stem-cell carve-out reaches exosomes or cognitive claims outlives whatever the site currently says about it.
 
 1. **Scope.** SB 1768 (enacted as Fla. Stat. §§458.3245 and 459.0127) authorizes unapproved stem cell therapy only "for treatment or procedures that are within the scope of practice for such physician and the therapies are related to **orthopedics, wound care, or pain management**" (§458.3245(3)(a), verbatim). Cognitive, neurological, and brain-repair indications are not in that list. The statute does not address them, favorably or otherwise — it simply doesn't reach them. See row below.
 
-2. **Product type.** SB 1768's definition of the products it covers excludes "[s]ecreted or extracted human products, such as milk, collagen, and cell factors, other than semen" (§458.3245(2)(a)3.). Exosomes are secreted extracellular vesicles. FDA has already read the identical federal exclusion this way in writing: the Kimera Labs warning letter (9/1/2023) states plainly that "the definition of human cells, tissues, or cellular or tissue based products (HCT/Ps) in 21 CFR 1271.3(d) excludes secreted or extracted human products. 21 CFR 1271.3(d)(3). Accordingly, secreted body fluids... are not considered HCT/Ps... [and are] generally regulated as a drug... and requires premarket review and approval." Florida's definition tracks the federal one closely enough that the same reading plausibly applies — meaning SGL-001 may not be "stem cell therapy" under SB 1768 at all, regardless of indication. This is not resolved either way by any enforcement action or advisory opinion found; it is recorded here as open, not decided in Signal's favor per the rules of this map.
-
-Separately, the site makes no mention of federal law, IND status, or FDA review anywhere. Federal law governs regardless of what SB 1768 does or doesn't cover — see the US federal row. No X/Twitter account was located to check for the same claim; that remains an open item (see state file).
-
-This is a legal-surface finding, not a recommendation. What Signal does about its own site is the operator's call.
+2. **Product type.** SB 1768's definition of the products it covers excludes "[s]ecreted or extracted human products, such as milk, collagen, and cell factors, other than semen" (§458.3245(2)(a)3.). Exosomes are secreted extracellular vesicles. FDA has already read the identical federal exclusion this way in writing: the Kimera Labs warning letter (9/1/2023) states plainly that "the definition of human cells, tissues, or cellular or tissue based products (HCT/Ps) in 21 CFR 1271.3(d) excludes secreted or extracted human products. 21 CFR 1271.3(d)(3). Accordingly, secreted body fluids... are not considered HCT/Ps... [and are] generally regulated as a drug... and requires premarket review and approval." Florida's definition tracks the federal one closely enough that the same reading plausibly applies — meaning an intranasal exosome product may not be "stem cell therapy" under SB 1768 at all, regardless of indication. This is not resolved either way by any enforcement action or advisory opinion found; it is recorded here as open, not decided in Signal's favor per the rules of this map.
 
 ## Map
 
@@ -56,3 +60,7 @@ This is a legal-surface finding, not a recommendation. What Signal does about it
 
 - SB 1768's felony provision at §458.3245(9)(b) criminalizes "the sale, manufacture, or distribution of computer products created using human cells, tissues, or cellular or tissue-based products." This is enacted text, confirmed against the Senate's own HTML, not a scraping artifact. Commentary reads it as aimed at biocomputing (e.g., neuron-based hardware), not a typo. Not directly relevant to SGL-001's scope but flagged in case it becomes relevant to any future neural-interface framing.
 - Florida's HCT/P definition (§458.3245(2)(a)) is drafted nearly identically to the federal 21 CFR 1271.3(d) definition, down to the same enumerated exclusions. This is why the federal "secreted products" reading (via the Kimera Labs letter) is a reasonable — not certain — guide to how Florida's version would be read. No Florida Board of Medicine opinion on exosomes specifically was found.
+
+## Site check, 2026-09-01
+
+`sgl001.signal.clinic` (homepage and `/science`; `spray.signal.clinic` now redirects here) checked directly against the SB 1768 citation this map previously flagged — see Resolved, above. This was a site-text check only, not a re-check of the underlying statute or federal guidance; the Map table's "Last checked" dates (2026-08-27) are unchanged because the primary legal sources themselves weren't re-fetched this run.

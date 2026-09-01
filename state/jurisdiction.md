@@ -1,5 +1,13 @@
 # Jurisdiction agent — state
 
+## 2026-09-01 — site re-check: SB 1768 citation withdrawn
+
+**Trigger:** operator report that the product site no longer cites SB 1768 as its legal basis. Verified directly against the live page (now `sgl001.signal.clinic` — `spray.signal.clinic` redirects here) before editing the artifact, rather than taking the report on trust — this repo's primary-sources-only rule applies to the operator's own claims about the site the same way it applies to any other source.
+
+**What changed:** the §05 "Launching in Florida" section and the footer both previously named "Florida SB 1768" verbatim (fetched 2026-08-27); as of this check, neither does. The footer now carries a general development-stage disclaimer instead. This resolves the specific conflict this artifact recorded — a statute cited for a use its own text doesn't cover — because the citation is gone, not because the underlying scope question was answered. Moved the finding to a new `## Resolved` section and kept the statutory-scope analysis (indication scope, product-type/HCT/P exclusion) as a standing reference under its own heading, since that analysis is about Florida law generally and doesn't depend on whether Signal's site currently cites the statute.
+
+**What stayed open:** the site still makes no mention of federal law, IND status, or FDA review anywhere — unchanged, still the live Conflicts entry. The underlying statute and FDA guidance were not re-fetched this run; only the site text was checked, so the Map table's "Last checked" dates are unchanged.
+
 ## 2026-08-27 — first run
 
 **Jurisdictions checked:** Florida, US federal (in full, per brief's first-run instruction).

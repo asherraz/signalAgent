@@ -1,5 +1,15 @@
 # Spec agent — state
 
+## 2026-09-01 — site re-check: three conflicts resolved, one open
+
+**Trigger:** operator report that the product site had been updated; verified directly against the live page before editing anything, per the fresh-instance-reset rule and this repo's primary-sources-only standard, rather than taking the report on trust.
+
+**What changed:** the product moved from `spray.signal.clinic` to `sgl001.signal.clinic` (the old domain now redirects). Fetched both the homepage and `/science` directly. Confirmed three of the four standing conflicts no longer hold: the dose is now explicitly labelled "Target dose (in development)" with an on-site disclaimer that it isn't validated or derived from human data; the site no longer states a specific "100 doses" count (now "Multiple"), so the container-arithmetic self-contradiction no longer arises; and "0.22 µm filtration" is now labelled `Process`, not presented as a quality attribute. Moved all three to a new `## Resolved` section rather than deleting the history. Storage temperature and shelf life remain unpublished — the fourth conflict stays open, unchanged.
+
+**Downstream fix required:** the "Derived figures" table computed three rows from the now-withdrawn "100 doses" figure (particles per bottle, bottle vs. human course, conditioned medium per bottle). Marked those three as superseded rather than leaving them silently stale; the two rows that depend only on the per-dose figure are unaffected. Also cleaned three Specification-table open-question cells that still asserted "100-dose bottle" as current fact (isolation method, shelf life, container/device rows).
+
+**What stayed open:** the dose-vs-precedent comparison (5×10⁹ is still 6.25× the top arm of the only human intranasal EV trial, 62.5× its concentration) is kept as a note on an acknowledged development target — the site's own disclaimer doesn't change the arithmetic, so this isn't dropped, just reframed from "conflict" to "open scientific question." Everything else in the Specification table (source cell line, isolation method, excipients, storage, shelf life, device, analytics) is unchanged and still open.
+
 ## 2026-08-27 — first run
 
 **Parameters changed:** all of them — `artifacts/sgl-001-spec.md` did not

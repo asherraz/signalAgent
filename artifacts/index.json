@@ -35,8 +35,8 @@
     "file": "jurisdiction-map.md",
     "slug": "jurisdiction-map",
     "title": "Jurisdiction Map",
-    "description": "Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far.",
-    "updated": "2026-08-27",
+    "description": "Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far. The product site no longer cites SB 1768; the statutory scope analysis stands as reference, not a live conflict.",
+    "updated": "2026-09-01",
     "status": "in-progress"
   },
   {
@@ -51,8 +51,8 @@
     "file": "sgl-001-spec.md",
     "slug": "sgl-001-spec",
     "title": "SGL-001 Specification",
-    "description": "Every SGL-001 parameter with its value, the evidence behind it, a confidence rating, and the question still open — including where the published numbers do not reconcile.",
-    "updated": "2026-08-27",
+    "description": "Every SGL-001 parameter with its value, the evidence behind it, a confidence rating, and the question still open. Three prior conflicts with the product site are now resolved; storage and shelf life remain unpublished.",
+    "updated": "2026-09-01",
     "status": "in-progress"
   },
   {
