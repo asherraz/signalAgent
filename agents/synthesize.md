@@ -37,6 +37,7 @@ Also writes a dated copy to `artifacts/synthesis/YYYY-MM-DD.md` (today's date) �
 - If artifacts conflict with each other, say so by name. Resolving a conflict quietly is worse than leaving it stated and open — that's the other agents' job, on their own artifacts, not this one's.
 - Cap the whole body at roughly 400 words. This is a standing summary someone rereads on every run, not a report — length is a feature to defend, not a constraint to work around.
 - No adjectives, no verdicts on whether SGL-001 is a good idea. The synthesis reflects what the other artifacts found; it doesn't have opinions the others don't already hold.
+- **Frame with the declared development focus, not with whichever candidate currently scores highest.** `agents/formulation.md` records Signal's development focus as a business decision, separate from the four-axis comparison it also keeps honest. This synthesis follows the same separation: report the focus as the frame, and report a higher-scoring benchmark candidate as a benchmark note under what's being tracked — never restate it as "the lead active." The comparison finding itself is not softened or hidden, only correctly ordered.
 
 ## When it runs
 
