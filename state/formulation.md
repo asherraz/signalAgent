@@ -1,5 +1,13 @@
 # Formulation agent — state
 
+## 2026-09-01 — third run: declared exosome focus, scoring unchanged
+
+**Trigger:** operator declared Signal's development focus as an intranasal exosome therapeutic — a business decision, stated explicitly as scope rather than a research conclusion — with the instruction to keep the four-axis comparison honest rather than let the declared focus bias it.
+
+**What changed:** rewrote `active-candidates.md`'s framing only. The old `## Current lead` section (which named insulin without any declared-focus context) is now `## Development focus` (states the exosome focus and the required scope line) plus `## Benchmarks` (insulin, and oxytocin, tracked as higher-scoring alternatives, not adopted). The Four-axis scoring table's mechanism/evidence/manufacturability/regulatory-tractability cells are byte-for-byte unchanged from the prior run — only the Verdict column's two labels (naive EVs, insulin) were reworded to match the new framing, since Verdict is an interpretation, not a raw score.
+
+**What did not change:** every fact, citation, and axis score. EVs still score weakest on 3 of 4 axes; insulin still scores highest on all 4. Neither the declared focus nor this reframing altered either finding — per the operator's own instruction, and per the rule now written into `agents/formulation.md`, the focus is not a scoring input.
+
 ## 2026-09-01 — second run, four-axis scoring under the active-agnostic brief
 
 **Trigger:** the brief was rewritten to make the selection criterion explicit — mechanism, human-relevant evidence, manufacturability, regulatory tractability, with mechanism weighted as a gate — and to require `active-candidates.md` to lead with a current lead rather than stay a survey.

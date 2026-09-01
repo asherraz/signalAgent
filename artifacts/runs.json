@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-09-01",
+    "agent": "formulation",
+    "summary": "Reframed active-candidates.md around Signal's declared exosome development focus, on operator instruction to scope the product without biasing the four-axis comparison.",
+    "outcome": "Restructured 'Current lead' into 'Development focus' plus 'Benchmarks'; the scoring table's axis cells are unchanged. EVs still score weakest on 3 of 4 axes and insulin still scores highest on all 4 — the declared focus changed how the artifact frames those facts, not the facts.",
+    "artifact": "active-candidates"
+  },
+  {
+    "date": "2026-09-01",
     "agent": "synthesize",
     "summary": "Third run of the day: re-derived from every current artifact after spec and jurisdiction recorded three site conflicts as resolved.",
     "outcome": "Recorded the resolutions as a correction to the record, and confirmed the insulin-vs-EV product-identity tension from earlier today is unaffected by them — the homepage's marketing claim didn't change, only the numeric/legal framings did.",
