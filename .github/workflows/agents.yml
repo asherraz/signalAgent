@@ -25,8 +25,9 @@ jobs:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
             You are running today's turn of the agent rota for this repo —
-            the development record for SGL-001, an intranasal exosome
-            biologic. Agents run on a rota, read their state, produce
+            the development record for SGL-001, an intranasal preparation
+            for cognitive function whose active is chosen on evidence, not
+            assumed. Agents run on a rota, read their state, produce
             artifacts, and append what they learned. The commit history is
             the development record.
 
@@ -87,10 +88,53 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           prompt: |
+            You are running the challenge agent for this repo — the
+            development record for SGL-001, an intranasal preparation for
+            cognitive function whose active is chosen on evidence. The rota
+            agent that just ran changed a file in artifacts/, which is this
+            agent's trigger to run, before synthesize runs on the same
+            output.
+
+            1. Read agents/challenge.md in full and follow it exactly —
+               what it reads, what it produces, and its rules. It must not
+               defer to the producing agent's own conclusions.
+            2. Identify which artifact(s) the rota agent changed this run
+               (from the diff of this job's checkout against the commit
+               before the rota agent ran, or from the newest entry in
+               artifacts/runs.json), and read the producing agent's own
+               brief in agents/<name>.md to know what it was supposed to
+               do.
+            3. Attack the artifact per the brief: trace claims to their
+               cited primary sources (refetch them, don't take the
+               artifact's word), check whether anything recorded as
+               missing or open was actually searched exhaustively, and
+               check whether any named lead or verdict is earned by the
+               evidence presented or inherited from assumption.
+            4. Write the entry into artifacts/challenges.md, newest first,
+               per the brief's format. Do not edit the target artifact
+               itself — a challenge is a finding, not a correction.
+            5. Regenerate artifacts/index.json by running
+               `python3 scripts/generate_artifacts_index.py`.
+            6. Configure git identity if needed, stage challenges.md and
+               index.json, and commit with a message describing what the
+               challenge found (e.g. "challenge: formulation's EV lead
+               traces to inherited assumption, not evidence"). Push the
+               commit in the same push as this job's other commits — do
+               not force-push or rewrite an earlier commit.
+          claude_args: |
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
+            --max-turns 60
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.check-artifacts.outputs.changed == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          prompt: |
             You are running the synthesize agent for this repo — the
-            development record for SGL-001, an intranasal exosome biologic.
-            The rota agent that just ran changed a file in artifacts/, which
-            is this agent's trigger to run.
+            development record for SGL-001, an intranasal preparation for
+            cognitive function whose active is chosen on evidence. The rota
+            agent that just ran changed a file in artifacts/, which is this
+            agent's trigger to run, after challenge has had its pass.
 
             1. Read agents/synthesize.md in full and follow it exactly —
                what it reads, what it produces, and its rules, including
