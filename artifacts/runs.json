@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-01",
+    "agent": "formulation",
+    "summary": "Re-ran active-candidates.md under the new active-agnostic brief: scored every candidate active on mechanism, human-relevant evidence, manufacturability, and regulatory tractability, and named a current lead for the first time.",
+    "outcome": "Current lead is intranasal insulin, not extracellular vesicles — strongest on all four axes but not a regenerative active, a tension flagged for the operator rather than resolved.",
+    "artifact": "active-candidates"
+  },
+  {
     "date": "2026-08-31",
     "agent": "synthesize",
     "summary": "First run of the new synthesis agent: read every public artifact plus the run log and wrote the standing four-section summary of what's known about developing SGL-001.",

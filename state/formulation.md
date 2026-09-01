@@ -1,5 +1,19 @@
 # Formulation agent — state
 
+## 2026-09-01 — second run, four-axis scoring under the active-agnostic brief
+
+**Trigger:** the brief was rewritten to make the selection criterion explicit — mechanism, human-relevant evidence, manufacturability, regulatory tractability, with mechanism weighted as a gate — and to require `active-candidates.md` to lead with a current lead rather than stay a survey.
+
+**What changed:** Added a `## Current lead` section and a `## Four-axis scoring` table to `active-candidates.md`, scoring all seven real candidates plus the reference row against the four axes. Did not touch `formulation-design.md` or `presentation-and-device.md` — still out of scope, same as the first run; a verdict on excipient/device questions would require work this run didn't do.
+
+**Result: the current lead is intranasal insulin, not extracellular vesicles.** Applied honestly, the four-axis criterion favours insulin on all four axes — defined mechanism, the deepest controlled human cognitive dataset in the comparison (SNIFF), approved-biologic manufacturability, and an easier regulatory starting point (off-label device repurposing) than any cell- or vesicle-derived candidate. Naive EVs, the currently marketed active, score weakest of any candidate on three of the four axes; their one strength (cognitive-specific human precedent, Xie et al.) is real but thin (n=9, open-label, uncontrolled) and no longer clearly ahead of insulin's controlled trial even on that axis.
+
+**Flagged, not resolved:** insulin is not a regenerative or tissue-repair active and does not support spray.signal.clinic's current "nose signals the brain to repair itself" framing. This is a product-identity tension between what scores best under the new criterion and what the product currently claims to be — recorded in `active-candidates.md`'s `Current lead` section and left for the operator, per the brief's rule against reaching a predetermined answer.
+
+**Sourcing honesty for this run:** the EV/cell/secretome axis scores draw on already-cited repo artifacts (`cdmo-readiness.md`, `mirna-cargo.md`, `jurisdiction-map.md`, `sgl-001-spec.md`), not fresh fetches. The insulin/oxytocin/NAD⁺ scores draw on established receptor pharmacology and each product's public approval history, not a fresh primary-source search this run. Recorded explicitly in `active-candidates.md`'s Sources section so a challenge pass knows what was and wasn't independently re-checked this run.
+
+**Open for a future run:** `formulation-design.md` and `presentation-and-device.md` still don't exist. If insulin's lead holds up, the excipient/device precedent search should prioritize approved nasal-insulin and nasal-peptide products directly rather than starting from EV-specific formulation literature.
+
 ## 2026-08-28 — first run
 
 **Scope this run:** Per operator instruction — `artifacts/active-candidates.md` only. Explicitly did not attempt `artifacts/formulation-design.md` (excipient system) or `artifacts/presentation-and-device.md` (presentation/device) this run. Within the active-candidates comparison itself, scope was further narrowed to three of the brief's eight columns — human intranasal precedent, regulatory class, and molecular size/stability profile — leaving excipient/pH constraints, cost and supply, combinability, and verdict unfilled rather than guessed.
