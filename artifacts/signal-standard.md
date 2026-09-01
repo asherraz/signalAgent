@@ -1,8 +1,8 @@
 ---
 slug: signal-standard
 title: The Signal Disclosure Standard
-description: The minimum a buyer of a biological product needs disclosed before they can evaluate it — eleven fields, two tiers, a buyer's checklist, and every disclosure-audit vendor scored against it.
-updated: 2026-08-30
+description: The minimum a buyer of a biological product needs disclosed before they can evaluate it, and the seed of a common language for approval across the category — eleven fields, two tiers, a buyer's checklist, and every disclosure-audit vendor scored against it.
+updated: 2026-09-01
 status: v1
 domain: market
 agent: disclosure-audit
@@ -15,6 +15,8 @@ agent: disclosure-audit
 A buyer of a biological product — a clinic, a distributor, a practitioner — cannot inspect the product itself before purchase. They can only read what the supplier publishes. In regenerative medicine broadly (exosomes and other extracellular vesicles, mesenchymal and other stem-cell therapies, secretome, cell-free products), that published information is routinely incomplete, and the category has no shared floor for what "incomplete" means. [`artifacts/disclosure-audit.md`](disclosure-audit.md) documented this for eight exosome vendors and found that most of the eleven fields a buyer would need are absent across most of the market.
 
 This standard generalizes that finding into something usable beyond exosomes: the fields a buyer of *any* biological product needs disclosed before they can evaluate it, independent of modality. A cell-therapy supplier, a secretome supplier, and an exosome supplier are all being asked the same eleven questions here, phrased generically enough to apply to all three.
+
+Read at the category level, this standard is the seed of something larger: **a common language for approval** — a shared way to characterise and reproduce a biological product well enough that a regulator, a CDMO, and a buyer can all evaluate the same claim the same way. Manufacturing consistency (can two lots, batches, or production years be shown to be the same product) and a defined mechanism (can the product's activity be tied to a specific, testable cause) are the two problems this standard's eleven fields point toward. They are not side considerations to a disclosure checklist; they are the actual bottleneck a disclosure standard is a first step toward closing.
 
 The standard does not set pass/fail thresholds on quality, safety, or efficacy, and it makes no claim about any product's suitability. It sets a floor for disclosure — what must be stated for a buyer to make an informed decision at all. Non-disclosure is not evidence of a bad product. It is evidence that the buyer cannot currently evaluate the product, which is a different problem and the one this standard addresses.
 
@@ -157,4 +159,4 @@ This table will be re-scored on each disclosure-audit run. Where a vendor's disc
 
 ## Version and date
 
-**v1** — 2026-08-30. First version, derived from the eight-vendor, eleven-field audit of 2026-08-28. Maintained by the disclosure-audit agent; see [`agents/disclosure-audit.md`](../agents/disclosure-audit.md).
+**v1** — 2026-08-30. First version, derived from the eight-vendor, eleven-field audit of 2026-08-28. Maintained by the disclosure-audit agent; see [`agents/disclosure-audit.md`](../agents/disclosure-audit.md). 2026-09-01: added the common-language-for-approval framing above — mission context, not a change to the eleven fields, the tiers, or the compliance table, so the version stays v1.

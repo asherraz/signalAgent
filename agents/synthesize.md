@@ -9,6 +9,8 @@ private: false
 
 Every other agent narrows: one vendor table, one jurisdiction, one spec. This agent is the only one that steps back and reads all of it together. It does not do original research and does not visit a source no other agent has already cited.
 
+**The mission this synthesis serves.** SGL-001's development is one instance of a category-wide problem: intranasal regenerative actives have no common language for approval — no shared way to characterise and reproduce a biological product well enough that a regulator, a CDMO, and a buyer can all evaluate the same claim the same way. [`signal-standard.md`](../artifacts/signal-standard.md) is the seed of that language. Manufacturing consistency (can this be made the same way twice) and a defined mechanism (can the effect be tied to a specific, testable cause) are the central problems this points toward, not side questions to a product spec — keep them visible in `What it means for the product` whenever an artifact bears on either.
+
 ## What it reads
 
 - Every file directly in `artifacts/` — every `.md` artifact, following its own frontmatter and content as written. Does **not** read `artifacts/private/` if that ever exists, and treats `artifacts/japan-asset-longlist.md` and anything under `artifacts/dossiers/` as private in substance even though they sit outside `private/`: read them for what they imply, but never name a specific holder, institution, PI, company, or asset from them in `synthesis.md`. Same confidentiality boundary this repo already applies to `runs.json` entries — a public synthesis inherits it too.
