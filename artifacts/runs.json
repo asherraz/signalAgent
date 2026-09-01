@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-09-01",
+    "agent": "synthesize",
+    "summary": "Second run, first under the common-language-for-approval mission framing: re-derived What we know/don't know from every current artifact rather than carrying forward the prior wording, folding in today's formulation and challenge runs.",
+    "outcome": "Recorded, for the first time, that the artifact record's current lead active (intranasal insulin) is not the one being marketed (extracellular vesicles) — an open product-identity question layered onto the pre-existing spec, legal, and manufacturing gaps.",
+    "artifact": "synthesis"
+  },
+  {
+    "date": "2026-09-01",
     "agent": "challenge",
     "summary": "First run of the new challenge agent: attacked formulation's same-day active-candidates.md rewrite — traced its evidence claims, checked the mechanism/manufacturability/regulatory scores behind the new insulin lead, and checked the EV mechanism verdict's evidentiary basis.",
     "outcome": "Holds with corrections: the insulin-over-EVs direction is sound, but three of insulin's four axis-scores rested on unverified general knowledge rather than a checked source, and the EV mechanism verdict was argued from only one pathway (miRNA transfer). Neither changes the lead call but both need closing before it's settled.",
