@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-09-01",
+    "agent": "synthesize",
+    "summary": "Third run of the day: re-derived from every current artifact after spec and jurisdiction recorded three site conflicts as resolved.",
+    "outcome": "Recorded the resolutions as a correction to the record, and confirmed the insulin-vs-EV product-identity tension from earlier today is unaffected by them — the homepage's marketing claim didn't change, only the numeric/legal framings did.",
+    "artifact": "synthesis"
+  },
+  {
+    "date": "2026-09-01",
     "agent": "jurisdiction",
     "summary": "Re-checked the product site directly (now sgl001.signal.clinic) against the standing SB 1768 conflict, on an operator report that the citation had been removed.",
     "outcome": "Confirmed: SB 1768 is no longer cited on the site. Moved the finding to a new Resolved section; kept the underlying statutory-scope analysis as a standing reference. Federal-law silence remains open and unchanged.",
