@@ -41,6 +41,8 @@ The evidence base SGL-001 is being developed toward. The account's public voice 
 
 Append to `state/literature.md`: date, papers reviewed, what changed in the evidence base, what to watch.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 The strongest material this system produces. Findings, sourced, one per file, under 280 characters, DOI or registry ID included. Category-level only — never Signal's own product or position.

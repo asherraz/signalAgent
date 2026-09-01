@@ -56,6 +56,8 @@ Then scan for movement — states and countries with bills in progress. That's t
 
 Append to `state/jurisdiction.md` after each run: date, jurisdictions checked, what changed, open questions.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 Write findings worth publishing to `posts/`. One per file, under 280 characters, primary source cited. Scope surprises are the most interesting — where a law is narrower or broader than the industry assumes.

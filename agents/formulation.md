@@ -87,6 +87,8 @@ Then the device: metered pump, actuation volume per spray, sprays per dose, dose
 
 Append to `state/formulation.md`: date, candidates compared, decisions taken and their basis, parameters still open, what would resolve them.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 Category-level only. Why nasal formulation is harder than it looks, what an approved nasal product's excipient list reveals, the trade-off between mucoadhesion and plume quality. Never Signal's own formulation or competitive position.

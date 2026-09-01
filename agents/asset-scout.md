@@ -89,6 +89,8 @@ Plus a `## Near miss` section in the same file: assets that failed exactly one g
 
 Append to `state/asset-scout.md`: date, sources searched, assets screened, assets dropped and why, near misses and what would change them, changes in the longlist.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 None. This agent produces no public content. Asset scouting is a commercial activity and the longlist is a private working document — keep `japan-asset-longlist.md` and `dossiers/` out of the published artifact index until the operator says otherwise.

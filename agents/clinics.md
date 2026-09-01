@@ -43,6 +43,8 @@ Who can lawfully administer this, where, and what they need before they will buy
 
 Append to `state/clinics.md`: date, segments reviewed, requirement changes, gaps closed or opened.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 What clinic buyers actually ask for and how rarely they get it. Category-level. Never Signal's pipeline, prospects, or commercial position.

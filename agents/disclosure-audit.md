@@ -53,6 +53,8 @@ This agent also maintains [`artifacts/signal-standard.md`](../artifacts/signal-s
 
 Append to `state/disclosure-audit.md`: date, vendors checked, fields that changed since last run.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 What the category discloses in aggregate — how many of N vendors publish a particle count, a method, a COA. Never single out a named competitor in a post. Aggregate findings only.

@@ -49,6 +49,8 @@ Gaps in that document are the real project plan. Anything Signal can't answer is
 
 Append to `state/manufacturing.md`: date, manufacturers reviewed, status changes, open questions.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 Category-level only. What EV manufacturing actually requires, why capacity is scarce, what a CDMO asks before it will quote. Never Signal's own supplier relationships, negotiations, or position.

@@ -41,6 +41,8 @@ The basis column is the point of the artifact. "5×10⁹ particles per dose" is 
 
 Append to `state/spec.md`: date, parameters changed, what evidence moved them, what remains open.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 The reasoning, not the product. Why a dose is hard to scale from animals, why nasal volume is constrained, why stability decides more than potency. Never publish the spec as a claim about what Signal sells.

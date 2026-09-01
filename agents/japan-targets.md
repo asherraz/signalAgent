@@ -78,6 +78,8 @@ BioJapan runs 7–9 October in Yokohama. Partnering meetings at these events are
 
 Append to `private/state-japan-targets.md`: date, sources searched, organisations added, ranks changed, targets that went dead and why.
 
+Your state file is a log of what you have examined and when — not established fact. Re-derive conclusions from primary sources each run. If you now disagree with a past entry, supersede it and say why. Do not build on your own prior inference as if it were settled.
+
 ## Post drafts
 
 None. Commercial targeting is private.

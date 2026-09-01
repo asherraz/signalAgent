@@ -43,3 +43,5 @@ Not on the weekday rota — `stage: none` and no `schedule` field are both delib
 ## State
 
 None. `artifacts/synthesis.md` and the dated copies under `artifacts/synthesis/` already are this agent's record — a separate `state/synthesize.md` would just duplicate the "what changed since last time" section this agent already writes into the artifact itself.
+
+Your own previous `synthesis.md` is a log of what you concluded and when — not established fact. Re-derive `What we know` and `What we don't know` from the current artifacts each run rather than carrying forward last run's phrasing unexamined. If this run's reading disagrees with a past synthesis, supersede it and say why. Do not build on your own prior synthesis as if it were settled.
