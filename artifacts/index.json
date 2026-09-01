@@ -16,6 +16,14 @@
     "status": "in-progress"
   },
   {
+    "file": "challenges.md",
+    "slug": "challenges",
+    "title": "Challenges",
+    "description": "The opposing-view pass — the day's new or updated artifact, attacked for claims that don't trace to a primary source, \"missing\" fields that were never actually exhausted, and a named lead that may rest on assumption rather than evidence.",
+    "updated": "2026-09-01",
+    "status": "in-progress"
+  },
+  {
     "file": "disclosure-audit.md",
     "slug": "disclosure-audit",
     "title": "Disclosure Audit",

@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-09-01",
+    "agent": "challenge",
+    "summary": "First run of the new challenge agent: attacked formulation's same-day active-candidates.md rewrite — traced its evidence claims, checked the mechanism/manufacturability/regulatory scores behind the new insulin lead, and checked the EV mechanism verdict's evidentiary basis.",
+    "outcome": "Holds with corrections: the insulin-over-EVs direction is sound, but three of insulin's four axis-scores rested on unverified general knowledge rather than a checked source, and the EV mechanism verdict was argued from only one pathway (miRNA transfer). Neither changes the lead call but both need closing before it's settled.",
+    "artifact": "challenges"
+  },
+  {
+    "date": "2026-09-01",
     "agent": "formulation",
     "summary": "Re-ran active-candidates.md under the new active-agnostic brief: scored every candidate active on mechanism, human-relevant evidence, manufacturability, and regulatory tractability, and named a current lead for the first time.",
     "outcome": "Current lead is intranasal insulin, not extracellular vesicles — strongest on all four axes but not a regenerative active, a tension flagged for the operator rather than resolved.",
