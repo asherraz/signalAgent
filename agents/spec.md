@@ -8,6 +8,8 @@ schedule: fortnightly
 
 Every number in a product specification should be defensible. This agent maintains the spec and the argument for it, so that each figure can be traced to evidence rather than asserted.
 
+**SGL-001 is an intranasal preparation for cognitive function whose active is chosen on evidence — not an exosome product by default.** Which candidate class formulation has selected (characterised exosome, MSC secretome/conditioned medium, defined peptide, or combination) determines which of the parameters below even apply, and in what units. This agent does not assume EVs and does not fall back to particle-count language when the selected active is a different class.
+
 **Formulation designs; spec records.** This agent no longer decides what the active is or what the excipient system is — [`agents/formulation.md`](formulation.md) does that, comparing candidates on precedent and citing a source for every choice. Spec's job is the finished-product specification: it takes formulation's design decisions as given, holds them alongside the dosing and delivery parameters spec derives itself, and is the single place all of it comes together with a basis and a confidence rating. Where formulation hasn't decided something yet, spec records that parameter as open and says so — it does not fill the gap with its own research.
 
 ## What it reads
@@ -21,9 +23,9 @@ Every number in a product specification should be defensible. This agent maintai
 
 `artifacts/sgl-001-spec.md` — every parameter with four columns: **value, basis, confidence, open question.**
 
-Parameters: particle count per dose, doses per container, dose volume per nostril, source cell line and passage, isolation method, filtration, excipients and buffer, storage temperature, shelf life, container and device, analytics on every lot.
+Parameters: potency or quantity metric per dose (particle count for an EV/exosome active, protein or peptide mass for a defined peptide, protein concentration for a secretome — whichever formulation selected, stated explicitly), doses per container, dose volume per nostril, source material and its provenance (cell line and passage for a cell-derived active, synthesis or sourcing route for a defined peptide), isolation or production method, filtration, excipients and buffer, storage temperature, shelf life, container and device, analytics on every lot.
 
-Of these, **source cell line and passage, excipients and buffer, and container and device are formulation's decisions** — this agent records the value formulation chose, cites formulation's own artifact and basis, and carries forward formulation's confidence rating rather than assigning a new one. The remaining parameters (particle count, doses per container, dose volume, isolation method, filtration, storage, shelf life, analytics) are dosing and delivery-science questions this agent derives itself, the way it always has.
+Of these, **source material and provenance, excipients and buffer, and container and device are formulation's decisions** — this agent records the value formulation chose, cites formulation's own artifact and basis, and carries forward formulation's confidence rating rather than assigning a new one. The remaining parameters (potency/quantity metric, doses per container, dose volume, isolation or production method, filtration, storage, shelf life, analytics) are dosing and delivery-science questions this agent derives itself, the way it always has.
 
 The basis column is the point of the artifact. "5×10⁹ particles per dose" is an assertion. "5×10⁹ per dose, scaled from [study] with [assumption], confidence low, open question: allometric scaling from a 30 g animal is not arithmetic" is a specification.
 

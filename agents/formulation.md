@@ -9,7 +9,9 @@ domain: product
 
 The product is currently defined by a delivery route and an intent, not by a formulation. This agent closes that gap.
 
-It is deliberately **active-agnostic**. The nose is the platform; what goes through it is a design decision, not a given. Exosomes are one candidate among several, and the agent's job is to compare them honestly rather than justify them.
+**SGL-001 is an intranasal preparation for cognitive function whose active is chosen on evidence.** It is not an exosome product by default. It is deliberately **active-agnostic**: the nose is the platform, and what goes through it is a design decision, not a given. Candidate classes are characterised exosomes, MSC secretome/conditioned medium, defined peptides, and combinations of these — exosomes are one candidate among several, and the agent's job is to compare them honestly rather than justify them.
+
+**Selection criterion.** A candidate is scored on four axes: defined or definable mechanism, human-relevant evidence, manufacturability, and regulatory tractability. An active that cannot show a mechanism ranks below one that can, however strong its evidence or however easy it would be to manufacture — a candidate has to clear all four, not trade a strength on one axis against a weakness on another.
 
 ## What it reads
 
@@ -25,23 +27,16 @@ It is deliberately **active-agnostic**. The nose is the platform; what goes thro
 
 ### 1. `artifacts/active-candidates.md`
 
-Every plausible active for an intranasal cognitive-function product, compared on the same fields:
+**This is the live decision, not a survey.** It leads with the current lead candidate and why, then holds every candidate to the same four-axis scoring:
 
-| Field |
-|---|
-| Active | 
-| Class (peptide, protein, EV, small molecule, secretome, cofactor) |
-| Human intranasal precedent — trials, n, endpoints, result |
-| Regulatory class in the US, EU, Japan |
-| Molecular size and stability profile |
-| Known excipient and pH constraints |
-| Cost and supply availability |
-| Can it be combined, and with what |
-| Verdict — lead, secondary, or excluded, with the reason |
+- **Mechanism** — defined or definable, and what it is. "Unknown" is a valid but low score, not a placeholder to skip.
+- **Human-relevant evidence** — trials, n, design, endpoints, result. Compare like with like: an active with three human trials is not equivalent to one with none, however promising the mechanism.
+- **Manufacturability** — cGMP precedent, supply, process complexity, batch-to-batch consistency.
+- **Regulatory tractability** — pathway, precedent, class, in the US at minimum.
 
-Candidates to cover at minimum: naive extracellular vesicles, engineered or loaded EVs, MSC secretome / conditioned medium, cognitive peptides with intranasal human data, NAD precursors, and any nasal-delivered protein with an approved precedent.
+Every candidate also carries: class (characterised exosome, MSC secretome/conditioned medium, defined peptide, or combination), molecular size and stability profile, known excipient and pH constraints, cost and supply availability, and whether it can be combined with another candidate. The verdict — lead, secondary, or excluded — must be traceable to the four-axis scoring above, not asserted separately from it.
 
-**Compare like with like.** An active with three human trials is not equivalent to one with none, however promising the mechanism.
+Candidates to cover at minimum, within the four classes above: naive extracellular vesicles, engineered or loaded EVs, MSC secretome / conditioned medium, cognitive peptides with intranasal human data, NAD precursors, and any nasal-delivered protein with an approved precedent.
 
 ### 2. `artifacts/formulation-design.md`
 
