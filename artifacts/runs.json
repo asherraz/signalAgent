@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-09-01",
+    "agent": "synthesize",
+    "summary": "Fourth run of the day: re-derived after formulation reframed active-candidates.md around the declared exosome development focus.",
+    "outcome": "No longer leads with insulin as 'the lead active' — reports the declared exosome focus as the frame and insulin/oxytocin as benchmarks, per the updated brief. The underlying finding (EVs weakest on 3 of 4 axes) is unchanged and still stated plainly.",
+    "artifact": "synthesis"
+  },
+  {
+    "date": "2026-09-01",
     "agent": "formulation",
     "summary": "Reframed active-candidates.md around Signal's declared exosome development focus, on operator instruction to scope the product without biasing the four-axis comparison.",
     "outcome": "Restructured 'Current lead' into 'Development focus' plus 'Benchmarks'; the scoring table's axis cells are unchanged. EVs still score weakest on 3 of 4 axes and insulin still scores highest on all 4 — the declared focus changed how the artifact frames those facts, not the facts.",
