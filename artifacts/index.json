@@ -4,7 +4,7 @@
     "slug": "active-candidates",
     "title": "Active Candidates",
     "description": "The comparison record for SGL-001's active — every candidate scored on mechanism, human-relevant evidence, manufacturability, and regulatory tractability, framed by Signal's declared exosome development focus. Higher-scoring alternatives are tracked as benchmarks, not adopted.",
-    "updated": "2026-09-01",
+    "updated": "2026-09-03",
     "status": "in-progress"
   },
   {
@@ -29,6 +29,14 @@
     "title": "Disclosure Audit",
     "description": "What exosome vendors publish about their product, field by field, from public pages only — source, passage, isolation method, particle count and its measurement method, markers, sterility, traceability, storage, and COA availability.",
     "updated": "2026-08-28",
+    "status": "in-progress"
+  },
+  {
+    "file": "formulation-design.md",
+    "slug": "formulation-design",
+    "title": "Formulation Design",
+    "description": "The excipient system for an intranasal exosome preparation, each component traced to an approved nasal product or to the FDA Inactive Ingredient Database. The published EV-stabilisation buffer has no nasal precedent at all, and the one approved nasal permeation enhancer is a detergent that dissolves lipid vesicles.",
+    "updated": "2026-09-03",
     "status": "in-progress"
   },
   {

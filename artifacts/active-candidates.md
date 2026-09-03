@@ -2,7 +2,7 @@
 slug: active-candidates
 title: Active Candidates
 description: The comparison record for SGL-001's active — every candidate scored on mechanism, human-relevant evidence, manufacturability, and regulatory tractability, framed by Signal's declared exosome development focus. Higher-scoring alternatives are tracked as benchmarks, not adopted.
-updated: 2026-09-01
+updated: 2026-09-03
 status: in-progress
 domain: product
 ---
@@ -13,7 +13,7 @@ This is a design document, not a report on anything that has been made. Nothing 
 
 **Signal's declared development focus is an intranasal EXOSOME therapeutic for cognitive function — a business decision the operator has made, not a research conclusion this document reaches.** [`agents/formulation.md`](../agents/formulation.md) sets four axes every candidate is scored on regardless of focus: **mechanism** (defined or definable, and what it is), **human-relevant evidence**, **manufacturability**, and **regulatory tractability**. This document leads with the declared focus below, then holds every candidate — the focus candidate included — to the same honest scoring. A higher-scoring alternative is recorded as a benchmark, not adopted.
 
-**Scope of this run.** The prior run (2026-08-28) covered three columns only — human intranasal precedent, regulatory class, molecular size/stability — and deliberately withheld a verdict. The following run (2026-09-01) added the four-axis scoring below and, before this framing update, named a per-axis "current lead" independent of any declared focus. This run doesn't touch that scoring table — the facts and scores are unchanged — it only corrects how the artifact frames them, per the operator's scope decision. The excipient system ([`formulation-design.md`](formulation-design.md)) and the presentation/device decision ([`presentation-and-device.md`](presentation-and-device.md)) still don't exist, so cost/supply and combinability stay open.
+**Scope of this run.** The prior run (2026-08-28) covered three columns only — human intranasal precedent, regulatory class, molecular size/stability — and deliberately withheld a verdict. The following run (2026-09-01) added the four-axis scoring below and, before this framing update, named a per-axis "current lead" independent of any declared focus. This run doesn't touch that scoring table — the facts and scores are unchanged — it only corrects how the artifact frames them, per the operator's scope decision. The presentation/device decision ([`presentation-and-device.md`](presentation-and-device.md)) still doesn't exist, so cost/supply and combinability stay open. The excipient system ([`formulation-design.md`](formulation-design.md)) was created on 2026-09-03 — see Not assessed this run, below, for what it does and does not settle for this comparison.
 
 **The comparison itself stays active-agnostic, even though the product's focus is not.** Extracellular vesicles are one candidate among four classes — characterised exosomes, MSC secretome/conditioned medium, defined peptides, and combinations — scored the same as every other candidate here: on its evidence, not its incumbency or its declared status. The declared focus changes what Signal is building; it does not change what this table finds.
 
@@ -69,7 +69,9 @@ Per the current brief's selection criterion. **Mechanism** is scored first and w
 
 ## Not assessed this run
 
-Excipient and pH constraints, cost and supply availability, and whether candidates can be combined are still deliberately out of scope — that's [`formulation-design.md`](formulation-design.md)'s territory, which doesn't exist yet. A candidate's molecular fragility interacts directly with what excipient system could stabilize it, so every verdict above should be read as provisional to that document.
+Cost and supply availability, and whether candidates can be combined, are still deliberately out of scope. A candidate's molecular fragility interacts directly with what excipient system could stabilize it, so every verdict above should be read as provisional to [`formulation-design.md`](formulation-design.md).
+
+**Excipient and pH constraints are now partly answered, for the focus candidate only.** [`formulation-design.md`](formulation-design.md) was created on 2026-09-03 and works the excipient question for the exosome active: measured nasal pH is 6.27–6.40 (Washington et al. 2000) against a neutral-pH EV stability optimum, which is a smaller conflict than expected and is already bridged by an approved product at pH 7.2 (SPRIX). Two findings there bear directly on this comparison and make the EV rows' manufacturability and regulatory scores harder, not easier: **every component of the best-evidenced EV stabilisation buffer — trehalose, human serum albumin, HEPES, sucrose, poloxamer 188 — has zero nasal precedent in the FDA Inactive Ingredient Database**, and **the only permeation enhancer with US nasal precedent (n-dodecyl β-D-maltoside, in TOSYMRA at 0.2%) is a detergent that would be expected to dissolve the active**. The equivalent excipient work has not been done for the peptide, secretome, or NAD⁺ rows, so this column is filled for one candidate, not for the comparison. The four-axis scores above are unchanged by it — this run did not rescore anything.
 
 ## Observations worth flagging now
 

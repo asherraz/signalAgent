@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-03",
+    "agent": "formulation",
+    "summary": "Created the excipient-system artifact for the intranasal preparation, working from the FDA Inactive Ingredient Database (July 2026 release, filtered to its 132 nasal-route entries), the openFDA nasal label index, five approved nasal product labels, and the EMA nasal-products guideline.",
+    "outcome": "Every component of the best-evidenced stabilisation buffer for this class of active has zero nasal-route precedent in the IID, and the only permeation enhancer with US nasal precedent is a detergent that would be expected to dissolve the active — both recorded as findings against the design, not softened. Buffer and pH resolved with approved precedent; stabiliser, tonicity level and in-use period left open rather than guessed. Also recorded: there is no approved nasal biologic in the US, and FDA's own guidance excludes BLA excipients from the IID.",
+    "artifact": "formulation-design"
+  },
+  {
     "date": "2026-09-01",
     "agent": "synthesize",
     "summary": "Fourth run of the day: re-derived after formulation reframed active-candidates.md around the declared exosome development focus.",
