@@ -2,11 +2,13 @@ name: Agent Rota
 
 on:
   schedule:
-    - cron: "0 6 * * 1,3,5"
+    - cron: "0 6 * * 1-5"
+    - cron: "0 7 * * 1"
   workflow_dispatch:
 
 jobs:
   run-agent:
+    if: github.event_name != 'schedule' || github.event.schedule == '0 6 * * 1-5'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -135,4 +137,61 @@ jobs:
                not force-push or rewrite an earlier commit.
           claude_args: |
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
+            --max-turns 30
+
+  run-synthesize:
+    if: github.event_name != 'schedule' || github.event.schedule == '0 7 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - id: synth-due
+        run: python3 scripts/check_synthesis_due.py >> "$GITHUB_OUTPUT"
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.synth-due.outputs.due == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          settings: |
+            {
+              "env": {
+                "CLAUDE_CODE_PROMPT_CACHE_TTL": "1h"
+              }
+            }
+          prompt: |
+            You are running the weekly synthesize agent for this repo —
+            the development record for SGL-001, an intranasal preparation
+            for cognitive function whose active is chosen on evidence.
+            This job runs once a week, separately from the daily agent
+            rota, and only because scripts/check_synthesis_due.py found a
+            change under artifacts/ since synthesis.md was last committed.
+
+            1. Read agents/synthesize.md in full and follow it exactly —
+               what it reads, what it produces, and its rules, including
+               the confidentiality boundary around
+               artifacts/japan-asset-longlist.md and artifacts/dossiers/.
+            2. Read every file directly in artifacts/ (not artifacts/data/,
+               not artifacts/dossiers/ beyond what the brief's
+               confidentiality rule allows), plus artifacts/runs.json in
+               full, plus the existing artifacts/synthesis.md if present.
+            3. Write artifacts/synthesis.md and a dated copy at
+               artifacts/synthesis/YYYY-MM-DD.md (today's date), per the
+               brief's structure, word cap, and linking rule.
+            4. Regenerate artifacts/index.json by running
+               `python3 scripts/generate_artifacts_index.py`.
+            5. Configure git identity if needed, stage synthesis.md, the
+               dated copy, and index.json, and commit with a message
+               describing what changed in the synthesis (e.g.
+               "synthesize: <n>-day update, new conflict noted"). Push the
+               commit.
+            6. If, after reading everything, nothing in synthesis.md would
+               actually change from the last version, commit nothing.
+          claude_args: |
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep"
             --max-turns 30

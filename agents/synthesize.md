@@ -41,7 +41,7 @@ Also writes a dated copy to `artifacts/synthesis/YYYY-MM-DD.md` (today's date) �
 
 ## When it runs
 
-Not on the cadence rota — `stage: none` and no `schedule` field are both deliberate. Not part of the automatic per-run workflow either: to keep per-run cost down, `.github/workflows/agents.yml` stops after `challenge`. Run this agent by hand (`workflow_dispatch` with its own prompt, or locally) when the standing summary needs updating — a run where nothing in `artifacts/` changed since the last synthesis still gets no new dated copy, the same way a skipped rota slot is.
+Not on the cadence rota — `stage: none` and no `schedule` field are both deliberate. Not part of the daily `run-agent` job either: to keep that job's per-run cost down, it stops after `challenge`. Instead, a separate `run-synthesize` job in `.github/workflows/agents.yml` runs this agent alone, weekly (Mondays 07:00 UTC), gated on `scripts/check_synthesis_due.py` finding an artifact change since `synthesis.md` was last committed — a week where nothing changed gets no run at all, the same way a skipped rota slot is.
 
 ## State
 

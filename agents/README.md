@@ -43,7 +43,9 @@ schedule: How often / when this agent runs, e.g. "daily" or "on new data"
 ## Rota
 
 The scheduled workflow ([`.github/workflows/agents.yml`](../.github/workflows/agents.yml))
-runs Monday/Wednesday/Friday at 06:00 UTC, plus on manual dispatch. Each
+has two independent jobs, each on its own cron.
+
+**`run-agent`** runs weekdays at 06:00 UTC, plus on manual dispatch. Each
 run is capped to a single cadence agent, to keep per-run cost down:
 
 1. Before invoking Claude at all, [`scripts/check_due.py`](../scripts/check_due.py)
@@ -52,15 +54,14 @@ run is capped to a single cadence agent, to keep per-run cost down:
    picks whichever due agent is most overdue relative to its own
    cadence. An agent with no state file yet counts as maximally overdue.
 2. If nothing is due, the run stops there — no Claude invocation, no
-   cost, just a "nothing due, skipped" log line.
+   cost, just a "nothing due, skipped" log line. Daily-checking is safe
+   this way: it can't raise cost past however many agents are actually
+   due, it only raises how quickly a due agent gets picked up.
 3. Otherwise the picked agent's brief runs in full — reads its state,
    does the work, and commits, or commits nothing if there was nothing
    material to add — capped at 30 turns.
 4. If that run changed a file in `artifacts/`, the [challenge](challenge.md)
    agent runs once against that one artifact, then the workflow stops.
-   `synthesize` is not part of this automatic run; run it manually
-   (`workflow_dispatch` with its own prompt, or locally) when the
-   standing summary needs updating.
 
 There is no per-weekday agent assignment anymore — the schedule just
 picks the single most-overdue agent among all agents whose `schedule`
@@ -68,6 +69,18 @@ field says they're due, every time it runs. Fortnightly and monthly
 agents are simply not due, and get skipped over, until their cadence
 elapses. A skipped slot means no commit — silence is a valid outcome and
 is preferable to a run that manufactures a finding to justify itself.
+`check_due.py` only ever considers agents with a `weekly`/`fortnightly`/
+`monthly` `schedule` field, so `challenge` and `synthesize` — which have
+none — can never be picked by it.
+
+**`run-synthesize`** runs separately, Mondays at 07:00 UTC. It is not
+part of the daily rota and does not run `challenge`. Before invoking
+Claude, [`scripts/check_synthesis_due.py`](../scripts/check_synthesis_due.py)
+checks whether any file under `artifacts/` (other than `synthesis.md`
+itself and its dated trail in `artifacts/synthesis/`) has changed since
+`synthesis.md` was last committed; if nothing has, the run stops there —
+"nothing new to synthesize, skipped," no Claude invocation. Otherwise
+`synthesize` runs once, capped at 30 turns, and commits `synthesis.md`.
 
 ## Rules that apply to every agent
 
