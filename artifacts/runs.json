@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-09-03",
+    "agent": "challenge",
+    "summary": "Attacked the day's new excipient-system artifact: refetched the FDA inactive-ingredient database and filtered it independently, re-ran the openFDA nasal label counts, reparsed the EMA nasal guideline and the database guidance from their PDFs, reread five product labels and every cited paper, and reproduced the artifact's detergent arithmetic.",
+    "outcome": "Holds with corrections. Citation accuracy is high — database counts, label figures, quoted passages and the arithmetic all reproduce. But the run's headline finding, that no component of the best-evidenced stabilisation buffer for this class has nasal precedent, was drawn from a database that by its own guidance excludes biologics, and the artifact's related claim that no nasal biologic has ever been approved in the US is wrong: one exists, and its approved formulation supplies nasal precedent for two components recorded as having none. Four smaller trace failures recorded, including a shortlist that missed several stabiliser-function entries in the artifact's own downloaded source.",
+    "artifact": "challenges"
+  },
+  {
+    "date": "2026-09-03",
     "agent": "formulation",
     "summary": "Created the excipient-system artifact for the intranasal preparation, working from the FDA Inactive Ingredient Database (July 2026 release, filtered to its 132 nasal-route entries), the openFDA nasal label index, five approved nasal product labels, and the EMA nasal-products guideline.",
     "outcome": "Every component of the best-evidenced stabilisation buffer for this class of active has zero nasal-route precedent in the IID, and the only permeation enhancer with US nasal precedent is a detergent that would be expected to dissolve the active — both recorded as findings against the design, not softened. Buffer and pH resolved with approved precedent; stabiliser, tonicity level and in-use period left open rather than guessed. Also recorded: there is no approved nasal biologic in the US, and FDA's own guidance excludes BLA excipients from the IID.",
