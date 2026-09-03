@@ -20,9 +20,19 @@ jobs:
       - id: pre
         run: echo "base_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
+      - id: due
+        run: python3 scripts/check_due.py >> "$GITHUB_OUTPUT"
+
       - uses: anthropics/claude-code-action@v1
+        if: steps.due.outputs.due == 'true'
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          settings: |
+            {
+              "env": {
+                "CLAUDE_CODE_PROMPT_CACHE_TTL": "1h"
+              }
+            }
           prompt: |
             You are running today's turn of the agent rota for this repo —
             the development record for SGL-001, an intranasal preparation
@@ -31,47 +41,45 @@ jobs:
             artifacts, and append what they learned. The commit history is
             the development record.
 
-            1. Read agents/README.md in full, including its rota table, to
-               see which agent is assigned to today's weekday. Read every
-               file in state/ to see each agent's last-run date and what it
-               already knows.
-            2. Pick today's agent: use the rota's assignment for today's
-               weekday, unless that agent has already run today. If the
-               slot is empty, or the assigned agent already ran today, fall
-               back to whichever agent has gone longest since its last run
-               (per state/<name>.md), restricted to agents whose brief's
-               own `schedule` field says they're due.
-            3. Read that agent's brief in agents/<name>.md in full and
+            Today's agent has already been picked for you, outside this
+            session, from each agent's cadence and last-run date:
+            **${{ steps.due.outputs.agent }}**. Do not re-derive or
+            second-guess this choice — just run that agent.
+
+            1. Read agents/${{ steps.due.outputs.agent }}.md in full and
                follow it exactly — what it reads, what it produces, and its
-               rules. If state/<name>.md doesn't exist yet or is empty,
-               follow the brief's "First run" section if it has one.
-            4. Do the work. Use primary sources the way the brief requires
+               rules. Read state/${{ steps.due.outputs.agent }}.md to see
+               what it already knows. If that state file doesn't exist yet
+               or is empty, follow the brief's "First run" section if it
+               has one.
+            2. Do the work. Use primary sources the way the brief requires
                (statute text, regulator guidance, registries — not
                secondary summaries) via WebSearch/WebFetch. Write or update
                the artifact(s) the brief makes this agent responsible for
-               in artifacts/, append findings to state/<name>.md, and drop
-               any post drafts worth publishing into posts/ (one file per
-               day, under 280 characters, primary source cited). Follow
-               every rule in the brief, including ones about tone, scope,
-               and never softening unfavorable findings.
-            5. If you added or changed anything in artifacts/, regenerate
+               in artifacts/, append findings to state/${{ steps.due.outputs.agent }}.md,
+               and drop any post drafts worth publishing into posts/ (one
+               file per day, under 280 characters, primary source cited).
+               Follow every rule in the brief, including ones about tone,
+               scope, and never softening unfavorable findings.
+            3. If you added or changed anything in artifacts/, regenerate
                artifacts/index.json by running
                `python3 scripts/generate_artifacts_index.py` before
                committing — this is required by the rule in CLAUDE.md.
-            6. If you made any change worth keeping, configure git identity
+            4. If you made any change worth keeping, configure git identity
                if needed (`git config user.name` / `user.email`), stage it,
                and commit with a message describing what was found or
                produced, in the style of prior commits (e.g.
                "jurisdiction: texas"). Push the commit.
-            7. If nothing material changed — no new findings, no artifact
+            5. If nothing material changed — no new findings, no artifact
                update, nothing worth a state append — commit nothing.
                Do not create an empty or filler commit just to show
                activity.
           claude_args: |
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
-            --max-turns 120
+            --max-turns 30
 
       - id: check-artifacts
+        if: steps.due.outputs.due == 'true'
         run: |
           NEW_SHA=$(git rev-parse HEAD)
           BASE_SHA="${{ steps.pre.outputs.base_sha }}"
@@ -84,26 +92,30 @@ jobs:
           fi
 
       - uses: anthropics/claude-code-action@v1
-        if: steps.check-artifacts.outputs.changed == 'true'
+        if: steps.due.outputs.due == 'true' && steps.check-artifacts.outputs.changed == 'true'
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          settings: |
+            {
+              "env": {
+                "CLAUDE_CODE_PROMPT_CACHE_TTL": "1h"
+              }
+            }
           prompt: |
             You are running the challenge agent for this repo — the
             development record for SGL-001, an intranasal preparation for
             cognitive function whose active is chosen on evidence. The rota
-            agent that just ran changed a file in artifacts/, which is this
-            agent's trigger to run, before synthesize runs on the same
-            output.
+            agent that just ran (${{ steps.due.outputs.agent }}) changed a
+            file in artifacts/, which is this agent's trigger to run.
 
             1. Read agents/challenge.md in full and follow it exactly —
                what it reads, what it produces, and its rules. It must not
                defer to the producing agent's own conclusions.
-            2. Identify which artifact(s) the rota agent changed this run
-               (from the diff of this job's checkout against the commit
-               before the rota agent ran, or from the newest entry in
-               artifacts/runs.json), and read the producing agent's own
-               brief in agents/<name>.md to know what it was supposed to
-               do.
+            2. Identify which artifact(s) ${{ steps.due.outputs.agent }}
+               changed this run (from the diff of this job's checkout
+               against the commit before it ran, or from the newest entry
+               in artifacts/runs.json), and read agents/${{ steps.due.outputs.agent }}.md
+               to know what it was supposed to do.
             3. Attack the artifact per the brief: trace claims to their
                cited primary sources (refetch them, don't take the
                artifact's word), check whether anything recorded as
@@ -123,41 +135,4 @@ jobs:
                not force-push or rewrite an earlier commit.
           claude_args: |
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
-            --max-turns 60
-
-      - uses: anthropics/claude-code-action@v1
-        if: steps.check-artifacts.outputs.changed == 'true'
-        with:
-          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
-          prompt: |
-            You are running the synthesize agent for this repo — the
-            development record for SGL-001, an intranasal preparation for
-            cognitive function whose active is chosen on evidence. The rota
-            agent that just ran changed a file in artifacts/, which is this
-            agent's trigger to run, after challenge has had its pass.
-
-            1. Read agents/synthesize.md in full and follow it exactly —
-               what it reads, what it produces, and its rules, including
-               the confidentiality boundary around
-               artifacts/japan-asset-longlist.md and artifacts/dossiers/.
-            2. Read every file directly in artifacts/ (not artifacts/data/,
-               not artifacts/dossiers/ beyond what the brief's
-               confidentiality rule allows), plus artifacts/runs.json in
-               full, plus the existing artifacts/synthesis.md if present.
-            3. Write artifacts/synthesis.md and a dated copy at
-               artifacts/synthesis/YYYY-MM-DD.md (today's date), per the
-               brief's structure, word cap, and linking rule.
-            4. Regenerate artifacts/index.json by running
-               `python3 scripts/generate_artifacts_index.py`.
-            5. Configure git identity if needed, stage synthesis.md, the
-               dated copy, and index.json, and commit with a message
-               describing what changed in the synthesis (e.g.
-               "synthesize: <n>-day update, new conflict noted"). Push the
-               commit in the same push as this job's other commit, i.e. a
-               second commit on the same branch — do not force-push or
-               rewrite the rota agent's commit.
-            6. If, after reading everything, nothing in synthesis.md would
-               actually change from the last version, commit nothing.
-          claude_args: |
-            --allowedTools "Bash,Read,Write,Edit,Glob,Grep"
-            --max-turns 60
+            --max-turns 30

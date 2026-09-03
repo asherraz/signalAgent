@@ -41,7 +41,7 @@ Also writes a dated copy to `artifacts/synthesis/YYYY-MM-DD.md` (today's date) �
 
 ## When it runs
 
-Not on the weekday rota — `stage: none` and no `schedule` field are both deliberate. This agent runs once, immediately after any day's rota agent, but only if that day's run changed a file in `artifacts/`. See `.github/workflows/agents.yml`. A day where nothing in `artifacts/` changed gets no synthesis run and no new dated copy — silence there is correct, the same way a skipped rota slot is.
+Not on the cadence rota — `stage: none` and no `schedule` field are both deliberate. Not part of the automatic per-run workflow either: to keep per-run cost down, `.github/workflows/agents.yml` stops after `challenge`. Run this agent by hand (`workflow_dispatch` with its own prompt, or locally) when the standing summary needs updating — a run where nothing in `artifacts/` changed since the last synthesis still gets no new dated copy, the same way a skipped rota slot is.
 
 ## State
 

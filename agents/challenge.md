@@ -53,7 +53,7 @@ one line.
 
 ## When it runs
 
-Not on the weekday rota — `stage: none` and no `schedule` field are both deliberate, the same as `synthesize`. This agent runs once, immediately after any day's rota agent produces or changes an artifact, and before `synthesize` runs on that same day's output. See `.github/workflows/agents.yml`. This is the opposing-view pass the external review called for — one adversarial agent checking the day's work, not a duplicate of every agent yet.
+Not on the cadence rota — `stage: none` and no `schedule` field are both deliberate, the same as `synthesize`. This agent runs once, immediately after any run's rota agent produces or changes an artifact, and is the last thing the automatic workflow does that run. See `.github/workflows/agents.yml`. This is the opposing-view pass the external review called for — one adversarial agent checking the day's work, not a duplicate of every agent yet.
 
 ## State
 

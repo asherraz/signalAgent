@@ -43,37 +43,31 @@ schedule: How often / when this agent runs, e.g. "daily" or "on new data"
 ## Rota
 
 The scheduled workflow ([`.github/workflows/agents.yml`](../.github/workflows/agents.yml))
-runs weekdays at 06:00 UTC, plus on manual dispatch. Each run:
+runs Monday/Wednesday/Friday at 06:00 UTC, plus on manual dispatch. Each
+run is capped to a single cadence agent, to keep per-run cost down:
 
-1. Checks the table below for today's assigned agent.
-2. If that slot is empty, or the assigned agent has already run today,
-   falls back to whichever agent has gone longest since its last run (per
-   `state/<name>.md`), restricted to agents whose brief's own `schedule`
-   says they're due.
-3. Reads that agent's brief in full, does the work, and commits — or
-   commits nothing if there was nothing material to add.
+1. Before invoking Claude at all, [`scripts/check_due.py`](../scripts/check_due.py)
+   reads every agent's cadence from `artifacts/rota.json` and its
+   last-run date from the newest dated heading in `state/<name>.md`, and
+   picks whichever due agent is most overdue relative to its own
+   cadence. An agent with no state file yet counts as maximally overdue.
+2. If nothing is due, the run stops there — no Claude invocation, no
+   cost, just a "nothing due, skipped" log line.
+3. Otherwise the picked agent's brief runs in full — reads its state,
+   does the work, and commits, or commits nothing if there was nothing
+   material to add — capped at 30 turns.
+4. If that run changed a file in `artifacts/`, the [challenge](challenge.md)
+   agent runs once against that one artifact, then the workflow stops.
+   `synthesize` is not part of this automatic run; run it manually
+   (`workflow_dispatch` with its own prompt, or locally) when the
+   standing summary needs updating.
 
-| Day | Agent | Cadence |
-|---|---|---|
-| Monday | [literature](literature.md) | weekly |
-| Tuesday | [jurisdiction](jurisdiction.md) | weekly |
-| Wednesday | [japan-targets](japan-targets.md) | weekly, **temporary through 10 October** |
-| Thursday | [formulation](formulation.md) | weekly |
-| Friday | [disclosure-audit](disclosure-audit.md) / [clinics](clinics.md) / [asset-scout](asset-scout.md) / [spec](spec.md) / [manufacturing](manufacturing.md) | fortnightly/monthly, alternating |
-
-Wednesday's japan-targets slot runs through 10 October, covering the
-BioJapan (7–9 Oct) and SelectBIO EV Asia (13–14 Oct) booking windows.
-After that it reverts to spec/manufacturing, which moved to Friday's
-alternation for the duration.
-
-Fortnightly and monthly agents skip their slot when they ran inside their
-cadence. A skipped slot means no commit — silence is a valid outcome and
+There is no per-weekday agent assignment anymore — the schedule just
+picks the single most-overdue agent among all agents whose `schedule`
+field says they're due, every time it runs. Fortnightly and monthly
+agents are simply not due, and get skipped over, until their cadence
+elapses. A skipped slot means no commit — silence is a valid outcome and
 is preferable to a run that manufactures a finding to justify itself.
-
-An empty slot isn't idle time — the fallback rule in step 2 fills it from
-whichever agent is most overdue. Give a new agent its own row when its
-brief is created; until then it still runs via the fallback whenever it's
-due and nothing else has priority.
 
 ## Rules that apply to every agent
 
