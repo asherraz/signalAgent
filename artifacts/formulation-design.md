@@ -120,13 +120,15 @@ The published buffer systems that keep extracellular vesicles intact were
 developed for frozen bulk storage in laboratory plastics, not for a nasal
 dosage form. Checking each of them against the IID, by route:
 
-| Stabiliser | Why it is in the EV literature | IID routes with precedent | Nasal precedent |
-|---|---|---|---|
-| **Trehalose** (25 mM) | Bosch et al. 2016 — narrows particle size distribution, prevents freeze-thaw aggregation. Görgens et al. 2022 — a component of PBS-HAT, the lead buffer. Charoenviriyakul et al. 2018 — prevents aggregation on lyophilisation. | Intradermal, subcutaneous (3 rows) | **None** |
-| **Human serum albumin** (0.2%) | Görgens et al. 2022 — the other PBS-HAT component; suppresses the plastic-surface adsorption that loses EVs within minutes | Intravenous, oral (2 rows) | **None** |
-| **HEPES** (25 mM) | Görgens et al. 2022 — buffer base of PBS-HAT | **Not in the IID at all, by any route** | **None** |
-| **Sucrose** (5%) | Trenkenschuh et al. 2022 — improved colloidal stability on freeze-thaw; part of the lyophilisate stable 6 months at 40 °C | 10 routes incl. IV, ophthalmic, oral, transmucosal (73 rows) | **None** |
-| **Poloxamer 188** (0.02%) | Trenkenschuh et al. 2022 — "EVs colloidal stability can be most effectively preserved by addition of low amounts of poloxamer 188" | 7 routes incl. IV, ophthalmic, intratympanic (45 rows) | **None** |
+| Stabiliser | Why it is in the EV literature | IID routes with precedent | Nasal precedent | Precedent strength (0–3) | EV stability (0–3) |
+|---|---|---|---|---|---|
+| **Trehalose** (25 mM) | Bosch et al. 2016 — narrows particle size distribution, prevents freeze-thaw aggregation. Görgens et al. 2022 — a component of PBS-HAT, the lead buffer. Charoenviriyakul et al. 2018 — prevents aggregation on lyophilisation. | Intradermal, subcutaneous (3 rows) | **None** | 0 | 3 |
+| **Human serum albumin** (0.2%) | Görgens et al. 2022 — the other PBS-HAT component; suppresses the plastic-surface adsorption that loses EVs within minutes | Intravenous, oral (2 rows) | **None** | 0 | 2 |
+| **HEPES** (25 mM) | Görgens et al. 2022 — buffer base of PBS-HAT | **Not in the IID at all, by any route** | **None** | 0 | 2 |
+| **Sucrose** (5%) | Trenkenschuh et al. 2022 — improved colloidal stability on freeze-thaw; part of the lyophilisate stable 6 months at 40 °C | 10 routes incl. IV, ophthalmic, oral, transmucosal (73 rows) | **None** | 0 | 3 |
+| **Poloxamer 188** (0.02%) | Trenkenschuh et al. 2022 — "EVs colloidal stability can be most effectively preserved by addition of low amounts of poloxamer 188" | 7 routes incl. IV, ophthalmic, intratympanic (45 rows) | **None** | 0 | 3 |
+
+*Precedent strength (0 = no nasal-route precedent, 3 = strong/multiple approved nasal products) and EV stability (0 = disruptive or recovery-loss for the vesicle, 3 = strongest published stabilization evidence) — scored from the precedent and tradeoff text already in this table, no new claims added.*
 
 **Every single component of the best-evidenced EV stabilisation buffer has
 zero nasal precedent.** Not one of the five appears in the nasal IID. Three
@@ -184,13 +186,15 @@ stated on its own label. An approved nasal spray sits at pH 7.2 today.
 
 **Proposed: 10 mM potassium phosphate, target pH 7.0–7.2.**
 
-| Element | Choice | Precedent | Confidence |
-|---|---|---|---|
-| Buffer species | Monobasic potassium phosphate / dibasic sodium phosphate | IID nasal: `MONOBASIC POTASSIUM PHOSPHATE` (SOLUTION, 680 mg; SPRAY), `SODIUM PHOSPHATE, DIBASIC, ANHYDROUS` (SPRAY, SPRAY METERED). In approved products: TOSYMRA (NDA 210884) uses potassium phosphate monobasic + sodium phosphate dibasic anhydrous; SPRIX (NDA 022382) uses monobasic potassium phosphate | **moderate** — strong nasal precedent, and independently the buffer EV freeze-thaw work favours |
-| Molarity | 10 mM | Trenkenschuh et al. 2022 used 10 mM K- or Na-phosphate in the lyophilisate stable 6 months at 40 °C. Washington et al. 2000 shows ≥0.13 M is where a buffer starts overriding nasal pH — 10 mM stays well below that, which is the intent | **low** — the number is transferred from a lyophilisate study, not derived for this product |
-| Target pH | 7.0–7.2 | SPRIX label, pH 7.2, approved. Trenkenschuh et al. 2022 for the neutral-pH optimum | **moderate** on acceptability, **low** on optimum for *this* preparation |
-| Ruled out | Citrate | Nasal precedent is good (IID: anhydrous citric acid, citric acid monohydrate, trisodium citrate dihydrate; TOSYMRA uses citric acid monohydrate) but citrate buffers to pH 5–6, the acidic region Trenkenschuh associates with aggregation and fusion. Precedent is not a reason to buffer an active into its worst pH | **moderate** |
-| Ruled out | Plain PBS | Görgens et al. 2022: severe EV recovery loss in PBS within days on storage and within minutes on dilution. Trenkenschuh et al. 2022 ranked PBS below potassium phosphate. It is also the buffer the only human intranasal EV trial's "saline, composition unstated" most likely was | **moderate** |
+| Element | Choice | Precedent | Confidence | Precedent strength (0–3) | EV stability (0–3) |
+|---|---|---|---|---|---|
+| Buffer species | Monobasic potassium phosphate / dibasic sodium phosphate | IID nasal: `MONOBASIC POTASSIUM PHOSPHATE` (SOLUTION, 680 mg; SPRAY), `SODIUM PHOSPHATE, DIBASIC, ANHYDROUS` (SPRAY, SPRAY METERED). In approved products: TOSYMRA (NDA 210884) uses potassium phosphate monobasic + sodium phosphate dibasic anhydrous; SPRIX (NDA 022382) uses monobasic potassium phosphate | **moderate** — strong nasal precedent, and independently the buffer EV freeze-thaw work favours | 3 | 2 |
+| Molarity | 10 mM | Trenkenschuh et al. 2022 used 10 mM K- or Na-phosphate in the lyophilisate stable 6 months at 40 °C. Washington et al. 2000 shows ≥0.13 M is where a buffer starts overriding nasal pH — 10 mM stays well below that, which is the intent | **low** — the number is transferred from a lyophilisate study, not derived for this product | — | — |
+| Target pH | 7.0–7.2 | SPRIX label, pH 7.2, approved. Trenkenschuh et al. 2022 for the neutral-pH optimum | **moderate** on acceptability, **low** on optimum for *this* preparation | — | — |
+| Ruled out | Citrate | Nasal precedent is good (IID: anhydrous citric acid, citric acid monohydrate, trisodium citrate dihydrate; TOSYMRA uses citric acid monohydrate) but citrate buffers to pH 5–6, the acidic region Trenkenschuh associates with aggregation and fusion. Precedent is not a reason to buffer an active into its worst pH | **moderate** | 3 | 0 |
+| Ruled out | Plain PBS | Görgens et al. 2022: severe EV recovery loss in PBS within days on storage and within minutes on dilution. Trenkenschuh et al. 2022 ranked PBS below potassium phosphate. It is also the buffer the only human intranasal EV trial's "saline, composition unstated" most likely was | **moderate** | 2 | 0 |
+
+*Precedent strength and EV stability left blank ("—") for Molarity and Target pH — those are formulation parameters, not excipients, so the two scores don't apply.*
 
 ## Tonicity and osmolality
 
@@ -203,6 +207,9 @@ Tonicity agent: **sodium chloride**, the most heavily precedented nasal
 excipient there is (IID nasal: SOLUTION 330 mg, LIQUID 7.4 mg/mL, plus SPRAY
 and SPRAY METERED entries; 224 of 694 nasal labels mention it; used in both
 TOSYMRA and calcitonin-salmon nasal spray). Confidence **moderate**.
+Precedent strength **3/3** (TOSYMRA and calcitonin-salmon both named). EV
+stability **1/3** — the destabiliser question raised in the second caution
+below is open, not resolved either way.
 
 Two cautions that are not resolved here:
 
@@ -223,14 +230,16 @@ Two cautions that are not resolved here:
 
 The nasal-precedented viscosity and mucoadhesive agents, from the IID:
 
-| Agent | IID nasal entry | Seen in |
-|---|---|---|
-| Microcrystalline cellulose / carboxymethylcellulose sodium | `CELLULOSE MICROCRYSTALLINE/CARBOXYMETHYLCELLULOSE SODIUM` — SPRAY, SPRAY METERED (no max potency listed) | Nasonex (NDA 215712), fluticasone propionate ANDAs |
-| Carboxymethylcellulose sodium alone | — (listed via the co-processed entry above) | ENBUMYST (NDA 219500), labelled "viscosity control agent" |
-| Hypromellose 2910 (5 mPa·s) | SPRAY and SPRAY METERED, **1 mg/1 mL** | azelastine ANDAs |
-| Hypromellose 2910 (4000 mPa·s) | SPRAY, SPRAY METERED (no max potency listed) | — |
-| Hydroxyethyl cellulose (2000 mPa·s at 1%) | SPRAY, 0.1 mg/0.2 mL | — |
-| Pectin | SPRAY, 10 mg | — |
+| Agent | IID nasal entry | Seen in | Precedent strength (0–3) | EV stability (0–3) |
+|---|---|---|---|---|
+| Microcrystalline cellulose / carboxymethylcellulose sodium | `CELLULOSE MICROCRYSTALLINE/CARBOXYMETHYLCELLULOSE SODIUM` — SPRAY, SPRAY METERED (no max potency listed) | Nasonex (NDA 215712), fluticasone propionate ANDAs | — | — |
+| Carboxymethylcellulose sodium alone | — (listed via the co-processed entry above) | ENBUMYST (NDA 219500), labelled "viscosity control agent" | — | — |
+| Hypromellose 2910 (5 mPa·s) | SPRAY and SPRAY METERED, **1 mg/1 mL** | azelastine ANDAs | 3 | 1 |
+| Hypromellose 2910 (4000 mPa·s) | SPRAY, SPRAY METERED (no max potency listed) | — | — | — |
+| Hydroxyethyl cellulose (2000 mPa·s at 1%) | SPRAY, 0.1 mg/0.2 mL | — | — | — |
+| Pectin | SPRAY, 10 mg | — | — | — |
+
+*Scores added only for Hypromellose 2910 (5 mPa·s) — the one agent from this table tracked in `data/formulation.json`. The other five agents were not carried into that dataset, so scoring them here would be a new judgment this run isn't making; left blank rather than guessed.*
 
 **Recommendation: no viscosity or mucoadhesive agent in the initial design.**
 Recorded as a deliberate choice, not an omission, on three grounds:
@@ -413,13 +422,18 @@ exactly two candidates with any stabiliser function:
   bulking agent, but a crystallising one, which makes it a weaker
   lyoprotectant for a membrane-bearing particle than an amorphous
   disaccharide like trehalose or sucrose. No EV-specific data was found.
+  Precedent strength **2/3** (real IID nasal entry, no named marketed
+  product). EV stability **1/3** (no EV-specific data found).
 - **Polysorbate 80** — `POLYSORBATE 80 | SPRAY, METERED | 0.1 mg/1 mL`
   (0.01% w/v). The nasal-precedented stand-in for the poloxamer 188 that
   Trenkenschuh found most effective. But polysorbate 80's CMC is in the low
   micromolar range, so even 0.01% is above it, which is precisely the
   property that made DDM disqualifying — at a hundredth the concentration and
   with a different head group, but not obviously safe for a vesicle. This
-  needs measurement, not reasoning.
+  needs measurement, not reasoning. Precedent strength **2/3** (real IID
+  nasal entry, no named marketed product). EV stability **1/3** (unmeasured
+  against these vesicles; shares DDM's disqualifying property but not
+  confirmed disruptive).
 
 **Recorded as open, with a stated preference.** Position A is better
 supported by the evidence that actually exists about this active, and
@@ -436,16 +450,18 @@ Confidence **none** on a final stabiliser selection.
 
 ## Excipients explicitly ruled out
 
-| Excipient | Nasal precedent | Why ruled out |
-|---|---|---|
-| **n-Dodecyl β-D-maltoside (Intravail)** | Yes — IID nasal SPRAY; TOSYMRA at 0.2% | ~23× its own CMC and ~500 mol/mol lipid against this product's target particle concentration; a lipid-bilayer solubilising detergent placed in a lipid-vesicle product |
-| **Benzalkonium chloride** | Yes — the dominant nasal preservative, 535/694 labels | Ciliotoxic at nasal use concentrations (Riechelmann et al. 2004, p < 0.0001); separately, a cationic surfactant in continuous contact with a vesicle active |
-| **Plain PBS as the vehicle** | Sodium chloride and sodium phosphate both precedented | Görgens et al. 2022 — severe EV recovery loss within days on storage and within minutes on dilution; Trenkenschuh et al. 2022 ranked it below potassium phosphate |
-| **Citrate buffer** | Yes — three citrate entries in the nasal IID; TOSYMRA | Buffers to pH 5–6, the acidic region associated with EV aggregation and vesicle fusion (Trenkenschuh et al. 2022). Good precedent for the wrong pH |
-| **Edetate disodium (EDTA)** | Yes — 352 nasal labels; SPRIX contains it | Not excluded on toxicity — excluded as unjustified. Its usual nasal role is potentiating a preservative that this design does not have. An excipient with no function is a leachables and compatibility question with no upside |
-| **Chitosan** | **No** — absent from the nasal IID and from all 694 nasal labels | Frequently proposed as a nasal permeation enhancer in the delivery literature; has no US nasal precedent whatsoever. Its cationic, mucoadhesive, membrane-interacting mode of action also raises the same vesicle question as every other enhancer here |
-| **Ethanol** | Yes — IID nasal, several dosage forms | Standard EV-lysis solvent class; no plausible role in an aqueous vesicle formulation |
-| **Phenylmercuric acetate / nitrate, thimerosal** | Yes — legacy IID nasal entries | Organomercurial preservatives; legacy precedent is not a reason to use one in a new product |
+| Excipient | Nasal precedent | Why ruled out | Precedent strength (0–3) | EV stability (0–3) |
+|---|---|---|---|---|
+| **n-Dodecyl β-D-maltoside (Intravail)** | Yes — IID nasal SPRAY; TOSYMRA at 0.2% | ~23× its own CMC and ~500 mol/mol lipid against this product's target particle concentration; a lipid-bilayer solubilising detergent placed in a lipid-vesicle product | 3 | 0 |
+| **Benzalkonium chloride** | Yes — the dominant nasal preservative, 535/694 labels | Ciliotoxic at nasal use concentrations (Riechelmann et al. 2004, p < 0.0001); separately, a cationic surfactant in continuous contact with a vesicle active | 3 | 0 |
+| **Plain PBS as the vehicle** | Sodium chloride and sodium phosphate both precedented | Görgens et al. 2022 — severe EV recovery loss within days on storage and within minutes on dilution; Trenkenschuh et al. 2022 ranked it below potassium phosphate | 2 | 0 |
+| **Citrate buffer** | Yes — three citrate entries in the nasal IID; TOSYMRA | Buffers to pH 5–6, the acidic region associated with EV aggregation and vesicle fusion (Trenkenschuh et al. 2022). Good precedent for the wrong pH | 3 | 0 |
+| **Edetate disodium (EDTA)** | Yes — 352 nasal labels; SPRIX contains it | Not excluded on toxicity — excluded as unjustified. Its usual nasal role is potentiating a preservative that this design does not have. An excipient with no function is a leachables and compatibility question with no upside | — | — |
+| **Chitosan** | **No** — absent from the nasal IID and from all 694 nasal labels | Frequently proposed as a nasal permeation enhancer in the delivery literature; has no US nasal precedent whatsoever. Its cationic, mucoadhesive, membrane-interacting mode of action also raises the same vesicle question as every other enhancer here | 0 | 1 |
+| **Ethanol** | Yes — IID nasal, several dosage forms | Standard EV-lysis solvent class; no plausible role in an aqueous vesicle formulation | — | — |
+| **Phenylmercuric acetate / nitrate, thimerosal** | Yes — legacy IID nasal entries | Organomercurial preservatives; legacy precedent is not a reason to use one in a new product | — | — |
+
+*Precedent strength and EV stability scored only for the five excipients tracked in `data/formulation.json` (DDM, BAC, Plain PBS, Citrate buffer, Chitosan). EDTA, ethanol, and phenylmercuric acetate/nitrate/thimerosal aren't in that dataset, so left blank rather than newly scored.*
 
 ## The design, assembled
 

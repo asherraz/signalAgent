@@ -2,6 +2,13 @@
   {
     "date": "2026-09-04",
     "agent": "formulation",
+    "summary": "Added precedent_strength and ev_stability (0-3 integer scores) to every excipient entry in formulation-design.md and data/formulation.json, on operator instruction, scored only from the precedent/tradeoff text already recorded for each excipient.",
+    "outcome": "All 15 excipients tracked in data/formulation.json scored in both files consistently. Six additional excipients that appear in formulation-design.md's tables but were never carried into the JSON (EDTA, ethanol, phenylmercuric acetate/nitrate/thimerosal, two other cellulose/hydroxyethyl-cellulose/pectin viscosity agents) were left unscored rather than newly evaluated. active-candidates.md has no excipient entries at all, so nothing there was touched.",
+    "artifact": "formulation-design"
+  },
+  {
+    "date": "2026-09-04",
+    "agent": "formulation",
     "summary": "Refined the declared-focus label to MSC secretome (exosome-rich conditioned medium), on operator instruction, across active-candidates.md, formulation-design.md, and the governing brief agents/formulation.md — which previously still hardcoded exosome as focus and would have reverted the label on its next run.",
     "outcome": "Brief and artifact now agree. Set exact operator-specified notes on the focus and excluded entries in formulation.json, and folded the same purification-cost rationale into active-candidates.md's Development focus prose so the source document carries the reasoning, not only the derived JSON. No score, class, or entry name changed.",
     "artifact": "active-candidates"

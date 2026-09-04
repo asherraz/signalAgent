@@ -67,6 +67,8 @@
       "function": "buffer",
       "precedent": "IID nasal MONOBASIC POTASSIUM PHOSPHATE; TOSYMRA (NDA 210884); SPRIX (NDA 022382)",
       "tradeoff": "10 mM stays well below the ~0.13 M threshold where a buffer starts overriding nasal pH (Washington et al. 2000), but the molarity itself is transferred from a lyophilisate study, not derived for this product.",
+      "precedent_strength": 3,
+      "ev_stability": 2,
       "status": "chosen"
     },
     {
@@ -74,6 +76,8 @@
       "function": "tonicity",
       "precedent": "IID nasal SOLUTION 330 mg / LIQUID 7.4 mg/mL; TOSYMRA; calcitonin-salmon nasal spray",
       "tradeoff": "Level is open pending the stabilizer decision, since the stabilizer itself contributes osmolality; counter-ion identity (Na⁺ vs K⁺) may matter more to vesicle stability than a tonicity calculation captures.",
+      "precedent_strength": 3,
+      "ev_stability": 1,
       "status": "chosen"
     },
     {
@@ -81,6 +85,8 @@
       "function": "stabilizer",
       "precedent": "no precedent — regulatory risk (IID: intradermal, subcutaneous only; no nasal-route entry)",
       "tradeoff": "Deepest EV-specific stabilization evidence of any excipient considered (Bosch 2016, Görgens 2022, Charoenviriyakul 2018), but would need a nasal-route safety qualification package.",
+      "precedent_strength": 0,
+      "ev_stability": 3,
       "status": "candidate"
     },
     {
@@ -88,6 +94,8 @@
       "function": "stabilizer",
       "precedent": "IID nasal SPRAY, 41.5 mg",
       "tradeoff": "Only sugar/polyol with nasal precedent and a stated max potency, but a crystallizing bulking agent — a weaker lyoprotectant for a membrane particle than an amorphous disaccharide; no EV-specific data found.",
+      "precedent_strength": 2,
+      "ev_stability": 1,
       "status": "candidate"
     },
     {
@@ -95,6 +103,8 @@
       "function": "stabilizer",
       "precedent": "no precedent — regulatory risk (IID: intravenous, oral only; no nasal-route entry)",
       "tradeoff": "Suppresses the plastic-surface EV adsorption loss Görgens (2022) measured within minutes, but carries no nasal-route precedent at all.",
+      "precedent_strength": 0,
+      "ev_stability": 2,
       "status": "candidate"
     },
     {
@@ -102,6 +112,8 @@
       "function": "buffer",
       "precedent": "no precedent — regulatory risk (absent from the IID entirely, by any route)",
       "tradeoff": "Buffer base of PBS-HAT, the lead published EV-stabilization buffer (Görgens 2022), but has no US excipient precedent whatsoever.",
+      "precedent_strength": 0,
+      "ev_stability": 2,
       "status": "candidate"
     },
     {
@@ -109,6 +121,8 @@
       "function": "stabilizer",
       "precedent": "no precedent — regulatory risk (IID: 10 other routes incl. IV, ophthalmic, oral; no nasal-route entry)",
       "tradeoff": "Improves EV colloidal stability on freeze-thaw and supports a lyophilisate stable 6 months at 40°C (Trenkenschuh 2022), but zero nasal-route precedent.",
+      "precedent_strength": 0,
+      "ev_stability": 3,
       "status": "candidate"
     },
     {
@@ -116,6 +130,8 @@
       "function": "stabilizer",
       "precedent": "no precedent — regulatory risk (IID: 7 other routes incl. IV, ophthalmic, intratympanic; no nasal-route entry)",
       "tradeoff": "The single most effective published EV colloidal-stability agent (Trenkenschuh 2022), but zero nasal-route precedent.",
+      "precedent_strength": 0,
+      "ev_stability": 3,
       "status": "candidate"
     },
     {
@@ -123,6 +139,8 @@
       "function": "stabilizer",
       "precedent": "IID nasal SPRAY, METERED, 0.1 mg/1 mL",
       "tradeoff": "The nasal-precedented stand-in for poloxamer 188, but its CMC is in the low micromolar range — even 0.01% sits above it, the same surfactant-above-CMC property that disqualified DDM, unmeasured against these vesicles.",
+      "precedent_strength": 2,
+      "ev_stability": 1,
       "status": "candidate"
     },
     {
@@ -130,6 +148,8 @@
       "function": "mucoadhesive",
       "precedent": "IID nasal SPRAY/SPRAY METERED, 1 mg/1 mL; seen in azelastine ANDAs",
       "tradeoff": "Deliberately deferred, not chosen: added viscosity coarsens the plume and risks the <4.6% olfactory deposition fraction the product depends on; cellulose-polymer/EV adsorption compatibility is untested.",
+      "precedent_strength": 3,
+      "ev_stability": 1,
       "status": "candidate"
     },
     {
@@ -137,6 +157,8 @@
       "function": "permeation",
       "precedent": "IID nasal SPRAY; TOSYMRA (NDA 210884) at 0.2% w/v",
       "tradeoff": "~23× its own CMC and roughly 500 mol detergent per mol lipid at this product's target particle concentration — would be expected to dissolve the vesicle active.",
+      "precedent_strength": 3,
+      "ev_stability": 0,
       "status": "ruled-out"
     },
     {
@@ -144,6 +166,8 @@
       "function": "permeation",
       "precedent": "no precedent — regulatory risk (absent from the nasal IID and from all 694 nasal labels)",
       "tradeoff": "Frequently proposed in the delivery literature as a nasal permeation enhancer, but its cationic, membrane-interacting mode of action raises the same vesicle-disruption question as every other enhancer here.",
+      "precedent_strength": 0,
+      "ev_stability": 1,
       "status": "ruled-out"
     },
     {
@@ -151,6 +175,8 @@
       "function": "preservative",
       "precedent": "the dominant nasal preservative, 535 of 694 nasal labels",
       "tradeoff": "Ciliotoxic at nasal use concentrations (Riechelmann et al. 2004, p<0.0001); a cationic surfactant in continuous contact with a vesicle active for the whole in-use life of the bottle.",
+      "precedent_strength": 3,
+      "ev_stability": 0,
       "status": "ruled-out"
     },
     {
@@ -158,6 +184,8 @@
       "function": "buffer",
       "precedent": "sodium chloride and sodium phosphate both have nasal precedent",
       "tradeoff": "Severe EV recovery loss within days on storage and within minutes on dilution (Görgens et al. 2022); ranked below potassium phosphate for EV stability (Trenkenschuh et al. 2022).",
+      "precedent_strength": 2,
+      "ev_stability": 0,
       "status": "ruled-out"
     },
     {
@@ -165,6 +193,8 @@
       "function": "buffer",
       "precedent": "IID nasal citrate entries; TOSYMRA uses citric acid monohydrate",
       "tradeoff": "Good nasal precedent, but buffers to pH 5–6 — the acidic region associated with EV aggregation and vesicle fusion (Trenkenschuh et al. 2022). Precedent for the wrong pH.",
+      "precedent_strength": 3,
+      "ev_stability": 0,
       "status": "ruled-out"
     }
   ],
