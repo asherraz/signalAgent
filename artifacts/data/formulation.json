@@ -7,8 +7,8 @@
       "evidence_score": 2,
       "manufacturability_score": 2,
       "regulatory_score": 2,
-      "status": "focus",
-      "note": "Declared development focus — a business decision, not a score. Weakest of any candidate compared on 3 of 4 axes; the strongest human cognitive signal in the field (Xie et al. 2023, n=9) is open-label, uncontrolled, unblinded."
+      "status": "excluded",
+      "note": "A purified/isolated exosome preparation is mechanistically the cleanest option but cost-prohibitive to purify at nasal-spray scale. The secretome retains this fraction without the purification cost."
     },
     {
       "name": "Engineered or cargo-loaded EVs (e.g. miRNA-, BDNF-, or drug-loaded exosomes)",
@@ -27,8 +27,8 @@
       "evidence_score": 2,
       "manufacturability_score": 2,
       "regulatory_score": 2,
-      "status": "excluded",
-      "note": "Not the declared focus and does not clearly exceed it — one human intranasal trial exists and it's non-neurological (asthma); cognitive evidence is preclinical only. A variable, undefined-particle mixture is its own release-specification problem."
+      "status": "focus",
+      "note": "Intended active is the exosome fraction of the secretome. Full exosome purification is cost-prohibitive at consumer nasal-spray scale, so the product is unpurified MSC secretome that retains the exosome fraction rather than a purified isolate. Remaining secretome components (soluble growth factors and cytokines) may contribute additively; this is not established and is not relied on for the core mechanism."
     },
     {
       "name": "Intranasal insulin",

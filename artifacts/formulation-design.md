@@ -2,7 +2,7 @@
 slug: formulation-design
 title: Formulation Design
 description: The excipient system for an intranasal exosome preparation, each component traced to an approved nasal product or to the FDA Inactive Ingredient Database. The published EV-stabilisation buffer has no nasal precedent at all, and the one approved nasal permeation enhancer is a detergent that dissolves lipid vesicles.
-updated: 2026-09-03
+updated: 2026-09-04
 status: in-progress
 domain: product
 ---
@@ -16,12 +16,25 @@ precedent supports. No entry is a measured result, and none of it substitutes
 for bench compatibility and stability work.
 
 Per [`agents/formulation.md`](../agents/formulation.md), Signal's declared
-development focus is an intranasal exosome therapeutic, and this document
-designs against exosomes as the active. That is a business decision recorded
-as scope, not a conclusion of the four-axis comparison in
-[`active-candidates.md`](active-candidates.md) — which still scores naive EVs
-weakest of any candidate on three of four axes, and is unaffected by anything
-here.
+development focus was an intranasal exosome therapeutic when this document was
+built, and everything below designs against exosomes as the active. That was
+a business decision recorded as scope, not a conclusion of the four-axis
+comparison in [`active-candidates.md`](active-candidates.md) — which still
+scores naive EVs weakest of any candidate on three of four axes, and was
+unaffected by anything here.
+
+**Focus change flag, 2026-09-04.** [`active-candidates.md`](active-candidates.md)
+now records Signal's declared development focus as MSC secretome
+(exosome-rich conditioned medium), not the purified/naive EV candidate this
+document was built against. This document's excipient system below has
+**not** been reworked for that active — it remains an exosome/EV-specific
+design (buffer, tonicity, permeation, and preservative choices reasoned from
+lipid-bilayer and vesicle-membrane behaviour for a purified vesicle
+population), which does not apply the same way to an unpurified, exosome-rich
+secretome that also carries soluble growth factors and cytokines outside any
+vesicle membrane. Recorded here as open rather than silently carried forward:
+the next formulation run needs to redo this document's excipient work against
+the new focus candidate before any of it is relied on for secretome.
 
 ## Conflicts
 

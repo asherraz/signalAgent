@@ -1,5 +1,26 @@
 [
   {
+    "date": "2026-09-04",
+    "agent": "formulation",
+    "summary": "Refined the declared-focus label to MSC secretome (exosome-rich conditioned medium), on operator instruction, across active-candidates.md, formulation-design.md, and the governing brief agents/formulation.md — which previously still hardcoded exosome as focus and would have reverted the label on its next run.",
+    "outcome": "Brief and artifact now agree. Set exact operator-specified notes on the focus and excluded entries in formulation.json, and folded the same purification-cost rationale into active-candidates.md's Development focus prose so the source document carries the reasoning, not only the derived JSON. No score, class, or entry name changed.",
+    "artifact": "active-candidates"
+  },
+  {
+    "date": "2026-09-04",
+    "agent": "formulation",
+    "summary": "Moved Signal's declared development focus from naive/unmodified EVs to MSC secretome/conditioned medium, on operator instruction, and reframed active-candidates.md's Development focus and Benchmarks sections and the Four-axis scoring table's Verdict column accordingly.",
+    "outcome": "Every numeric axis score and every fact in the Comparison and Four-axis tables is unchanged — only the focus/excluded labels and the surrounding narrative moved. Secretome scores weak-to-weakest on 3 of 4 axes as the new focus; both benchmark candidates (insulin, oxytocin) now score above it on all four axes, not just three.",
+    "artifact": "active-candidates"
+  },
+  {
+    "date": "2026-09-04",
+    "agent": "formulation",
+    "summary": "Flagged formulation-design.md against the focus change recorded the same day in active-candidates.md.",
+    "outcome": "The excipient system in formulation-design.md remains exosome/EV-specific (buffer, permeation, and preservative reasoning built on lipid-vesicle behaviour) and has not been reworked for secretome. Recorded as an open item for the next formulation run rather than silently left stale.",
+    "artifact": "formulation-design"
+  },
+  {
     "date": "2026-09-03",
     "agent": "challenge",
     "summary": "Attacked the day's new excipient-system artifact: refetched the FDA inactive-ingredient database and filtered it independently, re-ran the openFDA nasal label counts, reparsed the EMA nasal guideline and the database guidance from their PDFs, reread five product labels and every cited paper, and reproduced the artifact's detergent arithmetic.",
