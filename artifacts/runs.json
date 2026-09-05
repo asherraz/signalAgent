@@ -2,6 +2,13 @@
   {
     "date": "2026-09-05",
     "agent": "jurisdiction",
+    "summary": "Addressed both gaps flagged in the prior run's diff against state/jurisdiction.md, on operator instruction: added the FDA Kimera Labs warning letter (9/1/2023) to us and us-fl legal_basis, and corrected the SB 1768 HCT/P-definition citation from Fla. Stat. §458.3245(1) to §458.3245(2)(a)3.",
+    "outcome": "Both corrections verified directly against primary sources before writing: the Florida Senate's own statute page and the enrolled bill text agree on §458.3245(2)(a)3. for the exclusion and confirm the existing §458.3245(3)(b)3. citation for the viable-cells requirement was already correct (re-verified, not changed). The warning letter's own footnote 1 was fetched directly and matches the added summary. Three changelog.json entries appended (two additions, one correction), none material (no verdict changed). New finding not requested but worth flagging: FDA issued a closeout letter for this warning letter on 2026-06-12 after Kimera Labs represented it had ceased manufacturing the relevant exosome products — not yet reflected anywhere in the dataset.",
+    "artifact": null
+  },
+  {
+    "date": "2026-09-05",
+    "agent": "jurisdiction",
     "summary": "Replaced the prose-artifact workflow with a structured dataset, on operator instruction: seeded state/jurisdictions.json (11 jurisdictions) and state/changelog.json (empty, append-only going forward), rewrote agents/jurisdiction.md around a pick-2-oldest/diff/update run algorithm, and moved the agent off the daily cadence rota onto its own dedicated weekly GitHub Actions job.",
     "outcome": "artifacts/jurisdiction-map.md and state/jurisdiction.md are frozen, not deleted. Diffed the old state/jurisdiction.md's Florida/US-federal findings against the new dataset: consistent on scope and federal status, but the new record's SB 1768 HCT/P-definition citation (Fla. Stat. §458.3245(1)) conflicts with the prior citation (§458.3245(2)(a)3.), and the Kimera Labs warning letter precedent (FDA construing the same secreted-product exclusion for amniotic fluid) present in the old state notes doesn't appear anywhere in the new dataset for either jurisdiction — both flagged to the operator, not resolved. Both new state files registered in artifacts/index.json via a small extension to generate_artifacts_index.py so the registration survives future regenerations.",
     "artifact": null

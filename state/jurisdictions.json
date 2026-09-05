@@ -547,6 +547,12 @@
         "citation": "2019 and 2020; enforcement discretion ended 31 May 2021",
         "date": "2021-05-31",
         "summary": "FDA warned consumers and providers about unapproved exosome products."
+      },
+      {
+        "instrument": "FDA warning letter, Kimera Labs Inc.",
+        "citation": "1 September 2023",
+        "date": "2023-09-01",
+        "summary": "FDA construed the secreted-or-extracted-human-products exclusion in 21 CFR 1271.3(d) as placing such products outside HCT/P status. Directly analogous to the SB 1768 exclusion, which borrows the same language."
       }
     ],
     "permitted": [
@@ -614,7 +620,7 @@
       },
       {
         "instrument": "SB 1768 HCT/P definition",
-        "citation": "Fla. Stat. §458.3245(1)",
+        "citation": "Fla. Stat. §458.3245(2)(a)3.",
         "date": "2025-07-01",
         "summary": "Expressly excludes secreted or extracted human products, such as milk, collagen, and cell factors. Language lifted from 21 CFR 1271.3(d)."
       },
@@ -623,6 +629,12 @@
         "citation": "Fla. Stat. §458.3245(3)(b)3",
         "date": "2025-07-01",
         "summary": "Material must contain viable or live cells upon post-thaw analysis, with a lot-specific viability report."
+      },
+      {
+        "instrument": "FDA warning letter, Kimera Labs Inc.",
+        "citation": "1 September 2023",
+        "date": "2023-09-01",
+        "summary": "FDA construed the secreted-or-extracted-human-products exclusion in 21 CFR 1271.3(d) as placing such products outside HCT/P status. Directly analogous to the SB 1768 exclusion, which borrows the same language."
       }
     ],
     "permitted": [

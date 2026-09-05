@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "date": "2026-09-05",
+    "jurisdiction": "us",
+    "field": "legal_basis[]",
+    "old": null,
+    "new": {
+      "instrument": "FDA warning letter, Kimera Labs Inc.",
+      "citation": "1 September 2023",
+      "date": "2023-09-01",
+      "summary": "FDA construed the secreted-or-extracted-human-products exclusion in 21 CFR 1271.3(d) as placing such products outside HCT/P status. Directly analogous to the SB 1768 exclusion, which borrows the same language."
+    },
+    "source_url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kimera-labs-inc-649343-09012023"
+  },
+  {
+    "date": "2026-09-05",
+    "jurisdiction": "us-fl",
+    "field": "legal_basis[]",
+    "old": null,
+    "new": {
+      "instrument": "FDA warning letter, Kimera Labs Inc.",
+      "citation": "1 September 2023",
+      "date": "2023-09-01",
+      "summary": "FDA construed the secreted-or-extracted-human-products exclusion in 21 CFR 1271.3(d) as placing such products outside HCT/P status. Directly analogous to the SB 1768 exclusion, which borrows the same language."
+    },
+    "source_url": "https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/warning-letters/kimera-labs-inc-649343-09012023"
+  },
+  {
+    "date": "2026-09-05",
+    "jurisdiction": "us-fl",
+    "field": "legal_basis[instrument='SB 1768 HCT/P definition'].citation",
+    "old": "Fla. Stat. §458.3245(1)",
+    "new": "Fla. Stat. §458.3245(2)(a)3.",
+    "source_url": "https://www.flsenate.gov/Laws/Statutes/2025/458.3245"
+  }
+]
