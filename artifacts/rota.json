@@ -8,6 +8,14 @@
     "private": false
   },
   {
+    "file": "challenge.md",
+    "name": "challenge",
+    "description": "Reads the artifact the day's rota agent just produced or updated and attacks it — traces every claim to its cited source, checks whether a \"not found\" is real or premature, and checks whether a named lead or verdict is earned by evidence or inherited from assumption. Writes artifacts/challenges.md.",
+    "schedule": "",
+    "domain": "",
+    "private": false
+  },
+  {
     "file": "clinics.md",
     "name": "clinics",
     "description": "Builds the addressable clinic list by jurisdiction, and records what documentation each type of buyer requires.",
@@ -42,8 +50,8 @@
   {
     "file": "jurisdiction.md",
     "name": "jurisdiction",
-    "description": "Maps where intranasal exosome products can lawfully be administered, for which indications, under which statute, and with what advertising and consent obligations.",
-    "schedule": "weekly",
+    "description": "Maintains a structured, per-jurisdiction dataset of where intranasal exosome products can lawfully be administered, for which indications, under which statute — refreshing the two oldest-verified jurisdictions each run rather than writing a prose map.",
+    "schedule": "",
     "domain": "",
     "private": false
   },
@@ -68,6 +76,14 @@
     "name": "spec",
     "description": "Holds the finished-product specification for SGL-001, with the reasoning and sources behind every number — the active and excipient system are formulation's decisions, recorded here rather than re-derived.",
     "schedule": "fortnightly",
+    "domain": "",
+    "private": false
+  },
+  {
+    "file": "synthesize.md",
+    "name": "synthesize",
+    "description": "Reads every public artifact and the run log, and writes the standing summary of what Signal currently knows about developing SGL-001.",
+    "schedule": "",
     "domain": "",
     "private": false
   }

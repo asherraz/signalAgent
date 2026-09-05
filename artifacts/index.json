@@ -78,5 +78,21 @@
     "description": "The standing four-section summary of what Signal knows about developing SGL-001, rebuilt from every public artifact and the run log on each run.",
     "updated": "2026-09-01",
     "status": "standing"
+  },
+  {
+    "file": "../state/jurisdictions.json",
+    "slug": "jurisdictions",
+    "title": "Jurisdictions",
+    "description": "Structured jurisdiction-by-jurisdiction legal status for intranasal exosome products — classification, legal basis, permitted/grey/prohibited lists, cell-source rules, enforcement, and route-in, one record per jurisdiction.",
+    "updated": "2026-09-05",
+    "status": "standing"
+  },
+  {
+    "file": "../state/changelog.json",
+    "slug": "jurisdictions-changelog",
+    "title": "Jurisdictions Changelog",
+    "description": "Append-only log of every field-level change to state/jurisdictions.json, newest first — date, jurisdiction, field, old value, new value, source URL, and whether the change was material (a verdict change).",
+    "updated": "",
+    "status": "standing"
   }
 ]

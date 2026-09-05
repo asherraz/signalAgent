@@ -1,0 +1,791 @@
+[
+  {
+    "id": "jp",
+    "name": "Japan",
+    "region": "Asia",
+    "verdict": "grey",
+    "classification": {
+      "product_status": "Not cells, so outside the Act on the Safety of Regenerative Medicine. Sold with therapeutic claims it becomes a regenerative medicine product or drug under the PMD Act.",
+      "clinical_status": "Administered as free private medical practice at physician discretion. No committee review, no provision plan, no mandatory adverse-event reporting.",
+      "cosmetic_status": "Culture supernatant permitted as cosmetic raw material under the Standards for Biological Raw Materials. Human placenta extract prohibited."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Act on the Safety of Regenerative Medicine",
+        "citation": "Amended act in force 31 May 2025",
+        "date": "2025-05-31",
+        "summary": "Added in vivo gene therapy. Extracellular vesicles and oligonucleotides explicitly left out of scope."
+      },
+      {
+        "instrument": "PMD Act",
+        "citation": "Act No. 145 of 1960 as amended",
+        "date": "",
+        "summary": "Governs products. Therapeutic claims require approval."
+      },
+      {
+        "instrument": "Standards for Biological Raw Materials",
+        "citation": "MHLW Notification No. 210 of 2003, revised 2026",
+        "date": "2026",
+        "summary": "Governs human-derived cosmetic raw materials. Placenta extract prohibited."
+      }
+    ],
+    "permitted": [
+      "Administering exosomes as free private medical practice",
+      "Culture supernatant as a cosmetic raw material",
+      "Cell therapies under a Class I-III provision plan",
+      "Conditional and time-limited approval or Sakigake designation"
+    ],
+    "grey": [
+      "The entire private exosome clinic sector, lawful because nothing addresses it",
+      "Physician personal import used to stock clinic inventory",
+      "Marketing an unapproved imported product to clinics",
+      "'Exosome therapy' used interchangeably with unfractionated supernatant"
+    ],
+    "prohibited": [
+      "Human placenta extract as a biological raw material",
+      "Disease-treatment claims on an unapproved product",
+      "Advertising an unapproved therapy as established"
+    ],
+    "cell_sources": {
+      "uc_msc": "allowed",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "restricted",
+      "dental_pulp": "allowed",
+      "ipsc": "allowed",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "low",
+      "recent_actions": [
+        {
+          "date": "2023-10",
+          "body": "JSRM",
+          "target": "Policy proposal",
+          "note": "Proposed bringing EVs into ASRM scope. Not adopted in the 2025 amendment."
+        },
+        {
+          "date": "2024-04",
+          "body": "JSRM",
+          "target": "Providers",
+          "note": "Guidance issued to institutions offering supernatant and exosome therapy."
+        }
+      ]
+    },
+    "route_in": "Fast: supply physicians in the private market, accepting the position rests on a regulatory gap. Durable: an ASRM provision plan or a PMD Act filing with conditional approval.",
+    "last_verified": "2026-09-05",
+    "confidence": "high",
+    "open_questions": [
+      "Whether the next amendment cycle brings EVs into scope",
+      "Whether personal import at inventory scale draws enforcement"
+    ]
+  },
+  {
+    "id": "kr",
+    "name": "South Korea",
+    "region": "Asia",
+    "verdict": "grey",
+    "classification": {
+      "product_status": "Permitted as a cosmetic ingredient with safety standards. No injectable approval exists.",
+      "clinical_status": "Cell therapies permitted via designated institutions under the 2025 ARBA treatment category. Injecting a cosmetic-grade vial is off-label use of a non-injectable.",
+      "cosmetic_status": "Permitted with safety standards. The word 'exosome' is banned in advertising unless plant or animal derived."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Advanced Regenerative Bio Act",
+        "citation": "Amendment in force 21 February 2025",
+        "date": "2025-02-21",
+        "summary": "Created the advanced regenerative medicine treatment category. Designated institutions may treat outside trials and charge patients on five-year approvals. Around 112 institutions designated."
+      },
+      {
+        "instrument": "Cosmetics Act",
+        "citation": "Article 8, Appendix 3",
+        "date": "",
+        "summary": "Safety standards for human cell and tissue culture fluid."
+      },
+      {
+        "instrument": "MFDS advertising rules",
+        "citation": "Effective 21 January 2025",
+        "date": "2025-01-21",
+        "summary": "Prohibits 'exosome' in cosmetic advertising unless plant or animal derived. Bans hospital-exclusive framing and quantitative anti-ageing claims."
+      }
+    ],
+    "permitted": [
+      "Manufacturing exosome cosmetics to MFDS standards",
+      "Export of cosmetic-grade product",
+      "Cell therapy under the ARBA treatment category",
+      "Clinical trials under MFDS"
+    ],
+    "grey": [
+      "Cosmetic-grade vials used intradermally after laser or microneedling",
+      "Whether ARBA reaches acellular EVs at all",
+      "Products exported as cosmetics and injected in the destination market"
+    ],
+    "prohibited": [
+      "The word 'exosome' in consumer cosmetic advertising for human-derived product",
+      "Medical or drug-like claims on a cosmetic",
+      "Intravenous administration of a cosmetic product"
+    ],
+    "cell_sources": {
+      "uc_msc": "allowed",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "allowed",
+      "dental_pulp": "allowed",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "moderate",
+      "recent_actions": [
+        {
+          "date": "2025-05-26",
+          "body": "MFDS",
+          "target": "Online cosmetic advertising",
+          "note": "237 violations identified, roughly half readable as drug or medical claims."
+        }
+      ]
+    },
+    "route_in": "A supply market before a sales market. The realistic play is sourcing or co-manufacturing, not selling into it.",
+    "last_verified": "2026-09-05",
+    "confidence": "high",
+    "open_questions": [
+      "Whether acellular EVs fall within ARBA scope. Genuinely unresolved."
+    ]
+  },
+  {
+    "id": "cn",
+    "name": "China",
+    "region": "Asia",
+    "verdict": "restrictive",
+    "classification": {
+      "product_status": "Inside the ATMP framework since June 2025. Exosome-membrane dressings are Class III device combination products since December 2025.",
+      "clinical_status": "Only within an approved trial or a filed hospital clinical-research study, which cannot charge patients.",
+      "cosmetic_status": "Prohibited. Human cells, tissues and human-derived products banned as cosmetic ingredients. 'Exosome' not in the approved catalogue."
+    },
+    "legal_basis": [
+      {
+        "instrument": "NMPA/CDE technical guidance",
+        "citation": "June 2025",
+        "date": "2025-06",
+        "summary": "Brought extracellular vesicles including exosomes into the ATMP framework."
+      },
+      {
+        "instrument": "NMPA classification decision",
+        "citation": "December 2025",
+        "date": "2025-12",
+        "summary": "Exosome-membrane dressings defined as Class III combination products."
+      },
+      {
+        "instrument": "Safety and Technical Standards for Cosmetics",
+        "citation": "2015 edition",
+        "date": "2015",
+        "summary": "Prohibits human-derived cosmetic ingredients. Reaffirmed September 2024 in response to CPPCC Proposal No. 00971."
+      },
+      {
+        "instrument": "Administrative Measures for Stem Cell Clinical Research",
+        "citation": "2015, NHC and NMPA dual filing",
+        "date": "2015",
+        "summary": "Hospital-led research track. Research only, no charging."
+      }
+    ],
+    "permitted": [
+      "Registered clinical trials under NMPA/CDE",
+      "Filed hospital clinical research without charging patients",
+      "The Class III device route for qualifying dressings",
+      "Manufacturing for export"
+    ],
+    "grey": [
+      "Plant-derived and conditioned-medium cosmetics avoiding the human-derived ban",
+      "Medical-beauty clinics running topical exosome protocols",
+      "Human genetic resources rules on cross-border collaboration"
+    ],
+    "prohibited": [
+      "Any exosome claim or the term on a cosmetic",
+      "Injectable human exosomes via medical-beauty and daigou channels",
+      "Unregistered cross-border import for clinical use"
+    ],
+    "cell_sources": {
+      "uc_msc": "restricted",
+      "adipose": "restricted",
+      "bone_marrow": "restricted",
+      "placental": "restricted",
+      "dental_pulp": "restricted",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "high",
+      "recent_actions": [
+        {
+          "date": "2024-09",
+          "body": "NMPA",
+          "target": "CPPCC Proposal No. 00971",
+          "note": "Reaffirmed prohibition on human-derived cosmetic ingredients including exosomes."
+        }
+      ]
+    },
+    "route_in": "No shortcut. A registered NMPA pathway with a local partner, or stay out. A five-year market, not an entry market.",
+    "last_verified": "2026-09-05",
+    "confidence": "high",
+    "open_questions": []
+  },
+  {
+    "id": "th",
+    "name": "Thailand",
+    "region": "Asia",
+    "verdict": "grey",
+    "classification": {
+      "product_status": "A medicinal product under Thai FDA; an ATMP under the 2026 royal decree. No registration in practice for aesthetic vials.",
+      "clinical_status": "Only under a registered ATMP or authorised research protocol. Everything else runs on enforcement discretion.",
+      "cosmetic_status": "Widely used through the aesthetics and wellness channel with no product registration."
+    },
+    "legal_basis": [
+      {
+        "instrument": "ATMP royal decree and regulatory sandbox",
+        "citation": "2026",
+        "date": "2026",
+        "summary": "Establishes an ATMP pathway with a sandbox. MOPH roadmap positions Thailand as fastest in ASEAN."
+      },
+      {
+        "instrument": "MOPH standards on stem cell treatment",
+        "citation": "2022, restated 31 October 2024",
+        "date": "2024-10-31",
+        "summary": "Outside haematology and corneal/limbal transplants, stem cell treatment is not approved routine care."
+      },
+      {
+        "instrument": "Thai FDA cell product requirements",
+        "citation": "2024",
+        "date": "2024",
+        "summary": "GMP laboratory requirements, donor screening for 50+ pathogens, maximum passage number four."
+      },
+      {
+        "instrument": "Medical Council ethics rules",
+        "citation": "",
+        "date": "",
+        "summary": "Uses outside recognised standards require a research and ethics framework. Guaranteeing results prohibited."
+      }
+    ],
+    "permitted": [
+      "A registered ATMP under the new decree",
+      "Treatment inside an authorised research protocol with ethics approval",
+      "The regulatory sandbox",
+      "Licensed facilities operating within scope"
+    ],
+    "grey": [
+      "Exosomes as an aesthetic and wellness add-on with no product registration",
+      "Clinics with facility and physician licences but no product authorisation",
+      "'GMP laboratory' claims with no third-party verification"
+    ],
+    "prohibited": [
+      "Presenting an investigational treatment as proven",
+      "Exaggerated claims, over 400 cases prosecuted annually",
+      "Selling unregistered cell products as routine care"
+    ],
+    "cell_sources": {
+      "uc_msc": "allowed",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "allowed",
+      "dental_pulp": "allowed",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "moderate",
+      "recent_actions": [
+        {
+          "date": "2024-10-31",
+          "body": "MOPH",
+          "target": "Providers",
+          "note": "Restated that stem cell treatment outside haematology and corneal transplant is not approved routine care."
+        }
+      ]
+    },
+    "route_in": "The sandbox is the most interesting door in the region. One of few structured routes to a legitimate first commercial footing for an unapproved EV product.",
+    "last_verified": "2026-09-05",
+    "confidence": "medium",
+    "open_questions": [
+      "Sandbox application criteria and whether a foreign sponsor can apply directly",
+      "Whether acellular EVs are in scope of the ATMP decree"
+    ]
+  },
+  {
+    "id": "ae",
+    "name": "United Arab Emirates",
+    "region": "Middle East",
+    "verdict": "grey",
+    "classification": {
+      "product_status": "No emirate-level exosome standard. Abu Dhabi requires approval from an internationally recognised regulator, which no exosome product holds anywhere.",
+      "clinical_status": "Clinics are licensed and openly market it. The product has no clean registration route.",
+      "cosmetic_status": "Topical products circulate freely."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Abu Dhabi DoH Standard on Stem Cell Therapies, Products and Regenerative Medicine",
+        "citation": "2019",
+        "date": "2019",
+        "summary": "HCT/Ps and stem cell products used in Abu Dhabi must hold product approval from an international regulator recognised by MOHAP."
+      },
+      {
+        "instrument": "DHA Standard on autologous adipose SVF/ADSC therapy",
+        "citation": "2020",
+        "date": "2020",
+        "summary": "Published standard for autologous adipose procedures. No exosome-specific standard exists."
+      },
+      {
+        "instrument": "DHA PRP guidelines",
+        "citation": "2014",
+        "date": "2014",
+        "summary": "Governs platelet-rich plasma procedures."
+      }
+    ],
+    "permitted": [
+      "Operating a licensed clinic with licensed physicians",
+      "Autologous adipose SVF and PRP under the DHA standards",
+      "Importing a product holding approval from a recognised foreign regulator"
+    ],
+    "grey": [
+      "Exosome IV drips advertised at 100-200 billion particles",
+      "'DHA and MOH approved' language referring to a facility licence, not product approval",
+      "Import under a cosmetic, supplement or device classification then clinical administration"
+    ],
+    "prohibited": [
+      "Marketing a product as approved when only the facility is licensed",
+      "Administering an unregistered biologic where recognised foreign approval is required",
+      "Disease-treatment claims on a wellness product"
+    ],
+    "cell_sources": {
+      "uc_msc": "allowed",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "allowed",
+      "dental_pulp": "allowed",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "low",
+      "recent_actions": []
+    },
+    "route_in": "Fastest legitimate footing of any market here: a DoH or DHA-licensed clinic partner, a written protocol, full provenance documentation, honest consent.",
+    "last_verified": "2026-09-05",
+    "confidence": "medium",
+    "open_questions": [
+      "Whether exosomes fall under semi-controlled medical materials decrees",
+      "Whether DHCC free zone rules differ from mainland Dubai"
+    ]
+  },
+  {
+    "id": "de",
+    "name": "Germany (EU baseline)",
+    "region": "Europe",
+    "verdict": "restrictive",
+    "classification": {
+      "product_status": "Unmodified EVs are not ATMPs per the 2025 EMA/CAT guideline. Handled as biological medicinal products case by case. Engineered EVs carrying functional transgenic mRNA are gene therapy products.",
+      "clinical_status": "Only with a marketing authorisation or inside an approved trial. The ATMP hospital exemption does not cover naive exosomes.",
+      "cosmetic_status": "Prohibited. Regulation 1223/2009 bans human cells, tissues and products of human origin. Plant-derived permitted."
+    },
+    "legal_basis": [
+      {
+        "instrument": "EMA/CAT guideline on extracellular vesicles",
+        "citation": "2025",
+        "date": "2025",
+        "summary": "Not substantially modified EVs fall outside the ATMP definition. Engineered EVs carrying functional transgenic mRNA classified as gene therapy products."
+      },
+      {
+        "instrument": "Arzneimittelgesetz",
+        "citation": "§13 manufacturing licence, §4b hospital exemption, §20b tissue procurement, §21(2)",
+        "date": "",
+        "summary": "§4b hospital exemption applies to ATMPs only, via the Paul-Ehrlich-Institut."
+      },
+      {
+        "instrument": "Cosmetics Regulation (EC) 1223/2009",
+        "citation": "Annex II",
+        "date": "2009",
+        "summary": "Prohibits human cells, tissues and products of human origin in cosmetics EU-wide."
+      }
+    ],
+    "permitted": [
+      "Clinical trials under the EU Clinical Trials Regulation via a single CTA",
+      "A CAT classification request, free, and the correct first step",
+      "Plant-derived exosome cosmetics",
+      "Marketing authorisation for a non-ATMP biological"
+    ],
+    "grey": [
+      "Individueller Heilversuch framing used to justify repeat commercial use",
+      "Physician-prepared preparations under narrow §21(2) exemptions",
+      "Whether a given engineered product is ATMP or biological"
+    ],
+    "prohibited": [
+      "Human-derived exosomes in cosmetic products",
+      "Importing Korean cosmetic-grade vials for injection",
+      "Invoking the ATMP hospital exemption for an unmodified exosome product",
+      "Placing an unauthorised medicinal product on the market"
+    ],
+    "cell_sources": {
+      "uc_msc": "restricted",
+      "adipose": "restricted",
+      "bone_marrow": "restricted",
+      "placental": "restricted",
+      "dental_pulp": "restricted",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "moderate",
+      "recent_actions": []
+    },
+    "route_in": "A CAT classification request first. Inexpensive, and it tells you whether you are running a biologics filing or a gene-therapy filing before spending anything.",
+    "last_verified": "2026-09-05",
+    "confidence": "high",
+    "open_questions": [
+      "Which national competent authority route is fastest for a non-ATMP biological EV product"
+    ]
+  },
+  {
+    "id": "ch",
+    "name": "Switzerland",
+    "region": "Europe",
+    "verdict": "restrictive",
+    "classification": {
+      "product_status": "Transplant product or medicinal product. Culture expansion is substantial manipulation by definition, so any cultured-cell-derived product is caught.",
+      "clinical_status": "Not permitted. Cultured-cell products for wellness or aesthetics outside a trial breach Swissmedic rules.",
+      "cosmetic_status": "Products used in aesthetic medicine to regenerate or repair are treated as transplant products, not cosmetics."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Therapeutic Products Act (HMG)",
+        "citation": "",
+        "date": "",
+        "summary": "Governs medicinal products including transplant products. Swissmedic ATMP Division is lead regulator."
+      },
+      {
+        "instrument": "Transplantation Act",
+        "citation": "",
+        "date": "",
+        "summary": "Transplant products are those manufactured from human or animal tissues or cells by a standardised process, substantially manipulated or used non-homologously. Substantial manipulation includes culture expansion, genetic modification, differentiation or activation."
+      },
+      {
+        "instrument": "Human Research Act",
+        "citation": "",
+        "date": "",
+        "summary": "Governs clinical trials and research involving human subjects."
+      }
+    ],
+    "permitted": [
+      "Minimally manipulated autologous material for homologous use in a single procedure",
+      "Authorised clinical trials",
+      "Products holding a Swissmedic marketing authorisation"
+    ],
+    "grey": [
+      "Where SVF and same-day preparations sit, assessed case by case and sometimes cantonally",
+      "Consultation and diagnostics in Switzerland with treatment delivered abroad"
+    ],
+    "prohibited": [
+      "Expanded or cultured-cell-derived products sold for wellness or aesthetics outside a trial",
+      "Importing cosmetic-grade exosome vials for injection",
+      "Marketing 'Swiss' regenerative therapy that is neither authorised nor trial-based",
+      "Storing UC-MSCs without a Swissmedic licence"
+    ],
+    "cell_sources": {
+      "uc_msc": "banned",
+      "adipose": "restricted",
+      "bone_marrow": "restricted",
+      "placental": "banned",
+      "dental_pulp": "restricted",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "moderate",
+      "recent_actions": []
+    },
+    "route_in": "Use Switzerland for credibility, manufacturing partners and capital, not for delivering therapy. There is no permissive Swiss lane.",
+    "last_verified": "2026-09-05",
+    "confidence": "high",
+    "open_questions": []
+  },
+  {
+    "id": "us",
+    "name": "United States (federal)",
+    "region": "North America",
+    "verdict": "illegal",
+    "classification": {
+      "product_status": "Unapproved new drug and unlicensed biological product. Never eligible for the 361 HCT/P exemption. No approval exists for any indication.",
+      "clinical_status": "Only under an active IND. Nothing else is lawful for a therapeutic purpose.",
+      "cosmetic_status": "Topical cosmetics permitted with no structure/function claims. Dozens of exosome INCI ingredients exist, mostly plant-derived."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Federal Food, Drug, and Cosmetic Act",
+        "citation": "21 U.S.C. §§301 et seq.",
+        "date": "",
+        "summary": "Exosome products for therapeutic use are unapproved new drugs."
+      },
+      {
+        "instrument": "Public Health Service Act",
+        "citation": "42 U.S.C. §262 (Section 351)",
+        "date": "",
+        "summary": "Unlicensed biological products require a BLA or an active IND."
+      },
+      {
+        "instrument": "21 CFR Part 1271",
+        "citation": "§1271.10, §1271.3(d)",
+        "date": "",
+        "summary": "The 361 exemption requires minimal manipulation and homologous use. The HCT/P definition excludes secreted or extracted human products including cell factors."
+      },
+      {
+        "instrument": "FDA public safety notifications",
+        "citation": "2019 and 2020; enforcement discretion ended 31 May 2021",
+        "date": "2021-05-31",
+        "summary": "FDA warned consumers and providers about unapproved exosome products."
+      }
+    ],
+    "permitted": [
+      "Topical cosmetics with no structure/function claims",
+      "An active IND with a registered clinical trial",
+      "Contract manufacturing for a sponsor holding the regulatory file"
+    ],
+    "grey": [
+      "Where a cosmetic claim ends and a drug claim begins",
+      "Post-procedure topical application in aesthetic practice"
+    ],
+    "prohibited": [
+      "Intravenous infusions, joint injections, scalp injections for hair loss",
+      "'Research use only' vials sold to clinics and administered to patients",
+      "Any therapeutic claim without an IND"
+    ],
+    "cell_sources": {
+      "uc_msc": "banned",
+      "adipose": "restricted",
+      "bone_marrow": "restricted",
+      "placental": "banned",
+      "dental_pulp": "restricted",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "high",
+      "recent_actions": [
+        {
+          "date": "2026-03",
+          "body": "FDA",
+          "target": "Consumer warning update",
+          "note": "Violators may face legal action without further notice, including seizure and injunction."
+        },
+        {
+          "date": "2024-2026",
+          "body": "FDA CBER",
+          "target": "Warning letters",
+          "note": "Evolutionary Biologics, Chara Biologics, Supreme Rejuvenation, New Life Medical Services, Innate Healthcare Institute, Dynamic Stem Cell Therapy."
+        }
+      ]
+    },
+    "route_in": "Cosmetic lane or IND. There is no third option, and offshore delivery does not insulate US-facing marketing from FTC or DOJ.",
+    "last_verified": "2026-09-05",
+    "confidence": "high",
+    "open_questions": []
+  },
+  {
+    "id": "us-fl",
+    "name": "Florida",
+    "region": "North America",
+    "verdict": "illegal",
+    "classification": {
+      "product_status": "SB 1768 covers stem cell therapy. Its HCT/P definition excludes secreted and extracted human products and cell factors, and requires viable live cells on post-thaw analysis.",
+      "clinical_status": "The statute does not reach acellular products. A state law cannot authorise what federal law prohibits.",
+      "cosmetic_status": "Same as US federal. The state law changes only what the medical board may discipline."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Florida SB 1768 (2025)",
+        "citation": "Fla. Stat. §§458.3245, 459.0127, effective 1 July 2025",
+        "date": "2025-07-01",
+        "summary": "Authorises non-FDA-approved stem cell therapy for orthopedics, wound care and pain management, from an FDA-registered facility accredited by NMDP, WMDA, AABB or AATB, with cGMP compliance, disclaimer and consent."
+      },
+      {
+        "instrument": "SB 1768 HCT/P definition",
+        "citation": "Fla. Stat. §458.3245(1)",
+        "date": "2025-07-01",
+        "summary": "Expressly excludes secreted or extracted human products, such as milk, collagen, and cell factors. Language lifted from 21 CFR 1271.3(d)."
+      },
+      {
+        "instrument": "SB 1768 material requirements",
+        "citation": "Fla. Stat. §458.3245(3)(b)3",
+        "date": "2025-07-01",
+        "summary": "Material must contain viable or live cells upon post-thaw analysis, with a lot-specific viability report."
+      }
+    ],
+    "permitted": [
+      "Stem cell therapy for orthopedics, wound care and pain management meeting all statutory conditions",
+      "Topical cosmetics with no structure/function claims",
+      "An active IND"
+    ],
+    "grey": [
+      "Whether the legislature intended to exclude secreted products or inherited the federal exclusion list. No Board rule under §(10) and no case testing scope",
+      "A product containing viable cells alongside vesicles, which may qualify where a pure EV vial cannot",
+      "Suppliers marketing exosome products as usable 'in accordance with SB 1768'"
+    ],
+    "prohibited": [
+      "Relying on SB 1768 as a safe harbour for an acellular exosome product",
+      "Any therapeutic exosome claim without an IND",
+      "Indications outside orthopedics, wound care and pain management"
+    ],
+    "cell_sources": {
+      "uc_msc": "restricted",
+      "adipose": "restricted",
+      "bone_marrow": "restricted",
+      "placental": "restricted",
+      "dental_pulp": "restricted",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "high",
+      "recent_actions": [
+        {
+          "date": "2026",
+          "body": "Florida DOH",
+          "target": "Implementing rules",
+          "note": "Rules under §(10) still in development as of early 2026. Scope questions unresolved."
+        }
+      ]
+    },
+    "route_in": "Not a route for exosomes. Watch whether Georgia HB 1275 and Tennessee HB 2246, both signed May 2026, use definitions including cell-derived products.",
+    "last_verified": "2026-09-05",
+    "confidence": "medium",
+    "open_questions": [
+      "Whether Florida DOH rules address acellular products",
+      "How Georgia and Tennessee 2026 statutes define the category"
+    ]
+  },
+  {
+    "id": "pa",
+    "name": "Panama",
+    "region": "Latin America",
+    "verdict": "legal",
+    "classification": {
+      "product_status": "No product registration category in practical use. Lawfulness sits in the protocol, the facility licence and the consent, not the vial.",
+      "clinical_status": "Permitted under a MINSA-licensed facility with National Bioethics Committee approval and documented consent.",
+      "cosmetic_status": "Not the primary channel. Providers typically market secretome or trophic factors rather than exosomes."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Health Act and MINSA licensing",
+        "citation": "",
+        "date": "",
+        "summary": "MINSA licenses facilities. Cell therapy delivered under approved research and treatment protocols rather than product registration."
+      },
+      {
+        "instrument": "National Bioethics Committee approval",
+        "citation": "",
+        "date": "",
+        "summary": "Protocols require committee approval. Charging patients within an approved protocol is permitted."
+      }
+    ],
+    "permitted": [
+      "MINSA-licensed facility with bioethics-approved protocol and documented consent",
+      "In-house manufacture under the treating institution's laboratory",
+      "Charging patients within an approved protocol"
+    ],
+    "grey": [
+      "Protocols framed as research but operated as a commercial business at scale",
+      "No independent product registration or lot release oversight",
+      "Marketing to US patients, which brings FTC and DOJ exposure home"
+    ],
+    "prohibited": [
+      "Cure claims and guaranteed outcomes",
+      "Administering unregistered imported vials outside an approved protocol"
+    ],
+    "cell_sources": {
+      "uc_msc": "allowed",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "allowed",
+      "dental_pulp": "allowed",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "low",
+      "recent_actions": []
+    },
+    "route_in": "Partnership with an existing MINSA-licensed institution that already holds bioethics approval. Building from zero is slow; buying in is not.",
+    "last_verified": "2026-09-05",
+    "confidence": "medium",
+    "open_questions": [
+      "Whether MINSA requires product-level registration for imported biologics used in approved protocols"
+    ]
+  },
+  {
+    "id": "co",
+    "name": "Colombia",
+    "region": "Latin America",
+    "verdict": "grey",
+    "classification": {
+      "product_status": "Decree 2493/2004 governs tissue and cell handling. INVIMA licenses banks and supervises trials. No registration category in practical use for exosomes.",
+      "clinical_status": "Formally only in INVIMA-supervised research. In practice sold commercially to medical tourists.",
+      "cosmetic_status": "Bundled into IV longevity packages alongside MSCs and hyperbaric oxygen."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Decree 2493 of 2004",
+        "citation": "",
+        "date": "2004",
+        "summary": "Governs handling of tissues and cells. Haematopoietic transplants only at authorised institutions using INVIMA-licensed banks."
+      },
+      {
+        "instrument": "INVIMA oversight",
+        "citation": "",
+        "date": "",
+        "summary": "Licenses tissue and marrow banks, registers products, supervises trials. Cultured or expanded MSC not approved for routine clinical use."
+      }
+    ],
+    "permitted": [
+      "Haematopoietic transplants at authorised institutions",
+      "Same-day autologous minimally manipulated procedures",
+      "INVIMA-supervised clinical trials"
+    ],
+    "grey": [
+      "Expanded MSC and exosome infusions sold commercially outside a trial",
+      "'GMP-certified' and 'ISO' laboratory claims with no verification",
+      "Bundled longevity packages"
+    ],
+    "prohibited": [
+      "Advertising unproven uses",
+      "Advertising stem cells and delivering exosomes",
+      "Routine commercial use of expanded MSC products"
+    ],
+    "cell_sources": {
+      "uc_msc": "restricted",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "restricted",
+      "dental_pulp": "restricted",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "low",
+      "recent_actions": []
+    },
+    "route_in": "Viable for volume, poor for asset-building. Nothing done here generates evidence or standing that travels to a stricter market.",
+    "last_verified": "2026-09-05",
+    "confidence": "medium",
+    "open_questions": [
+      "Whether INVIMA has issued any exosome-specific position"
+    ]
+  }
+]

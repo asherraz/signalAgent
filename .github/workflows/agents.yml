@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "0 6 * * 1-5"
     - cron: "0 7 * * 1"
+    - cron: "0 8 * * 1"
   workflow_dispatch:
 
 jobs:
@@ -194,4 +195,74 @@ jobs:
                actually change from the last version, commit nothing.
           claude_args: |
             --allowedTools "Bash,Read,Write,Edit,Glob,Grep"
+            --max-turns 30
+
+  run-jurisdiction:
+    if: github.event_name != 'schedule' || github.event.schedule == '0 8 * * 1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - id: juris-due
+        run: python3 scripts/check_jurisdiction_due.py >> "$GITHUB_OUTPUT"
+
+      - uses: anthropics/claude-code-action@v1
+        if: steps.juris-due.outputs.due == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          settings: |
+            {
+              "env": {
+                "CLAUDE_CODE_PROMPT_CACHE_TTL": "1h"
+              }
+            }
+          prompt: |
+            You are running the weekly jurisdiction agent for this repo —
+            the development record for SGL-001, an intranasal preparation
+            for cognitive function. This job runs on its own dedicated
+            weekly cron, separate from the daily cadence rota — it does
+            not compete with other agents for a slot.
+
+            1. Read agents/jurisdiction.md in full and follow it exactly,
+               including the "Each run" section's numbered algorithm and
+               every rule under "Rules". This agent maintains
+               state/jurisdictions.json and state/changelog.json — it does
+               not write prose artifacts, and does not touch
+               artifacts/jurisdiction-map.md or state/jurisdiction.md
+               (both frozen).
+            2. Pick the 2 jurisdictions with the oldest last_verified in
+               state/jurisdictions.json and search only for primary-source
+               changes since that date, per the brief.
+            3. Update state/jurisdictions.json and, if anything changed,
+               append to state/changelog.json exactly as the brief
+               specifies — never delete a citation, never raise
+               confidence without a primary source, flag verdict changes
+               as material.
+            4. Append a run entry to artifacts/runs.json (artifact: null),
+               per the repo-wide rule in CLAUDE.md — this agent produces
+               no public artifact, so no index.json regeneration is
+               needed.
+            5. If a changelog entry this run is material (a verdict
+               change) or is otherwise a genuine scope surprise, drop a
+               post draft into posts/ per the brief's "Post drafts"
+               section. Most runs won't produce one.
+            6. Validate both state/jurisdictions.json and
+               state/changelog.json still parse as JSON before
+               committing.
+            7. Configure git identity if needed, stage
+               state/jurisdictions.json, state/changelog.json, and
+               artifacts/runs.json (and any post draft), and commit with a
+               message describing what changed (e.g. "jurisdiction: japan
+               and south korea re-verified, no change" or "jurisdiction:
+               thailand sandbox rules finalized, verdict grey -> legal").
+               Push the commit. Even a no-change run commits, per the
+               brief's step 3 (the last_verified bump).
+          claude_args: |
+            --allowedTools "Bash,Read,Write,Edit,Glob,Grep,WebFetch,WebSearch"
             --max-turns 30

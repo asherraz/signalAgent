@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-05",
+    "agent": "jurisdiction",
+    "summary": "Replaced the prose-artifact workflow with a structured dataset, on operator instruction: seeded state/jurisdictions.json (11 jurisdictions) and state/changelog.json (empty, append-only going forward), rewrote agents/jurisdiction.md around a pick-2-oldest/diff/update run algorithm, and moved the agent off the daily cadence rota onto its own dedicated weekly GitHub Actions job.",
+    "outcome": "artifacts/jurisdiction-map.md and state/jurisdiction.md are frozen, not deleted. Diffed the old state/jurisdiction.md's Florida/US-federal findings against the new dataset: consistent on scope and federal status, but the new record's SB 1768 HCT/P-definition citation (Fla. Stat. §458.3245(1)) conflicts with the prior citation (§458.3245(2)(a)3.), and the Kimera Labs warning letter precedent (FDA construing the same secreted-product exclusion for amniotic fluid) present in the old state notes doesn't appear anywhere in the new dataset for either jurisdiction — both flagged to the operator, not resolved. Both new state files registered in artifacts/index.json via a small extension to generate_artifacts_index.py so the registration survives future regenerations.",
+    "artifact": null
+  },
+  {
     "date": "2026-09-04",
     "agent": "formulation",
     "summary": "Added precedent_strength and ev_stability (0-3 integer scores) to every excipient entry in formulation-design.md and data/formulation.json, on operator instruction, scored only from the precedent/tradeoff text already recorded for each excipient.",
