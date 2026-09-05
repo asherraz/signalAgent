@@ -1,6 +1,23 @@
 [
   {
     "date": "2026-09-05",
+    "jurisdiction": "mx",
+    "field": "<new record>",
+    "old": null,
+    "new": "Added Mexico as a new jurisdiction record — see state/jurisdictions.json.",
+    "source_url": "https://dof.gob.mx/2026/PRESREP/PRESREP_150126_02.pdf"
+  },
+  {
+    "date": "2026-09-05",
+    "jurisdiction": "us-fl",
+    "field": "verdict",
+    "old": "illegal",
+    "new": "unique",
+    "source_url": "https://www.flsenate.gov/Session/Bill/2025/1768",
+    "material": true
+  },
+  {
+    "date": "2026-09-05",
     "jurisdiction": "us",
     "field": "legal_basis[]",
     "old": null,

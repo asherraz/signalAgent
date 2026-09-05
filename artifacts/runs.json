@@ -2,6 +2,13 @@
   {
     "date": "2026-09-05",
     "agent": "jurisdiction",
+    "summary": "Florida (exact edit, operator-supplied, no research): introduced a fifth verdict value 'unique' for a jurisdiction with an affirmative but scope-limited legal pathway, applied it to us-fl, rewrote its classification text, and added a grey-list item on the carve-out's limits. Mexico (new record, sourced research): added 'mx' after fetching and full-text-searching the actual 15 January 2026 Ley General de Salud reform decree from dof.gob.mx, plus Art. 315 and Art. 222 Bis LGS and clinic-market-reality sources.",
+    "outcome": "agents/jurisdiction.md's verdict enum documentation updated to include 'unique'. Mexico verdict set to 'grey', not 'unique' — its stem-cell framework is a general facility/donation-conduct regime not limited by indication, unlike Florida's narrow safe harbor, and enforcement is low with an active unaddressed private market, matching this dataset's other 'grey' jurisdictions more closely. Notable finding: secondary press coverage of the 2026 LGS reform attributes it to 'mesenchymal progenitor cells' from adipose/placental/dental-pulp/cord sources, but the word 'mesenquimal' does not appear anywhere in the actual 83,206-character decree text fetched and searched in full this run — flagged as an open question, not silently repeated. Five changelog.json entries appended (Florida verdict change marked material; Mexico addition not material by definition).",
+    "artifact": null
+  },
+  {
+    "date": "2026-09-05",
+    "agent": "jurisdiction",
     "summary": "Addressed both gaps flagged in the prior run's diff against state/jurisdiction.md, on operator instruction: added the FDA Kimera Labs warning letter (9/1/2023) to us and us-fl legal_basis, and corrected the SB 1768 HCT/P-definition citation from Fla. Stat. §458.3245(1) to §458.3245(2)(a)3.",
     "outcome": "Both corrections verified directly against primary sources before writing: the Florida Senate's own statute page and the enrolled bill text agree on §458.3245(2)(a)3. for the exclusion and confirm the existing §458.3245(3)(b)3. citation for the viable-cells requirement was already correct (re-verified, not changed). The warning letter's own footnote 1 was fetched directly and matches the added summary. Three changelog.json entries appended (two additions, one correction), none material (no verdict changed). New finding not requested but worth flagging: FDA issued a closeout letter for this warning letter on 2026-06-12 after Kimera Labs represented it had ceased manufacturing the relevant exosome products — not yet reflected anywhere in the dataset.",
     "artifact": null

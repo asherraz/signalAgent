@@ -34,7 +34,7 @@ An array of one object per jurisdiction. Schema:
 | `id` | Short lowercase code, `us-fl` style for a state |
 | `name` | Display name |
 | `region` | Asia / Europe / Middle East / North America / Latin America / etc. |
-| `verdict` | `legal` / `grey` / `restrictive` / `illegal` |
+| `verdict` | `legal` / `grey` / `restrictive` / `illegal` / `unique` — `unique` is for a jurisdiction where an affirmative law creates a limited legal pathway whose scope is unresolved for this product; distinct from `grey` (no law addresses the question at all) |
 | `classification.product_status` | How the product itself is classified |
 | `classification.clinical_status` | How clinical administration is treated |
 | `classification.cosmetic_status` | How a cosmetic/topical use is treated |

@@ -605,10 +605,10 @@
     "id": "us-fl",
     "name": "Florida",
     "region": "North America",
-    "verdict": "illegal",
+    "verdict": "unique",
     "classification": {
-      "product_status": "SB 1768 covers stem cell therapy. Its HCT/P definition excludes secreted and extracted human products and cell factors, and requires viable live cells on post-thaw analysis.",
-      "clinical_status": "The statute does not reach acellular products. A state law cannot authorise what federal law prohibits.",
+      "product_status": "SB 1768's HCT/P definition excludes secreted and extracted human products and cell factors, and requires viable live cells on post-thaw analysis (Fla. Stat. §458.3245(2)(a)3., §458.3245(3)(b)3.). Federally, FDA treats unapproved exosome products as outside HCT/P status and unlawful when marketed with therapeutic claims — the state pathway does not reach this product, and a state law cannot authorise what federal law prohibits.",
+      "clinical_status": "FL-licensed MD/DO physicians may perform non-FDA-approved stem cell therapy, but only for orthopedics, wound care, and pain management, with informed consent and an advertising notice (Fla. Stat. §458.3245, effective 2025-07-01).",
       "cosmetic_status": "Same as US federal. The state law changes only what the medical board may discipline."
     },
     "legal_basis": [
@@ -645,7 +645,8 @@
     "grey": [
       "Whether the legislature intended to exclude secreted products or inherited the federal exclusion list. No Board rule under §(10) and no case testing scope",
       "A product containing viable cells alongside vesicles, which may qualify where a pure EV vial cannot",
-      "Suppliers marketing exosome products as usable 'in accordance with SB 1768'"
+      "Suppliers marketing exosome products as usable 'in accordance with SB 1768'",
+      "The SB 1768 carve-out is limited to those three indications and to physician-administered stem cell therapy — it does not clearly cover exosome/secretome products or cognitive indications, so a cognitive secretome sits outside it."
     ],
     "prohibited": [
       "Relying on SB 1768 as a safe harbour for an acellular exosome product",
@@ -798,6 +799,75 @@
     "confidence": "medium",
     "open_questions": [
       "Whether INVIMA has issued any exosome-specific position"
+    ]
+  },
+  {
+    "id": "mx",
+    "name": "Mexico",
+    "region": "Latin America",
+    "verdict": "grey",
+    "classification": {
+      "product_status": "No product-specific classification for exosomes or secretome exists. A cell-free biologic would most plausibly need COFEPRIS sanitary registration as a 'medicamento biotecnológico' (Art. 222 Bis, Ley General de Salud), but Mexico's dedicated regenerative-medicine framework (Art. 315 licensing; the January 2026 LGS reform's definitions, consent, and anti-commerce rules) is built entirely around 'células troncales' (living stem cells) — exosomes, extracellular vesicles, and secretome are not mentioned anywhere in that reform's text, fetched and searched in full this run.",
+      "clinical_status": "COFEPRIS-authorized regenerative-medicine establishments and stem cell banks/collection centers may administer stem cell therapy under Art. 315 licensing and the 2026 reform's committee and consent requirements. Whether an acellular exosome/secretome product is administered under that same authorization in practice, or falls outside it, is unresolved — clinic-marketing sources describe exosome therapy being offered under the same facility authorization as stem cell therapy, with no regulatory differentiation found.",
+      "cosmetic_status": "No exosome- or secretome-specific cosmetic framework found. General cosmetic product rules (Art. 271 Bis, Ley General de Salud) govern cosmetics generally; whether a topical exosome/secretome product is marketed as a cosmetic or a medical treatment in practice was not resolved this run."
+    },
+    "legal_basis": [
+      {
+        "instrument": "Ley General de Salud, decreto de reforma (stem cell provisions)",
+        "citation": "DOF 15 January 2026, in force 16 January 2026 — Art. 3 fracc. XXIX-XXXI, 316, 316 Bis 1, 319, 321 Bis, 327, 332",
+        "date": "2026-01-16",
+        "summary": "Fetched and searched in full (83,206 characters, 26 pages) directly from dof.gob.mx. Adds statutory definitions for 'banco de células troncales', 'centro de colecta de células troncales', and 'establecimiento de medicina regenerativa' (defined by therapeutic purpose — repair, replacement, or regeneration of cells, tissues or organs — not by product type); requires internal committees for establishments that transplant or infuse stem cells; requires informed consent for placental/umbilical cord stem cell donation (Art. 321 Bis); prohibits commerce in stem cells outside a specific statutory exception (Art. 327); permits minor stem cell/bone marrow donation with legal-representative consent (Art. 332). The word 'mesenquimal' does not appear anywhere in the decree text, despite being widely attributed to this reform by secondary press coverage — see open_questions."
+      },
+      {
+        "instrument": "Ley General de Salud, Artículo 315",
+        "citation": "Amended 2015 (exact DOF date not independently re-verified this run)",
+        "date": "2015",
+        "summary": "Requires COFEPRIS authorization for any establishment engaged in the collection, conservation, analysis, preparation, supply, or disposal of organs, tissues, or cells — the base licensing requirement the 2026 reform's stem-cell-specific rules sit on top of."
+      },
+      {
+        "instrument": "Ley General de Salud, Artículo 222 Bis",
+        "citation": "Added by decree, DOF 11 June 2009",
+        "date": "2009-06-11",
+        "summary": "Defines 'medicamento biotecnológico' — any substance produced by molecular biotechnology with therapeutic, preventive, or rehabilitative effect, presented in pharmaceutical form — and requires COFEPRIS sanitary registration (registro sanitario) demonstrating quality, safety and efficacy. The pathway a cell-free exosome/secretome product would most plausibly fall under, distinct from the stem-cell-bank framework above."
+      }
+    ],
+    "permitted": [
+      "COFEPRIS-authorized stem cell banks, collection centers, and regenerative-medicine establishments handling células troncales, per Art. 315 licensing and the 2026 reform's definitions",
+      "A COFEPRIS-registered biotechnological medicine (registro sanitario under Art. 222 Bis) — the formal drug pathway for a cell-free biologic, though not the one clinic-marketing sources describe clinics actually using",
+      "Minimally-regulated cosmetic products under the general cosmetics rules (Art. 271 Bis), to the extent a topical product avoids therapeutic claims"
+    ],
+    "grey": [
+      "Whether 'establecimiento de medicina regenerativa' and the stem-cell-specific rules (banks, consent, anti-commerce) reach an acellular exosome/secretome product at all — the entire 2026 reform is built around 'células troncales'; exosomes, extracellular vesicles, and secretome are not mentioned anywhere in the decree text",
+      "Whether private clinics selling exosome/secretome therapy hold a product-level registro sanitario (Art. 222 Bis) or only the facility-level Aviso de Funcionamiento and Aviso de Publicidad — clinic-operator sources describe only the latter, not independently confirmed against a COFEPRIS registry this run",
+      "Scale and destination of the medical-tourism market (clinics in Cancún and elsewhere marketing to US/Canadian patients) — described by clinic-operator sources, not independently verified against COFEPRIS's own establishment registry"
+    ],
+    "prohibited": [
+      "Commerce (sale for profit) in stem cells or donated tissue — donation must be altruistic and free of charge, subject to a narrow statutory exception (Art. 327)",
+      "Operating a regenerative-medicine establishment, stem cell bank, or collection center without the required COFEPRIS authorization",
+      "Advertising a therapy without the required Aviso de Publicidad, or making claims the authorized advertisement doesn't cover"
+    ],
+    "cell_sources": {
+      "uc_msc": "allowed",
+      "adipose": "allowed",
+      "bone_marrow": "allowed",
+      "placental": "allowed",
+      "dental_pulp": "allowed",
+      "ipsc": "restricted",
+      "immortalised": "restricted",
+      "plant": "allowed"
+    },
+    "enforcement": {
+      "level": "low",
+      "recent_actions": []
+    },
+    "route_in": "Mexico already has an active, internationally-marketed private clinic sector for stem cell and exosome therapy, operating on facility-level COFEPRIS authorization (Aviso de Funcionamiento, Aviso de Publicidad) rather than product-level drug registration, per clinic-operator sources. The fast route mirrors that practice; the durable route is COFEPRIS product registration as a medicamento biotecnológico (Art. 222 Bis) — or asking COFEPRIS directly whether the 2026 stem-cell-establishment framework reaches an acellular product.",
+    "last_verified": "2026-09-05",
+    "confidence": "medium",
+    "open_questions": [
+      "Whether COFEPRIS or a court has ever addressed whether the 2026 stem-cell reform's definitions extend to an acellular exosome/secretome product — no primary source found either way",
+      "Whether Mexican private clinics selling exosome/secretome therapy in practice hold a registro sanitario under Art. 222 Bis, or operate solely under facility/advertising notices — described one way by clinic-operator sources, not independently confirmed against a COFEPRIS registry",
+      "Whether the widely-repeated media claim that the 2026 reform specifically names adipose tissue, placental tissue, dental pulp, and umbilical cord as 'mesenchymal progenitor cell' sources is accurate — the full decree text (fetched and searched in full this run) does not contain the word 'mesenquimal' anywhere, only the generic term 'células troncales'; this discrepancy between secondary reporting and the primary text is unresolved",
+      "No specific COFEPRIS enforcement action against an exosome or regenerative-medicine clinic was found this run — a negative search result, not evidence of absence"
     ]
   }
 ]
