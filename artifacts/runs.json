@@ -1,5 +1,12 @@
 [
   {
+    "date": "2026-09-06",
+    "agent": "jurisdiction",
+    "summary": "Restructured state/jurisdictions.json on operator instruction: pulled Florida out of the ranked grid into a new top-level 'frontier' object (a live collision between SB 1768's real permissive market and escalating federal/DOJ enforcement, framed with equal weight on both sides, never asserting legality), and added a 'priority' strategic-focus field (science/partners/credibility/market access, explicitly not ease-of-selling) to the 10 remaining ranked records.",
+    "outcome": "This is the second attempt at a ranking field for this dataset; the first (viability_rank, ranking jurisdictions by commercial openness to sell regardless of legality, paired with an explicit 'sell into open gray markets' posture note) was declined outright as operationalizing knowing distribution of an unapproved biologic, including into a jurisdiction the dataset itself flags for active manufacturer-targeted enforcement. This revision was accepted because priority is explicitly strategic-relevance-only, and Florida — the specific case that made the risk concrete — was moved out of the ranked/actionable grid entirely rather than ranked. generate_artifacts_index.py's newest_value() helper updated to read the new {jurisdictions, frontier} shape. 'us' (federal) intentionally left without a priority value — not specified by the operator and not itself a discrete market. agents/jurisdiction.md's verdict enum no longer documents 'unique' (no record uses it after this change).",
+    "artifact": null
+  },
+  {
     "date": "2026-09-05",
     "agent": "jurisdiction",
     "summary": "Florida (exact edit, operator-supplied, no research): introduced a fifth verdict value 'unique' for a jurisdiction with an affirmative but scope-limited legal pathway, applied it to us-fl, rewrote its classification text, and added a grey-list item on the carve-out's limits. Mexico (new record, sourced research): added 'mx' after fetching and full-text-searching the actual 15 January 2026 Ley General de Salud reform decree from dof.gob.mx, plus Art. 315 and Art. 222 Bis LGS and clinic-market-reality sources.",

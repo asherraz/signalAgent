@@ -78,14 +78,25 @@ def parse_frontmatter(text):
 
 
 def newest_value(state_filename, key):
-    """Latest value of `key` across a state/*.json array, or '' if absent/empty."""
+    """Latest value of `key` found anywhere in a state/*.json file, or '' if
+    absent/empty. Handles a bare array of records (e.g. changelog.json) and
+    an object of named sections each holding a record or array of records
+    (e.g. jurisdictions.json's {"jurisdictions": [...], "frontier": {...}}).
+    """
     path = STATE_DIR / f"{state_filename}.json"
     if not path.exists():
         return ""
     try:
-        records = json.loads(path.read_text())
+        data = json.loads(path.read_text())
     except json.JSONDecodeError:
         return ""
+    if isinstance(data, dict):
+        sections = data.values()
+    else:
+        sections = [data]
+    records = []
+    for section in sections:
+        records.extend(section if isinstance(section, list) else [section])
     values = [r.get(key, "") for r in records if isinstance(r, dict) and r.get(key)]
     return max(values) if values else ""
 

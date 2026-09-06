@@ -27,14 +27,17 @@ If a claim can't be traced to a primary document, it doesn't go in the dataset.
 
 ### 1. `state/jurisdictions.json`
 
-An array of one object per jurisdiction. Schema:
+Top-level shape: `{"jurisdictions": [...], "frontier": {...}}` — the ranked grid, plus one standalone feature (see below).
+
+**The ranked grid — `jurisdictions`.** An array of one object per jurisdiction. Schema:
 
 | Field | Notes |
 |---|---|
 | `id` | Short lowercase code, `us-fl` style for a state |
 | `name` | Display name |
 | `region` | Asia / Europe / Middle East / North America / Latin America / etc. |
-| `verdict` | `legal` / `grey` / `restrictive` / `illegal` / `unique` — `unique` is for a jurisdiction where an affirmative law creates a limited legal pathway whose scope is unresolved for this product; distinct from `grey` (no law addresses the question at all) |
+| `verdict` | `legal` / `grey` / `restrictive` / `illegal` — the legal/enforcement reality. Intelligence, never an endorsement to act |
+| `priority` | Integer, strategic-focus ordering for Signal (1 = highest). Ranks by strategic relevance — science, partners, credibility, market access — never by ease of selling regardless of legality. Not every record needs one; leave it off rather than guess |
 | `classification.product_status` | How the product itself is classified |
 | `classification.clinical_status` | How clinical administration is treated |
 | `classification.cosmetic_status` | How a cosmetic/topical use is treated |
@@ -49,6 +52,8 @@ An array of one object per jurisdiction. Schema:
 | `last_verified` | Date this record was last checked against primary sources |
 | `confidence` | `low` / `moderate` / `high` |
 | `open_questions` | Array of unresolved questions worth a future check |
+
+**The standalone feature — `frontier`.** A single object, sitting *outside* the ranked grid entirely — no `priority`, no place in the grid's comparison logic. It's for a jurisdiction whose story is a live collision between a real, affirmative permissive development and an adverse, escalating legal reality, where forcing it into the grid's verdict/priority format would flatten exactly the tension that makes it worth recording. As of 2026-09-06 this is Florida. Schema: `{id, name, region, headline, momentum, tension, through_line, sources: [{label, url}], last_verified, confidence}`. `momentum` states the real permissive forces (a law, a market) honestly; `tension` states the real countervailing legal/enforcement reality honestly; neither is softened toward the other, and the record must never assert the underlying activity is legal as settled fact. A jurisdiction only belongs here instead of in the grid when it has this specific shape — a real affirmative development actively colliding with real adverse enforcement — not merely because it's contentious or hard to score.
 
 ### 2. `state/changelog.json`
 

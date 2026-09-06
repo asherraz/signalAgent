@@ -84,7 +84,7 @@
     "slug": "jurisdictions",
     "title": "Jurisdictions",
     "description": "Structured jurisdiction-by-jurisdiction legal status for intranasal exosome products — classification, legal basis, permitted/grey/prohibited lists, cell-source rules, enforcement, and route-in, one record per jurisdiction.",
-    "updated": "2026-09-05",
+    "updated": "2026-09-06",
     "status": "standing"
   },
   {
@@ -92,7 +92,7 @@
     "slug": "jurisdictions-changelog",
     "title": "Jurisdictions Changelog",
     "description": "Append-only log of every field-level change to state/jurisdictions.json, newest first — date, jurisdiction, field, old value, new value, source URL, and whether the change was material (a verdict change).",
-    "updated": "2026-09-05",
+    "updated": "2026-09-06",
     "status": "standing"
   }
 ]
