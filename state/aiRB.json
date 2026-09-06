@@ -1,0 +1,124 @@
+{
+  "board": {
+    "name": "aiRB",
+    "definition": "An internal adversarial multi-agent review layer that audits Signal's own data artifacts before they reach the public site — not an institutional review board in the legal or human-subjects sense, carrying no regulatory authority; it is a bias-and-accuracy check.",
+    "roles": [
+      {
+        "name": "Proposer",
+        "mandate": "Holds Signal's strategic objectives and drafts the candidate record for review.",
+        "sees": "The strategic objective, the full draft record, and all supporting research.",
+        "isolated_from": "Nothing — the Proposer is the only role that sees the strategy, and is the source the other roles are isolated from."
+      },
+      {
+        "name": "Verifier",
+        "mandate": "Checks one claim against its cited primary source: whether the claim traces, and whether it is stated without overclaiming beyond what the source supports.",
+        "sees": "One claim and its primary source, and nothing else.",
+        "isolated_from": "The strategic objective, the record's priority or ranking, and the Proposer's reasoning."
+      },
+      {
+        "name": "Adversary",
+        "mandate": "Assumes the optimistic reading of the record is wrong and argues for the higher-exposure interpretation.",
+        "sees": "The draft record.",
+        "isolated_from": "The strategic objective. Runs as a different model instance than the Proposer."
+      },
+      {
+        "name": "Chair",
+        "mandate": "Rules ship, hold, or return on the record; writes the disposition and records any dissent.",
+        "sees": "The Proposer's draft, the Verifier's finding, and the Adversary's argument.",
+        "isolated_from": "The strategic objective. Cannot be overruled by the Proposer."
+      }
+    ],
+    "rules": [
+      "Dissent is recorded, not resolved away.",
+      "No record ships on agent consensus alone if the Verifier flagged an overclaim — that routes to a human.",
+      "The board convenes only on changes to a record, never on static records."
+    ]
+  },
+  "standard": {
+    "version": "v1",
+    "date": "2026-08-30",
+    "title": "The Signal Disclosure Standard (SDS-1)",
+    "intro": "A buyer of a biological product — a clinic, a distributor, a practitioner — cannot inspect the product itself before purchase. They can only read what the supplier publishes. In regenerative medicine broadly (exosomes and other extracellular vesicles, mesenchymal and other stem-cell therapies, secretome, cell-free products), that published information is routinely incomplete, and the category has no shared floor for what \"incomplete\" means. `artifacts/disclosure-audit.md` documented this for eight exosome vendors and found that most of the eleven fields a buyer would need are absent across most of the market.",
+    "audit_headline": "No vendor in this run, Signal included, fully meets the Minimum disclosure tier.",
+    "fields": [
+      {
+        "n": 1,
+        "name": "Source material and line identifier",
+        "tier": "minimum",
+        "definition": "The biological starting material (cell type, tissue origin, donor category) and a specific line or bank identifier — not just a category description.",
+        "absence_means": "The buyer cannot confirm that what they receive today is the same starting material as what they received last time, or as what any published data was generated from."
+      },
+      {
+        "n": 2,
+        "name": "Passage number (or equivalent culture/processing history)",
+        "tier": "complete",
+        "definition": "How many times the source material was expanded or passaged before the product was derived from it, or the equivalent processing-history marker for a non-cultured modality.",
+        "absence_means": "Two lots described identically on every other field could still differ meaningfully if drawn from different points in the culture history, and the buyer has no way to know."
+      },
+      {
+        "n": 3,
+        "name": "Isolation or production method",
+        "tier": "complete",
+        "definition": "The specific technique used to derive or isolate the product from its source material (e.g. ultracentrifugation, size-exclusion, tangential-flow filtration for EVs; expansion and harvest protocol for cells).",
+        "absence_means": "Two products claiming the same source and the same potency number can still be different products if isolated differently, and nothing in the rest of the disclosure would reveal that."
+      },
+      {
+        "n": 4,
+        "name": "Potency or quantity metric, and its measurement method",
+        "tier": "minimum",
+        "definition": "The quantitative measure appropriate to the modality (particle count for EVs, viable cell count for cell therapy, protein concentration for secretome) per dose or per unit, and the method used to measure it.",
+        "absence_means": "The buyer cannot verify the quantity claim independently, and cannot compare it meaningfully to a competitor's claim even when both publish a number."
+      },
+      {
+        "n": 5,
+        "name": "Size or physical characterization",
+        "tier": "complete",
+        "definition": "The physical characterization appropriate to the modality — size distribution for particles, morphology and viability for cells.",
+        "absence_means": "The buyer has no independent physical confirmation that the product matches its own description."
+      },
+      {
+        "n": 6,
+        "name": "Identity markers",
+        "tier": "minimum",
+        "definition": "The panel of markers (surface markers, proteins, or other identity confirmation) used to confirm what the product actually is, distinct from what it's claimed to be.",
+        "absence_means": "The product's identity rests entirely on the supplier's description of their process, with no output-level confirmation."
+      },
+      {
+        "n": 7,
+        "name": "Sterility and endotoxin testing",
+        "tier": "minimum",
+        "definition": "Results (not just the existence of a testing step) confirming the product is sterile and within an endotoxin limit appropriate to its route of administration.",
+        "absence_means": "The buyer has no confirmation the product is safe to administer by its intended route, regardless of anything else disclosed."
+      },
+      {
+        "n": 8,
+        "name": "Lot number and traceability",
+        "tier": "complete",
+        "definition": "A lot or batch identifier tying a specific unit of product to its manufacturing record, and a mechanism for the buyer to reference it.",
+        "absence_means": "In a recall or adverse-event scenario, the buyer has no way to determine whether their inventory is implicated."
+      },
+      {
+        "n": 9,
+        "name": "Storage and shipping conditions",
+        "tier": "complete",
+        "definition": "The temperature and handling conditions required in transit and storage, stated specifically (a temperature or a defined condition, not just \"cold chain\").",
+        "absence_means": "The buyer cannot confirm the product they received was maintained correctly, and has no defined standard to hold their own handling to."
+      },
+      {
+        "n": 10,
+        "name": "Certificate of Analysis (COA) availability",
+        "tier": "minimum",
+        "definition": "Whether a lot-specific or batch-specific COA is offered to buyers, and how (automatically with shipment, on request, or not at all).",
+        "absence_means": "Everything else on this list may exist internally at the supplier, but the buyer has no route to see it for the specific lot they are purchasing."
+      },
+      {
+        "n": 11,
+        "name": "Documentation currency",
+        "tier": "complete",
+        "definition": "A stated date on the supplier's product documentation (spec sheet, product page, or COA) indicating when it was last confirmed accurate or revised.",
+        "absence_means": "The buyer cannot tell whether the disclosed information reflects the current product or an earlier version of it. As of this version of the standard, no audited vendor's public documentation states a currency date at all — this is a category-wide gap, not one supplier's gap."
+      }
+    ]
+  },
+  "reviews": []
+}
