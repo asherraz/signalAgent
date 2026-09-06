@@ -19,7 +19,9 @@ The aiRB's self-description — static, not regenerated per run.
 
 ## `standard`
 
-The Signal Disclosure Standard (SDS-1), copied verbatim from `artifacts/signal-standard.md` so nothing is lost if that artifact changes shape. `version`, `date`, `title`, `intro`, `audit_headline`, and `fields` — an array of 11 `{n, name, tier, definition, absence_means}` objects, `tier` being `"minimum"` (5 fields) or `"complete"` (6 fields). If `artifacts/signal-standard.md` is revised, re-sync this object from it — don't let the two drift.
+The Signal Disclosure Standard (SDS-1), copied verbatim from `artifacts/signal-standard.md` so nothing is lost if that artifact changes shape. `version`, `date`, `title`, `intro`, `audit_headline`, and `fields` — an array of 11 `{n, name, tier, definition, absence_means}` objects, `tier` being `"minimum"` (5 fields) or `"complete"` (6 fields).
+
+**`artifacts/signal-standard.md` is re-scored on every disclosure-audit run** (see `agents/disclosure-audit.md`), so this copy goes stale the moment that happens. Run `python3 scripts/sync_airb_standard.py` to regenerate this key from the current `signal-standard.md` — it parses the title, the version/date line, the first paragraph under "What this is", the bolded headline sentence at the top of the Compliance table section, and all 11 fields (with their tier from the Tiers section), and rewrites only the `standard` key, leaving `board` and `reviews` untouched. It prints what changed, or "no change" if the copy was already current. **Required step after any disclosure-audit run that touches `signal-standard.md`** — not yet wired into the GitHub Actions workflow, so it must be run by hand until it is.
 
 ## `reviews`
 
