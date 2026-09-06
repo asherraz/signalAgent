@@ -81,7 +81,7 @@
         "Whether the next amendment cycle brings EVs into scope",
         "Whether personal import at inventory scale draws enforcement"
       ],
-      "priority": 1
+      "priority": 2
     },
     {
       "id": "kr",
@@ -156,7 +156,7 @@
       "open_questions": [
         "Whether acellular EVs fall within ARBA scope. Genuinely unresolved."
       ],
-      "priority": 3
+      "priority": 4
     },
     {
       "id": "cn",
@@ -235,7 +235,7 @@
       "last_verified": "2026-09-05",
       "confidence": "high",
       "open_questions": [],
-      "priority": 10
+      "priority": 11
     },
     {
       "id": "th",
@@ -317,7 +317,7 @@
         "Sandbox application criteria and whether a foreign sponsor can apply directly",
         "Whether acellular EVs are in scope of the ATMP decree"
       ],
-      "priority": 4
+      "priority": 5
     },
     {
       "id": "ae",
@@ -385,7 +385,7 @@
         "Whether exosomes fall under semi-controlled medical materials decrees",
         "Whether DHCC free zone rules differ from mainland Dubai"
       ],
-      "priority": 7
+      "priority": 8
     },
     {
       "id": "de",
@@ -454,7 +454,7 @@
       "open_questions": [
         "Which national competent authority route is fastest for a non-ATMP biological EV product"
       ],
-      "priority": 6
+      "priority": 7
     },
     {
       "id": "ch",
@@ -519,7 +519,7 @@
       "last_verified": "2026-09-05",
       "confidence": "high",
       "open_questions": [],
-      "priority": 5
+      "priority": 6
     },
     {
       "id": "us",
@@ -610,6 +610,103 @@
       "open_questions": []
     },
     {
+      "id": "us-fl",
+      "name": "Florida",
+      "region": "North America",
+      "verdict": "grey",
+      "classification": {
+        "product_status": "SB 1768's HCT/P definition excludes secreted and extracted human products and cell factors, and requires viable live cells on post-thaw analysis (Fla. Stat. §458.3245(2)(a)3., §458.3245(3)(b)3.). Federally, FDA treats unapproved exosome products as outside HCT/P status and unlawful when marketed with therapeutic claims — the state pathway does not reach this product, and a state law cannot authorise what federal law prohibits.",
+        "clinical_status": "FL-licensed MD/DO physicians may perform non-FDA-approved stem cell therapy, but only for orthopedics, wound care, and pain management, with informed consent and an advertising notice (Fla. Stat. §458.3245, effective 2025-07-01).",
+        "cosmetic_status": "Same as US federal. The state law changes only what the medical board may discipline."
+      },
+      "legal_basis": [
+        {
+          "instrument": "Florida SB 1768 (2025)",
+          "citation": "Fla. Stat. §§458.3245, 459.0127, effective 1 July 2025",
+          "date": "2025-07-01",
+          "summary": "Authorises non-FDA-approved stem cell therapy for orthopedics, wound care and pain management, from an FDA-registered facility accredited by NMDP, WMDA, AABB or AATB, with cGMP compliance, disclaimer and consent."
+        },
+        {
+          "instrument": "SB 1768 HCT/P definition",
+          "citation": "Fla. Stat. §458.3245(2)(a)3.",
+          "date": "2025-07-01",
+          "summary": "Expressly excludes secreted or extracted human products, such as milk, collagen, and cell factors. Language lifted from 21 CFR 1271.3(d)."
+        },
+        {
+          "instrument": "SB 1768 material requirements",
+          "citation": "Fla. Stat. §458.3245(3)(b)3",
+          "date": "2025-07-01",
+          "summary": "Material must contain viable or live cells upon post-thaw analysis, with a lot-specific viability report."
+        },
+        {
+          "instrument": "FDA warning letter, Kimera Labs Inc.",
+          "citation": "1 September 2023",
+          "date": "2023-09-01",
+          "summary": "FDA construed the secreted-or-extracted-human-products exclusion in 21 CFR 1271.3(d) as placing such products outside HCT/P status. Directly analogous to the SB 1768 exclusion, which borrows the same language."
+        }
+      ],
+      "permitted": [
+        "Stem cell therapy for orthopedics, wound care and pain management meeting all statutory conditions",
+        "Topical cosmetics with no structure/function claims",
+        "An active IND"
+      ],
+      "grey": [
+        "Whether the legislature intended to exclude secreted products or inherited the federal exclusion list. No Board rule under §(10) and no case testing scope",
+        "A product containing viable cells alongside vesicles, which may qualify where a pure EV vial cannot",
+        "Suppliers marketing exosome products as usable 'in accordance with SB 1768'",
+        "The SB 1768 carve-out is limited to those three indications and to physician-administered stem cell therapy — it does not clearly cover exosome/secretome products or cognitive indications, so a cognitive secretome sits outside it."
+      ],
+      "prohibited": [
+        "Relying on SB 1768 as a safe harbour for an acellular exosome product",
+        "Any therapeutic exosome claim without an IND",
+        "Indications outside orthopedics, wound care and pain management"
+      ],
+      "cell_sources": {
+        "uc_msc": "restricted",
+        "adipose": "restricted",
+        "bone_marrow": "restricted",
+        "placental": "restricted",
+        "dental_pulp": "restricted",
+        "ipsc": "restricted",
+        "immortalised": "restricted",
+        "plant": "allowed"
+      },
+      "enforcement": {
+        "level": "high",
+        "recent_actions": [
+          {
+            "date": "2026",
+            "body": "Florida DOH",
+            "target": "Implementing rules",
+            "note": "Rules under §(10) still in development as of early 2026. Scope questions unresolved."
+          }
+        ]
+      },
+      "route_in": "Not a route for exosomes. Watch whether Georgia HB 1275 and Tennessee HB 2246, both signed May 2026, use definitions including cell-derived products.",
+      "last_verified": "2026-09-05",
+      "confidence": "medium",
+      "open_questions": [
+        "Whether Florida DOH rules address acellular products",
+        "How Georgia and Tennessee 2026 statutes define the category"
+      ],
+      "frontier": true,
+      "headline": "Florida is the fault line where the federal prohibition on unapproved exosome products and the state's new permissive stem-cell-therapy model are actively colliding.",
+      "momentum": "SB 1768 (Fla. Stat. §458.3245, Ch. 2025-185, effective 2025-07-01) is a real, affirmative state law authorizing FL-licensed MD/DO physicians to perform non-FDA-approved stem cell therapy for orthopedics, wound care, and pain management, with informed consent and a mandated advertising notice. On the strength of that law and the surrounding publicity, a large, openly-operating clinic market has grown up selling exosome therapy under its banner — real, active patient demand and real commercial scale, not a fringe activity.",
+      "tension": "That market rests on a reading of SB 1768 the statute's own text doesn't support: its HCT/P definition (Fla. Stat. §458.3245(2)(a)3.) excludes secreted or extracted human products, and its material requirements (§458.3245(3)(b)3.) demand viable live cells on post-thaw analysis — an acellular exosome product fits neither. No FDA-approved exosome product exists for any indication; an active IND is the only clean federal therapeutic pathway. Enforcement is escalating, not static: FDA warning letters have continued through 2024-2026, the Department of Justice established a Health & Safety Unit in December 2025, and FDA's March 2026 consumer notice states violators may face legal action without further notice, including seizure and injunction.",
+      "through_line": "This is the shape the category's near future may take elsewhere: a state creates a real, permissive pathway for a cellular therapy, a commercial market reads it as covering more than it does, and federal enforcement escalates against that gap. Florida is where that pattern is furthest along and most visible right now.",
+      "sources": [
+        {
+          "label": "Florida SB 1768, Chapter 2025-185",
+          "url": "https://www.flsenate.gov/Session/Bill/2025/1768"
+        },
+        {
+          "label": "FDA Public Safety Notification on Exosome Products",
+          "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/public-safety-notification-exosome-products"
+        }
+      ],
+      "priority": 1
+    },
+    {
       "id": "pa",
       "name": "Panama",
       "region": "Latin America",
@@ -667,7 +764,7 @@
       "open_questions": [
         "Whether MINSA requires product-level registration for imported biologics used in approved protocols"
       ],
-      "priority": 9
+      "priority": 10
     },
     {
       "id": "co",
@@ -728,7 +825,7 @@
       "open_questions": [
         "Whether INVIMA has issued any exosome-specific position"
       ],
-      "priority": 8
+      "priority": 9
     },
     {
       "id": "mx",
@@ -798,28 +895,7 @@
         "Whether the widely-repeated media claim that the 2026 reform specifically names adipose tissue, placental tissue, dental pulp, and umbilical cord as 'mesenchymal progenitor cell' sources is accurate — the full decree text (fetched and searched in full this run) does not contain the word 'mesenquimal' anywhere, only the generic term 'células troncales'; this discrepancy between secondary reporting and the primary text is unresolved",
         "No specific COFEPRIS enforcement action against an exosome or regenerative-medicine clinic was found this run — a negative search result, not evidence of absence"
       ],
-      "priority": 2
+      "priority": 3
     }
-  ],
-  "frontier": {
-    "id": "us-fl",
-    "name": "Florida",
-    "region": "North America",
-    "headline": "Florida is the fault line where the federal prohibition on unapproved exosome products and the state's new permissive stem-cell-therapy model are actively colliding.",
-    "momentum": "SB 1768 (Fla. Stat. §458.3245, Ch. 2025-185, effective 2025-07-01) is a real, affirmative state law authorizing FL-licensed MD/DO physicians to perform non-FDA-approved stem cell therapy for orthopedics, wound care, and pain management, with informed consent and a mandated advertising notice. On the strength of that law and the surrounding publicity, a large, openly-operating clinic market has grown up selling exosome therapy under its banner — real, active patient demand and real commercial scale, not a fringe activity.",
-    "tension": "That market rests on a reading of SB 1768 the statute's own text doesn't support: its HCT/P definition (Fla. Stat. §458.3245(2)(a)3.) excludes secreted or extracted human products, and its material requirements (§458.3245(3)(b)3.) demand viable live cells on post-thaw analysis — an acellular exosome product fits neither. No FDA-approved exosome product exists for any indication; an active IND is the only clean federal therapeutic pathway. Enforcement is escalating, not static: FDA warning letters have continued through 2024-2026, the Department of Justice established a Health & Safety Unit in December 2025, and FDA's March 2026 consumer notice states violators may face legal action without further notice, including seizure and injunction.",
-    "through_line": "This is the shape the category's near future may take elsewhere: a state creates a real, permissive pathway for a cellular therapy, a commercial market reads it as covering more than it does, and federal enforcement escalates against that gap. Florida is where that pattern is furthest along and most visible right now.",
-    "sources": [
-      {
-        "label": "Florida SB 1768, Chapter 2025-185",
-        "url": "https://www.flsenate.gov/Session/Bill/2025/1768"
-      },
-      {
-        "label": "FDA Public Safety Notification on Exosome Products",
-        "url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/public-safety-notification-exosome-products"
-      }
-    ],
-    "last_verified": "2026-09-06",
-    "confidence": "medium"
-  }
+  ]
 }

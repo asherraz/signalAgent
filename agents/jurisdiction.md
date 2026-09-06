@@ -27,7 +27,7 @@ If a claim can't be traced to a primary document, it doesn't go in the dataset.
 
 ### 1. `state/jurisdictions.json`
 
-Top-level shape: `{"jurisdictions": [...], "frontier": {...}}` — the ranked grid, plus one standalone feature (see below).
+Top-level shape: `{"jurisdictions": [...]}` — one ranked grid. There is no separate top-level `frontier` object; a jurisdiction with a frontier story is a normal record in the grid carrying a `frontier` flag plus some extra narrative fields (see below).
 
 **The ranked grid — `jurisdictions`.** An array of one object per jurisdiction. Schema:
 
@@ -52,8 +52,10 @@ Top-level shape: `{"jurisdictions": [...], "frontier": {...}}` — the ranked gr
 | `last_verified` | Date this record was last checked against primary sources |
 | `confidence` | `low` / `moderate` / `high` |
 | `open_questions` | Array of unresolved questions worth a future check |
+| `frontier` | Boolean, omitted unless `true`. Marks a record whose story is a live collision between a real, affirmative permissive development and an adverse, escalating legal reality — present alongside the fields below |
+| `headline`, `momentum`, `tension`, `through_line`, `sources` | Only present when `frontier: true`. `headline` is a one-line summary of the collision; `momentum` states the real permissive forces (a law, a market) honestly; `tension` states the real countervailing legal/enforcement reality honestly — neither softened toward the other, and the record must never assert the underlying activity is legal as settled fact; `through_line` is the broader pattern this jurisdiction exemplifies; `sources` is an array of `{label, url}` |
 
-**The standalone feature — `frontier`.** A single object, sitting *outside* the ranked grid entirely — no `priority`, no place in the grid's comparison logic. It's for a jurisdiction whose story is a live collision between a real, affirmative permissive development and an adverse, escalating legal reality, where forcing it into the grid's verdict/priority format would flatten exactly the tension that makes it worth recording. As of 2026-09-06 this is Florida. Schema: `{id, name, region, headline, momentum, tension, through_line, sources: [{label, url}], last_verified, confidence}`. `momentum` states the real permissive forces (a law, a market) honestly; `tension` states the real countervailing legal/enforcement reality honestly; neither is softened toward the other, and the record must never assert the underlying activity is legal as settled fact. A jurisdiction only belongs here instead of in the grid when it has this specific shape — a real affirmative development actively colliding with real adverse enforcement — not merely because it's contentious or hard to score.
+**The frontier flag.** As of 2026-09-06 this is `us-fl` (Florida) — it still has an ordinary `verdict` and `priority` like any other record, plus `frontier: true` and the five narrative fields above. A jurisdiction only carries `frontier: true` when it has this specific shape — a real affirmative development actively colliding with real adverse enforcement — not merely because it's contentious or hard to score.
 
 ### 2. `state/changelog.json`
 

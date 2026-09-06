@@ -3,6 +3,14 @@
     "date": "2026-09-06",
     "jurisdiction": "us-fl",
     "field": "structure",
+    "old": "separate frontier object",
+    "new": "record in jurisdictions array with frontier:true",
+    "source_url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/public-safety-notification-exosome-products"
+  },
+  {
+    "date": "2026-09-06",
+    "jurisdiction": "us-fl",
+    "field": "structure",
     "old": "grid record (verdict: unique)",
     "new": "frontier feature",
     "source_url": "https://www.fda.gov/vaccines-blood-biologics/safety-availability-biologics/public-safety-notification-exosome-products"
