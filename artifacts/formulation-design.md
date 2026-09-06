@@ -2,7 +2,7 @@
 slug: formulation-design
 title: Formulation Design
 description: The excipient system for an intranasal exosome preparation, each component traced to an approved nasal product or to the FDA Inactive Ingredient Database. The published EV-stabilisation buffer has no nasal precedent at all, and the one approved nasal permeation enhancer is a detergent that dissolves lipid vesicles.
-updated: 2026-09-04
+updated: 2026-09-06
 status: in-progress
 domain: product
 ---
@@ -518,13 +518,17 @@ required, per the brief:
 ## What this run did not do
 
 - **[`presentation-and-device.md`](presentation-and-device.md) still does not
-  exist.** The liquid/lyophilised/frozen comparison and the device
-  specification were not attempted. Three findings gathered this run feed
-  directly into it and are recorded so the next run starts from them rather
-  than from scratch: TOSYMRA and ENBUMYST as room-temperature unit-dose
-  precedents; SPRIX as the multi-dose preservative-free precedent with a
-  24-hour in-use limit; and Trenkenschuh et al. 2022's lyophilisate holding
-  particle size and concentration for 6 months at 40 °C. That last is the
+  exist as a standalone artifact, and the device specification was not
+  attempted.** A liquid/lyophilised/frozen format comparison was carried
+  out, however — tracked in [`data/formulation.json`](data/formulation.json)'s
+  `presentation` key, not yet written up as prose here — and its own verdict
+  already notes that the device, fill, and reconstitution spec remain
+  outstanding. The findings behind that comparison are recorded so the next
+  run, and the eventual prose write-up, start from them rather than from
+  scratch: TOSYMRA and ENBUMYST as room-temperature unit-dose precedents;
+  SPRIX as the multi-dose preservative-free precedent with a 24-hour in-use
+  limit; and Trenkenschuh et al. 2022's lyophilisate holding particle size and
+  concentration for 6 months at 40 °C. That last is the
   only published route to anything resembling "shelf-stable" for this active,
   and it is a lyophilisate, not a spray.
 - **No excipient supplier, grade, or compendial status was checked.** USP-NF
