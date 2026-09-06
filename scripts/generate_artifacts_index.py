@@ -42,17 +42,21 @@ EXTRA_ENTRIES = [
 ]
 
 # Paths relative to ARTIFACTS_DIR excluded from the index regardless of
-# frontmatter. Two different reasons live in one set:
+# frontmatter. Three different reasons live in one set:
 # - japan-asset-longlist.md, dossiers: private working documents that must
 #   never reach the published index.
 # - synthesis: dated snapshots (synthesis/YYYY-MM-DD.md) are a trail, not
 #   separate artifacts — only the current artifacts/synthesis.md itself
 #   (a sibling file, not under this directory, so unaffected by this
 #   exclusion) belongs in the index.
+# - jurisdiction-map.md: frozen and superseded by state/jurisdictions.json
+#   (see agents/jurisdiction.md) — it must stop being published as if it
+#   were current.
 EXCLUDE = {
     "japan-asset-longlist.md",
     "dossiers",
     "synthesis",
+    "jurisdiction-map.md",
 }
 
 FRONTMATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
@@ -81,7 +85,9 @@ def newest_value(state_filename, key):
     """Latest value of `key` found anywhere in a state/*.json file, or '' if
     absent/empty. Handles a bare array of records (e.g. changelog.json) and
     an object of named sections each holding a record or array of records
-    (e.g. jurisdictions.json's {"jurisdictions": [...], "frontier": {...}}).
+    (e.g. jurisdictions.json's {"jurisdictions": [...]}, where us-fl is a
+    normal member of that array carrying a frontier:true flag rather than a
+    separate top-level section).
     """
     path = STATE_DIR / f"{state_filename}.json"
     if not path.exists():

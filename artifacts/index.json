@@ -36,15 +36,7 @@
     "slug": "formulation-design",
     "title": "Formulation Design",
     "description": "The excipient system for an intranasal exosome preparation, each component traced to an approved nasal product or to the FDA Inactive Ingredient Database. The published EV-stabilisation buffer has no nasal precedent at all, and the one approved nasal permeation enhancer is a detergent that dissolves lipid vesicles.",
-    "updated": "2026-09-04",
-    "status": "in-progress"
-  },
-  {
-    "file": "jurisdiction-map.md",
-    "slug": "jurisdiction-map",
-    "title": "Jurisdiction Map",
-    "description": "Where intranasal exosome products can lawfully be administered, for what indications, under which statute — Florida and US federal so far. The product site no longer cites SB 1768; the statutory scope analysis stands as reference, not a live conflict.",
-    "updated": "2026-09-01",
+    "updated": "2026-09-06",
     "status": "in-progress"
   },
   {
@@ -84,7 +76,7 @@
     "slug": "jurisdictions",
     "title": "Jurisdictions",
     "description": "Structured jurisdiction-by-jurisdiction legal status for intranasal exosome products — classification, legal basis, permitted/grey/prohibited lists, cell-source rules, enforcement, and route-in, one record per jurisdiction.",
-    "updated": "2026-09-06",
+    "updated": "2026-09-05",
     "status": "standing"
   },
   {
